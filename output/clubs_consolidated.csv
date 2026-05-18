@@ -1,40 +1,4 @@
 club_name,club_code,squad_size,average_age,foreigners_pct,national_team_players,stadium_seats,net_transfer_record,coach_name,source_league,season_id,competition_code
-KVC Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,Jonas De Roeck,2023-jupiler-pro-league,2023,jupiler-pro-league
-Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,Marc Brys,2023-jupiler-pro-league,2023,jupiler-pro-league
-RSC Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,Brian Riemer,2023-jupiler-pro-league,2023,jupiler-pro-league
-Royal Antwerp FC,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,Mark van Bommel,2023-jupiler-pro-league,2023,jupiler-pro-league
-KAA Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,Hein Vanhaezebrouck,2023-jupiler-pro-league,2023,jupiler-pro-league
-Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,Alexander Blessin,2023-jupiler-pro-league,2023,jupiler-pro-league
-Cercle Brugge,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,Miron Muslic,2023-jupiler-pro-league,2023,jupiler-pro-league
-Standard Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,Carl Hoefkens,2023-jupiler-pro-league,2023,jupiler-pro-league
-Club Brugge KV,fc-brugge,28,24.2,57.1,12,29062,49000000.0,Ronny Deila,2023-jupiler-pro-league,2023,jupiler-pro-league
-KV Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,Steven Defour,2023-jupiler-pro-league,2023,jupiler-pro-league
-Royal Charleroi SC,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,Felice Mazzù,2023-jupiler-pro-league,2023,jupiler-pro-league
-Sint-Truidense VV,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,Thorsten Fink,2023-jupiler-pro-league,2023,jupiler-pro-league
-KV Kortrijk,kv-kortrijk,27,25.2,51.9,3,9399,4000000.0,Edward Still,2023-jupiler-pro-league,2023,jupiler-pro-league
-KAS Eupen,kas-eupen,31,25.2,64.5,1,8363,-0.0,Florian Kohfeldt,2023-jupiler-pro-league,2023,jupiler-pro-league
-RWDM Brussels,rwd-molenbeek,25,23.6,64.0,3,8090,2930000.0,Vincent Euvrard,2023-jupiler-pro-league,2023,jupiler-pro-league
-KRC Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,Wouter Vrancken,2023-jupiler-pro-league,2023,jupiler-pro-league
-Torino FC,fc-turin,30,26.3,80.0,11,28177,21840000.0,Ivan Juric,2023-serie-a,2023,serie-a
-Juventus FC,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,Massimiliano Allegri,2023-serie-a,2023,serie-a
-Inter Milan,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,Simone Inzaghi,2023-serie-a,2023,serie-a
-Atalanta BC,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,Gian Piero Gasperini,2023-serie-a,2023,serie-a
-SS Lazio,lazio-rom,28,27.7,60.7,11,70634,12550000.0,Maurizio Sarri,2023-serie-a,2023,serie-a
-Genoa CFC,genua-cfc,26,26.7,69.2,7,34901,47930000.0,Alberto Gilardino,2023-serie-a,2023,serie-a
-AC Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,Stefano Pioli,2023-serie-a,2023,serie-a
-SSC Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,Rudi Garcia,2023-serie-a,2023,serie-a
-ACF Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,Vincenzo Italiano,2023-serie-a,2023,serie-a
-AS Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,José Mourinho,2023-serie-a,2023,serie-a
-Bologna FC 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,Thiago Motta,2023-serie-a,2023,serie-a
-US Sassuolo,us-sassuolo,29,26.0,58.6,12,21584,-34680000.0,Alessio Dionisi,2023-serie-a,2023,serie-a
-Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,Andrea Sottil,2023-serie-a,2023,serie-a
-AC Monza,ac-monza,28,26.9,42.9,2,17102,14900000.0,Raffaele Palladino,2023-serie-a,2023,serie-a
-Frosinone Calcio,frosinone-calcio,30,24.4,30.0,4,16227,16850000.0,Eusebio Di Francesco,2023-serie-a,2023,serie-a
-FC Empoli,fc-empoli,33,24.6,27.3,1,19847,23330000.0,Paolo Zanetti,2023-serie-a,2023,serie-a
-US Salernitana 1919,us-salernitana-1919,26,27.0,26.9,0,29739,2140000.0,Paulo Sousa,2023-serie-a,2023,serie-a
-Hellas Verona,hellas-verona,30,26.0,86.7,9,39211,7300000.0,Marco Baroni,2023-serie-a,2023,serie-a
-US Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,Roberto D'Aversa,2023-serie-a,2023,serie-a
-Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,Claudio Ranieri,2023-serie-a,2023,serie-a
 Bayer 04 Leverkusen,bayer-04-leverkusen,27,26.6,77.8,14,30210,31800000.0,Xabi Alonso,2023-bundesliga,2023,bundesliga
 TSG 1899 Hoffenheim,tsg-1899-hoffenheim,29,25.5,69.0,12,30150,1350000.0,Pellegrino Matarazzo,2023-bundesliga,2023,bundesliga
 Borussia Dortmund,borussia-dortmund,26,26.4,53.8,13,81365,-23200000.0,Edin Terzic,2023-bundesliga,2023,bundesliga
@@ -53,322 +17,22 @@ VfB Stuttgart,vfb-stuttgart,30,24.9,46.7,14,60449,57050000.0,Sebastian Hoeneß,2
 Eintracht Frankfurt,eintracht-frankfurt,29,25.6,65.5,13,59500,53400000.0,Dino Toppmöller,2023-bundesliga,2023,bundesliga
 SV Darmstadt 98,sv-darmstadt-98,27,26.8,48.1,3,17810,2550000.0,Torsten Lieberknecht,2023-bundesliga,2023,bundesliga
 SV Werder Bremen,sv-werder-bremen,30,25.4,60.0,10,41800,-2150000.0,Ole Werner,2023-bundesliga,2023,bundesliga
-AS Monaco,as-monaco,28,25.9,100.0,15,18525,135570000.0,Adi Hütter,2024-ligue-1,2024,ligue-1
-Paris Saint-Germain,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,Luis Enrique,2024-ligue-1,2024,ligue-1
-LOSC Lille,losc-lille,28,26.4,64.3,12,50186,61600000.0,Bruno Genesio,2024-ligue-1,2024,ligue-1
-OGC Nice,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,Franck Haise,2024-ligue-1,2024,ligue-1
-RC Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,Will Still,2024-ligue-1,2024,ligue-1
-Olympique Lyon,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,Pierre Sage,2024-ligue-1,2024,ligue-1
-Stade Reims,stade-reims,24,24.1,79.2,7,20519,81980000.0,Luka Elsner,2024-ligue-1,2024,ligue-1
-Olympique Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,Roberto De Zerbi,2024-ligue-1,2024,ligue-1
-FC Toulouse,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,Carles Martínez,2024-ligue-1,2024,ligue-1
-Stade Rennais FC,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,Julien Stéphan,2024-ligue-1,2024,ligue-1
-RC Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,Patrick Vieira,2024-ligue-1,2024,ligue-1
-Stade Brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,Éric Roy,2024-ligue-1,2024,ligue-1
-FC Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,Antoine Kombouaré,2024-ligue-1,2024,ligue-1
-AS Saint-Étienne,as-saint-etienne,29,24.2,55.2,8,41965,-22050000.0,Olivier Dall'Oglio,2024-ligue-1,2024,ligue-1
-Le Havre AC,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,Didier Digard,2024-ligue-1,2024,ligue-1
-AJ Auxerre,aj-auxerre,29,24.3,51.7,9,18541,14650000.0,Christophe Pélissier,2024-ligue-1,2024,ligue-1
-Montpellier HSC,montpellier-hsc,23,24.4,43.5,2,22000,6550000.0,Michel Der Zakarian,2024-ligue-1,2024,ligue-1
-Angers SCO,sco-angers,24,25.9,58.3,6,19350,20250000.0,Alexandre Dujeux,2024-ligue-1,2024,ligue-1
-Boavista FC,boavista-porto-fc,3,20.3,0.0,0,28263,100000.0,Petit,2023-liga-portugal,2023,liga-portugal
-GD Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,Álvaro Pacheco,2023-liga-portugal,2023,liga-portugal
-SL Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,Roger Schmidt,2023-liga-portugal,2023,liga-portugal
-FC Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,João Pedro Sousa,2023-liga-portugal,2023,liga-portugal
-Sporting CP,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,Ruben Amorim,2023-liga-portugal,2023,liga-portugal
-FC Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,Daniel Ramos,2023-liga-portugal,2023,liga-portugal
-SC Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,Artur Jorge,2023-liga-portugal,2023,liga-portugal
-Gil Vicente FC,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,Vítor Campelos,2023-liga-portugal,2023,liga-portugal
-FC Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,Sérgio Conceição,2023-liga-portugal,2023,liga-portugal
-Casa Pia AC,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,Filipe Martins,2023-liga-portugal,2023,liga-portugal
-Moreirense FC,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,António da Costa,2023-liga-portugal,2023,liga-portugal
-SC Farense,sc-farense,29,27.5,55.2,1,7000,800000.0,José Mota,2023-liga-portugal,2023,liga-portugal
-CF Estrela Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,Sérgio Vieira,2023-liga-portugal,2023,liga-portugal
-Portimonense SAD,portimonense-sc,27,25.4,70.4,2,4961,2730000.0,Paulo Sérgio,2023-liga-portugal,2023,liga-portugal
-Vitória Guimarães SC,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,Moreno,2023-liga-portugal,2023,liga-portugal
-GD Chaves,gd-chaves,27,27.6,48.1,3,8400,-200000.0,José Gomes,2023-liga-portugal,2023,liga-portugal
-FC Vizela,fc-vizela,30,26.6,76.7,6,6000,4700000.0,Pablo Villar,2023-liga-portugal,2023,liga-portugal
-Rio Ave FC,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,Luís Freire,2023-liga-portugal,2023,liga-portugal
-Villarreal CF,fc-villarreal,27,26.5,48.1,10,23500,2500000.0,Marcelino,2024-laliga,2024,laliga
-Sevilla FC,fc-sevilla,28,28.0,60.7,9,43883,54750000.0,Xavier García Pimienta,2024-laliga,2024,laliga
-Atlético de Madrid,atletico-madrid,23,27.7,69.6,18,70460,-84450000.0,Diego Simeone,2024-laliga,2024,laliga
-Real Madrid,real-madrid,29,25.7,58.6,18,83186,-165500000.0,Carlo Ancelotti,2024-laliga,2024,laliga
-Real Betis Balompié,real-betis-sevilla,27,29.2,48.1,11,70000,-875000.0,Manuel Pellegrini,2024-laliga,2024,laliga
-Girona FC,fc-girona,27,28.7,51.9,6,14624,29150000.0,Míchel,2024-laliga,2024,laliga
-Celta de Vigo,celta-vigo,28,27.1,32.1,6,22803,41700000.0,Claudio Giráldez,2024-laliga,2024,laliga
-Real Sociedad,real-sociedad-san-sebastian,25,26.2,36.0,11,39313,63500000.0,Imanol Alguacil,2024-laliga,2024,laliga
-CA Osasuna,ca-osasuna,23,28.1,13.0,3,23576,1500000.0,Vicente Moreno,2024-laliga,2024,laliga
-RCD Espanyol Barcelona,espanyol-barcelona,23,27.4,30.4,2,37776,9800000.0,Manolo González,2024-laliga,2024,laliga
-Deportivo Alavés,deportivo-alaves,24,28.1,41.7,3,19840,20880000.0,Luis García,2024-laliga,2024,laliga
-RCD Mallorca,rcd-mallorca,26,27.8,42.3,8,26020,800000.0,Jagoba Arrasate,2024-laliga,2024,laliga
-Athletic Bilbao,athletic-bilbao,28,27.2,10.7,6,53289,-17800000.0,Ernesto Valverde,2024-laliga,2024,laliga
-Real Valladolid CF,real-valladolid,28,25.6,50.0,1,27618,11300000.0,Paulo Pezzolano,2024-laliga,2024,laliga
-FC Barcelona,fc-barcelona,24,25.8,45.8,17,62657,3700000.0,Hansi Flick,2024-laliga,2024,laliga
-UD Las Palmas,ud-las-palmas,27,26.8,22.2,1,32400,14060000.0,Luis Carrión,2024-laliga,2024,laliga
-Valencia CF,fc-valencia,27,28.2,51.9,3,49430,9630000.0,Rubén Baraja,2024-laliga,2024,laliga
-Getafe CF,fc-getafe,25,28.3,52.0,3,16800,10800000.0,José Bordalás,2024-laliga,2024,laliga
-CD Leganés,cd-leganes,25,27.6,20.0,3,14422,17050000.0,Borja Jiménez,2024-laliga,2024,laliga
-Rayo Vallecano,rayo-vallecano,27,28.8,51.9,7,14708,-7100000.0,Iñigo Pérez,2024-laliga,2024,laliga
-Atalanta Bergamasca Calcio S.p.a.,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,,2025-serie-a,2025,serie-a
-Associazione Sportiva Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,,2025-serie-a,2025,serie-a
-Football Club Internazionale Milano S.p.A.,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,,2025-serie-a,2025,serie-a
-Associazione Calcio Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,,2025-serie-a,2025,serie-a
-Juventus Football Club,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,,2025-serie-a,2025,serie-a
-Società Sportiva Lazio S.p.A.,lazio-rom,28,27.7,60.7,11,70634,12550000.0,,2025-serie-a,2025,serie-a
-Bologna Football Club 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,,2025-serie-a,2025,serie-a
-Società Sportiva Calcio Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,,2025-serie-a,2025,serie-a
-Unione Sportiva Sassuolo Calcio,us-sassuolo,29,26.0,58.6,12,21584,-34680000.0,,2025-serie-a,2025,serie-a
-Associazione Calcio Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,,2025-serie-a,2025,serie-a
-Calcio Como,como-1907,27,26.3,92.6,10,12039,-110510000.0,,2025-serie-a,2025,serie-a
-Genoa Cricket and Football Club,genua-cfc,26,26.7,69.2,7,34901,47930000.0,,2025-serie-a,2025,serie-a
-Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,,2025-serie-a,2025,serie-a
-Parma Calcio 1913,parma-calcio-1913,25,24.6,76.0,2,22352,37290000.0,,2025-serie-a,2025,serie-a
-Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,,2025-serie-a,2025,serie-a
-Pisa Sporting Club,ac-pisa-1909,29,27.1,72.4,6,12508,-29900000.0,,2025-serie-a,2025,serie-a
-Verona Hellas Football Club,hellas-verona,30,26.0,86.7,9,39211,7300000.0,,2025-serie-a,2025,serie-a
-Torino Calcio,fc-turin,30,26.3,80.0,11,28177,21840000.0,,2025-serie-a,2025,serie-a
-Unione Sportiva Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,,2025-serie-a,2025,serie-a
-Unione Sportiva Cremonese S.p.A.,us-cremonese,27,28.6,44.4,3,16003,-17750000.0,,2025-serie-a,2025,serie-a
-Tottenham Hotspur,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,Ange Postecoglou,2023-premier-league,2023,premier-league
-Manchester United,manchester-united,24,26.6,75.0,15,74879,-172500000.0,Erik ten Hag,2023-premier-league,2023,premier-league
-Nottingham Forest,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,Steve Cooper,2023-premier-league,2023,premier-league
-Chelsea FC,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,Mauricio Pochettino,2023-premier-league,2023,premier-league
-Manchester City,manchester-city,27,26.1,70.4,22,55097,-199520000.0,Pep Guardiola,2023-premier-league,2023,premier-league
-Liverpool FC,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,Jürgen Klopp,2023-premier-league,2023,premier-league
-Arsenal FC,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,Mikel Arteta,2023-premier-league,2023,premier-league
-Brighton & Hove Albion,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,Roberto De Zerbi,2023-premier-league,2023,premier-league
-Aston Villa,aston-villa,25,28.2,68.0,12,42918,-12650000.0,Unai Emery,2023-premier-league,2023,premier-league
-Crystal Palace,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,Roy Hodgson,2023-premier-league,2023,premier-league
-Brentford FC,fc-brentford,26,25.5,76.9,14,17250,50060000.0,Thomas Frank,2023-premier-league,2023,premier-league
-Everton FC,fc-everton,25,26.8,52.0,11,52769,-117150000.0,Sean Dyche,2023-premier-league,2023,premier-league
-Burnley FC,fc-burnley,29,27.8,72.4,12,21994,-91500000.0,Vincent Kompany,2023-premier-league,2023,premier-league
-Wolverhampton Wanderers,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,Julen Lopetegui,2023-premier-league,2023,premier-league
-West Ham United,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,David Moyes,2023-premier-league,2023,premier-league
-AFC Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,Andoni Iraola,2023-premier-league,2023,premier-league
-Sheffield United,sheffield-united,31,26.4,41.9,5,32702,-910000.0,Paul Heckingbottom,2023-premier-league,2023,premier-league
-Fulham FC,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,Marco Silva,2023-premier-league,2023,premier-league
-Newcastle United,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,Eddie Howe,2023-premier-league,2023,premier-league
-Luton Town,luton-town,26,27.1,53.8,5,11850,12950000.0,Rob Edwards,2023-premier-league,2023,premier-league
-Rio Ave FC,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,Luís Freire,2024-liga-portugal,2024,liga-portugal
-GD Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,Ian Cathro,2024-liga-portugal,2024,liga-portugal
-Vitória Guimarães SC,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,Rui Borges,2024-liga-portugal,2024,liga-portugal
-CD Santa Clara,cd-santa-clara,27,26.2,77.8,1,12500,1570000.0,Vasco Matos,2024-liga-portugal,2024,liga-portugal
-SC Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,Daniel Sousa,2024-liga-portugal,2024,liga-portugal
-SL Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,Roger Schmidt,2024-liga-portugal,2024,liga-portugal
-Sporting CP,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,Ruben Amorim,2024-liga-portugal,2024,liga-portugal
-FC Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,Armando Evangelista,2024-liga-portugal,2024,liga-portugal
-Gil Vicente FC,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,Tozé Marreco,2024-liga-portugal,2024,liga-portugal
-FC Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,Gonzalo García,2024-liga-portugal,2024,liga-portugal
-Casa Pia AC,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,João Pereira,2024-liga-portugal,2024,liga-portugal
-SC Farense,sc-farense,29,27.5,55.2,1,7000,800000.0,José Mota,2024-liga-portugal,2024,liga-portugal
-Avs Futebol,avs-futebol-sad,25,28.4,80.0,0,6230,3000000.0,Vítor Campelos,2024-liga-portugal,2024,liga-portugal
-Moreirense FC,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,António da Costa,2024-liga-portugal,2024,liga-portugal
-CF Estrela Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,Filipe Martins,2024-liga-portugal,2024,liga-portugal
-Boavista FC,boavista-porto-fc,3,20.3,0.0,0,28263,100000.0,Cristiano Bacci,2024-liga-portugal,2024,liga-portugal
-FC Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,Vítor Bruno,2024-liga-portugal,2024,liga-portugal
-CD Nacional,cd-nacional,30,26.6,73.3,2,5200,-1760000.0,Tiago Margarido,2024-liga-portugal,2024,liga-portugal
-Bayern Munich,fc-bayern-munchen,25,27.0,52.0,16,75000,12900000.0,Vincent Kompany,2024-bundesliga,2024,bundesliga
-Bayer 04 Leverkusen,bayer-04-leverkusen,27,26.6,77.8,14,30210,31800000.0,Xabi Alonso,2024-bundesliga,2024,bundesliga
-VfL Wolfsburg,vfl-wolfsburg,33,25.5,72.7,14,28917,-30980000.0,Ralph Hasenhüttl,2024-bundesliga,2024,bundesliga
-Eintracht Frankfurt,eintracht-frankfurt,29,25.6,65.5,13,59500,53400000.0,Dino Toppmöller,2024-bundesliga,2024,bundesliga
-Borussia Dortmund,borussia-dortmund,26,26.4,53.8,13,81365,-23200000.0,Nuri Şahin,2024-bundesliga,2024,bundesliga
-Borussia Mönchengladbach,borussia-monchengladbach,28,26.0,53.6,10,54042,10650000.0,Gerardo Seoane,2024-bundesliga,2024,bundesliga
-TSG 1899 Hoffenheim,tsg-1899-hoffenheim,29,25.5,69.0,12,30150,1350000.0,Pellegrino Matarazzo,2024-bundesliga,2024,bundesliga
-RB Leipzig,rasenballsport-leipzig,30,23.7,66.7,12,47069,38050000.0,Marco Rose,2024-bundesliga,2024,bundesliga
-SV Werder Bremen,sv-werder-bremen,30,25.4,60.0,10,41800,-2150000.0,Ole Werner,2024-bundesliga,2024,bundesliga
-SC Freiburg,sc-freiburg,25,28.1,36.0,5,34700,-1150000.0,Julian Schuster,2024-bundesliga,2024,bundesliga
-VfB Stuttgart,vfb-stuttgart,30,24.9,46.7,14,60449,57050000.0,Sebastian Hoeneß,2024-bundesliga,2024,bundesliga
-1.FSV Mainz 05,1-fsv-mainz-05,31,27.3,48.4,11,33305,5730000.0,Bo Henriksen,2024-bundesliga,2024,bundesliga
-1.FC Heidenheim 1846,1-fc-heidenheim-1846,29,26.4,24.1,3,15000,7500000.0,Frank Schmidt,2024-bundesliga,2024,bundesliga
-FC St. Pauli,fc-st-pauli,30,26.3,83.3,13,29546,-2450000.0,Alexander Blessin,2024-bundesliga,2024,bundesliga
-VfL Bochum,vfl-bochum,29,25.7,31.0,3,26000,5900000.0,Peter Zeidler,2024-bundesliga,2024,bundesliga
-1.FC Union Berlin,1-fc-union-berlin,26,27.1,65.4,8,22012,300000.0,Bo Svensson,2024-bundesliga,2024,bundesliga
-Holstein Kiel,holstein-kiel,30,25.1,50.0,4,15034,7970000.0,Marcel Rapp,2024-bundesliga,2024,bundesliga
-FC Augsburg,fc-augsburg,29,25.6,65.5,9,30660,-8250000.0,Jess Thorup,2024-bundesliga,2024,bundesliga
-Paris Saint-Germain Football Club,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,,2025-ligue-1,2025,ligue-1
-Toulouse Football Club,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,,2025-ligue-1,2025,ligue-1
-Olympique Gymnaste Club Nice Côte d'Azur,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,,2025-ligue-1,2025,ligue-1
-Racing Club de Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,,2025-ligue-1,2025,ligue-1
-Racing Club de Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,,2025-ligue-1,2025,ligue-1
-Stade Rennais Football Club,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,,2025-ligue-1,2025,ligue-1
-Olympique de Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,,2025-ligue-1,2025,ligue-1
-Lille Olympique Sporting Club,losc-lille,28,26.4,64.3,12,50186,61600000.0,,2025-ligue-1,2025,ligue-1
-Olympique Lyonnais,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,,2025-ligue-1,2025,ligue-1
-Association sportive de Monaco Football Club,as-monaco,28,25.9,100.0,15,18525,135570000.0,,2025-ligue-1,2025,ligue-1
-Football Club de Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,,2025-ligue-1,2025,ligue-1
-Le Havre Athletic Club,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,,2025-ligue-1,2025,ligue-1
-Paris Football Club,paris-fc,31,28.7,54.8,8,19904,-72300000.0,,2025-ligue-1,2025,ligue-1
-Stade brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,,2025-ligue-1,2025,ligue-1
-Association de la Jeunesse auxerroise,aj-auxerre,29,24.3,51.7,9,18541,14650000.0,,2025-ligue-1,2025,ligue-1
-Angers Sporting Club de l'Ouest,sco-angers,24,25.9,58.3,6,19350,20250000.0,,2025-ligue-1,2025,ligue-1
-Football Club Lorient-Bretagne Sud,fc-lorient,25,26.0,72.0,9,16787,600000.0,,2025-ligue-1,2025,ligue-1
-Football Club de Metz,fc-metz,27,25.8,70.4,7,28786,29850000.0,,2025-ligue-1,2025,ligue-1
-Brighton & Hove Albion,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,Fabian Hürzeler,2024-premier-league,2024,premier-league
-Chelsea FC,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,Enzo Maresca,2024-premier-league,2024,premier-league
-Aston Villa,aston-villa,25,28.2,68.0,12,42918,-12650000.0,Unai Emery,2024-premier-league,2024,premier-league
-Tottenham Hotspur,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,Ange Postecoglou,2024-premier-league,2024,premier-league
-Liverpool FC,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,Arne Slot,2024-premier-league,2024,premier-league
-Arsenal FC,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,Mikel Arteta,2024-premier-league,2024,premier-league
-Manchester City,manchester-city,27,26.1,70.4,22,55097,-199520000.0,Pep Guardiola,2024-premier-league,2024,premier-league
-Crystal Palace,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,Oliver Glasner,2024-premier-league,2024,premier-league
-Manchester United,manchester-united,24,26.6,75.0,15,74879,-172500000.0,Erik ten Hag,2024-premier-league,2024,premier-league
-Newcastle United,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,Eddie Howe,2024-premier-league,2024,premier-league
-AFC Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,Andoni Iraola,2024-premier-league,2024,premier-league
-Nottingham Forest,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,Nuno Espírito Santo,2024-premier-league,2024,premier-league
-Wolverhampton Wanderers,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,Gary O'Neil,2024-premier-league,2024,premier-league
-Southampton FC,fc-southampton,27,26.8,55.6,6,32384,87060000.0,Russell Martin,2024-premier-league,2024,premier-league
-Ipswich Town,ipswich-town,26,27.9,50.0,8,30056,29950000.0,Kieran McKenna,2024-premier-league,2024,premier-league
-Brentford FC,fc-brentford,26,25.5,76.9,14,17250,50060000.0,Thomas Frank,2024-premier-league,2024,premier-league
-Everton FC,fc-everton,25,26.8,52.0,11,52769,-117150000.0,Sean Dyche,2024-premier-league,2024,premier-league
-Leicester City,leicester-city,29,26.1,58.6,7,32259,57300000.0,Steve Cooper,2024-premier-league,2024,premier-league
-Fulham FC,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,Marco Silva,2024-premier-league,2024,premier-league
-West Ham United,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,Julen Lopetegui,2024-premier-league,2024,premier-league
-Real Sociedad de Fútbol S.A.D.,real-sociedad-san-sebastian,25,26.2,36.0,11,39313,63500000.0,,2025-laliga,2025,laliga
-Futbol Club Barcelona,fc-barcelona,24,25.8,45.8,17,62657,3700000.0,,2025-laliga,2025,laliga
-Villarreal Club de Fútbol S.A.D.,fc-villarreal,27,26.5,48.1,10,23500,2500000.0,,2025-laliga,2025,laliga
-Real Betis Balompié S.A.D.,real-betis-sevilla,27,29.2,48.1,11,70000,-875000.0,,2025-laliga,2025,laliga
-Athletic Club Bilbao,athletic-bilbao,28,27.2,10.7,6,53289,-17800000.0,,2025-laliga,2025,laliga
-Girona Fútbol Club S. A. D.,fc-girona,27,28.7,51.9,6,14624,29150000.0,,2025-laliga,2025,laliga
-Real Club Celta de Vigo S. A. D.,celta-vigo,28,27.1,32.1,6,22803,41700000.0,,2025-laliga,2025,laliga
-Real Madrid Club de Fútbol,real-madrid,29,25.7,58.6,18,83186,-165500000.0,,2025-laliga,2025,laliga
-Valencia Club de Fútbol S. A. D.,fc-valencia,27,28.2,51.9,3,49430,9630000.0,,2025-laliga,2025,laliga
-Club Atlético de Madrid S.A.D.,atletico-madrid,23,27.7,69.6,18,70460,-84450000.0,,2025-laliga,2025,laliga
-Club Atlético Osasuna,ca-osasuna,23,28.1,13.0,3,23576,1500000.0,,2025-laliga,2025,laliga
-Rayo Vallecano de Madrid S. A. D.,rayo-vallecano,27,28.8,51.9,7,14708,-7100000.0,,2025-laliga,2025,laliga
-Sevilla Fútbol Club S.A.D.,fc-sevilla,28,28.0,60.7,9,43883,54750000.0,,2025-laliga,2025,laliga
-Reial Club Deportiu Espanyol de Barcelona S.A.D.,espanyol-barcelona,23,27.4,30.4,2,37776,9800000.0,,2025-laliga,2025,laliga
-Real Club Deportivo Mallorca S.A.D.,rcd-mallorca,26,27.8,42.3,8,26020,800000.0,,2025-laliga,2025,laliga
-Levante Unión Deportiva S.A.D.,ud-levante,27,26.0,29.6,3,26354,300000.0,,2025-laliga,2025,laliga
-Deportivo Alavés S. A. D.,deportivo-alaves,24,28.1,41.7,3,19840,20880000.0,,2025-laliga,2025,laliga
-Real Oviedo S.A.D.,real-oviedo,26,28.0,61.5,8,30500,-3950000.0,,2025-laliga,2025,laliga
-Elche Club de Fútbol S.A.D.,fc-elche,26,26.8,38.5,3,31388,22900000.0,,2025-laliga,2025,laliga
-Getafe Club de Fútbol S. A. D. Team Dubai,fc-getafe,25,28.3,52.0,3,16800,10800000.0,,2025-laliga,2025,laliga
-Manchester City Football Club,manchester-city,27,26.1,70.4,22,55097,-199520000.0,,2025-premier-league,2025,premier-league
-Chelsea Football Club,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,,2025-premier-league,2025,premier-league
-Newcastle United Football Club,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,,2025-premier-league,2025,premier-league
-Crystal Palace Football Club,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,,2025-premier-league,2025,premier-league
-Tottenham Hotspur Football Club,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,,2025-premier-league,2025,premier-league
-Liverpool Football Club,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,,2025-premier-league,2025,premier-league
-Aston Villa Football Club,aston-villa,25,28.2,68.0,12,42918,-12650000.0,,2025-premier-league,2025,premier-league
-Arsenal Football Club,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,,2025-premier-league,2025,premier-league
-Manchester United Football Club,manchester-united,24,26.6,75.0,15,74879,-172500000.0,,2025-premier-league,2025,premier-league
-Brighton and Hove Albion Football Club,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,,2025-premier-league,2025,premier-league
-Association Football Club Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,,2025-premier-league,2025,premier-league
-Everton Football Club,fc-everton,25,26.8,52.0,11,52769,-117150000.0,,2025-premier-league,2025,premier-league
-Nottingham Forest Football Club,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,,2025-premier-league,2025,premier-league
-Brentford Football Club,fc-brentford,26,25.5,76.9,14,17250,50060000.0,,2025-premier-league,2025,premier-league
-Fulham Football Club,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,,2025-premier-league,2025,premier-league
-Wolverhampton Wanderers Football Club,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,,2025-premier-league,2025,premier-league
-Burnley Football Club,fc-burnley,29,27.8,72.4,12,21994,-91500000.0,,2025-premier-league,2025,premier-league
-Sunderland Association Football Club,afc-sunderland,28,25.2,82.1,16,48707,-156340000.0,,2025-premier-league,2025,premier-league
-West Ham United Football Club,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,,2025-premier-league,2025,premier-league
-Leeds United Association Football Club,leeds-united,26,27.3,76.9,14,37890,-106700000.0,,2025-premier-league,2025,premier-league
-Montpellier HSC,montpellier-hsc,23,24.4,43.5,2,22000,6550000.0,Michel Der Zakarian,2023-ligue-1,2023,ligue-1
-RC Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,Patrick Vieira,2023-ligue-1,2023,ligue-1
-OGC Nice,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,Francesco Farioli,2023-ligue-1,2023,ligue-1
-RC Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,Franck Haise,2023-ligue-1,2023,ligue-1
-Paris Saint-Germain,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,Luis Enrique,2023-ligue-1,2023,ligue-1
-AS Monaco,as-monaco,28,25.9,100.0,15,18525,135570000.0,Adi Hütter,2023-ligue-1,2023,ligue-1
-Olympique Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,Marcelino,2023-ligue-1,2023,ligue-1
-Stade Rennais FC,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,Bruno Genesio,2023-ligue-1,2023,ligue-1
-Olympique Lyon,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,Laurent Blanc,2023-ligue-1,2023,ligue-1
-Stade Brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,Éric Roy,2023-ligue-1,2023,ligue-1
-FC Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,Pierre Aristouy,2023-ligue-1,2023,ligue-1
-Le Havre AC,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,Luka Elsner,2023-ligue-1,2023,ligue-1
-Stade Reims,stade-reims,24,24.1,79.2,7,20519,81980000.0,Will Still,2023-ligue-1,2023,ligue-1
-LOSC Lille,losc-lille,28,26.4,64.3,12,50186,61600000.0,Paulo Fonseca,2023-ligue-1,2023,ligue-1
-FC Lorient,fc-lorient,25,26.0,72.0,9,16787,600000.0,Régis Le Bris,2023-ligue-1,2023,ligue-1
-FC Toulouse,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,Carles Martínez,2023-ligue-1,2023,ligue-1
-FC Metz,fc-metz,27,25.8,70.4,7,28786,29850000.0,Ladislau Bölöni,2023-ligue-1,2023,ligue-1
-Clermont Foot 63,clermont-foot-63,28,25.9,57.1,1,10800,-0.0,Pascal Gastien,2023-ligue-1,2023,ligue-1
-RasenBallsport Leipzig,rasenballsport-leipzig,30,23.7,66.7,12,47069,38050000.0,,2025-bundesliga,2025,bundesliga
-FC Bayern München,fc-bayern-munchen,25,27.0,52.0,16,75000,12900000.0,,2025-bundesliga,2025,bundesliga
-Sportverein Werder Bremen von 1899,sv-werder-bremen,30,25.4,60.0,10,41800,-2150000.0,,2025-bundesliga,2025,bundesliga
-Sport-Club Freiburg,sc-freiburg,25,28.1,36.0,5,34700,-1150000.0,,2025-bundesliga,2025,bundesliga
-Eintracht Frankfurt Fußball AG,eintracht-frankfurt,29,25.6,65.5,13,59500,53400000.0,,2025-bundesliga,2025,bundesliga
-Verein für Bewegungsspiele Stuttgart 1893,vfb-stuttgart,30,24.9,46.7,14,60449,57050000.0,,2025-bundesliga,2025,bundesliga
-Borussia Dortmund,borussia-dortmund,26,26.4,53.8,13,81365,-23200000.0,,2025-bundesliga,2025,bundesliga
-Verein für Leibesübungen Wolfsburg,vfl-wolfsburg,33,25.5,72.7,14,28917,-30980000.0,,2025-bundesliga,2025,bundesliga
-Turn- und Sportgemeinschaft 1899 Hoffenheim Fußball-Spielbetriebs,tsg-1899-hoffenheim,29,25.5,69.0,12,30150,1350000.0,,2025-bundesliga,2025,bundesliga
-Bayer 04 Leverkusen Fußball,bayer-04-leverkusen,27,26.6,77.8,14,30210,31800000.0,,2025-bundesliga,2025,bundesliga
-1. Fußballclub Heidenheim 1846,1-fc-heidenheim-1846,29,26.4,24.1,3,15000,7500000.0,,2025-bundesliga,2025,bundesliga
-Fußball-Club Augsburg 1907,fc-augsburg,29,25.6,65.5,9,30660,-8250000.0,,2025-bundesliga,2025,bundesliga
-Hamburger Sport Verein,hamburger-sv,30,25.1,76.7,9,57000,-7960000.0,,2025-bundesliga,2025,bundesliga
-Borussia Verein für Leibesübungen 1900 Mönchengladbach,borussia-monchengladbach,28,26.0,53.6,10,54042,10650000.0,,2025-bundesliga,2025,bundesliga
-1. Fußball-Club Köln,1-fc-koln,30,25.9,40.0,6,50000,-12130000.0,,2025-bundesliga,2025,bundesliga
-1. Fußball- und Sportverein Mainz 05,1-fsv-mainz-05,31,27.3,48.4,11,33305,5730000.0,,2025-bundesliga,2025,bundesliga
-Fußball-Club St. Pauli von 1910,fc-st-pauli,30,26.3,83.3,13,29546,-2450000.0,,2025-bundesliga,2025,bundesliga
-1. Fußballclub Union Berlin,1-fc-union-berlin,26,27.1,65.4,8,22012,300000.0,,2025-bundesliga,2025,bundesliga
-KVC Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,Timmy Simons,2024-jupiler-pro-league,2024,jupiler-pro-league
-Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,Óscar García,2024-jupiler-pro-league,2024,jupiler-pro-league
-Royal Antwerp FC,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,Jonas De Roeck,2024-jupiler-pro-league,2024,jupiler-pro-league
-Club Brugge KV,fc-brugge,28,24.2,57.1,12,29062,49000000.0,Nicky Hayen,2024-jupiler-pro-league,2024,jupiler-pro-league
-Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,Sébastien Pocognoli,2024-jupiler-pro-league,2024,jupiler-pro-league
-KRC Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,Thorsten Fink,2024-jupiler-pro-league,2024,jupiler-pro-league
-Cercle Brugge,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,Miron Muslic,2024-jupiler-pro-league,2024,jupiler-pro-league
-Standard Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,Ivan Leko,2024-jupiler-pro-league,2024,jupiler-pro-league
-KAA Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,Wouter Vrancken,2024-jupiler-pro-league,2024,jupiler-pro-league
-RSC Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,Brian Riemer,2024-jupiler-pro-league,2024,jupiler-pro-league
-KV Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,Besnik Hasi,2024-jupiler-pro-league,2024,jupiler-pro-league
-Royal Charleroi SC,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,Rik De Mil,2024-jupiler-pro-league,2024,jupiler-pro-league
-Sint-Truidense VV,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,Christian Lattanzio,2024-jupiler-pro-league,2024,jupiler-pro-league
-Beerschot VA,beerschot-v-a-,32,26.3,62.5,2,12771,1150000.0,Dirk Kuyt,2024-jupiler-pro-league,2024,jupiler-pro-league
-KV Kortrijk,kv-kortrijk,27,25.2,51.9,3,9399,4000000.0,Freyr Alexandersson,2024-jupiler-pro-league,2024,jupiler-pro-league
-FCV Dender EH,fcv-dender-eh,28,25.5,60.7,6,8548,300000.0,Vincent Euvrard,2024-jupiler-pro-league,2024,jupiler-pro-league
-Club Brugge Koninklijke Voetbalvereniging,fc-brugge,28,24.2,57.1,12,29062,49000000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Royal Antwerp Football Club,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Koninklijke Atletiek Associatie Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Royal Sporting Club Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Koninklijke Voetbal Club Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Royale Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Koninklijke Racing Club Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Royal Charleroi Sporting Club,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Koninklijke Sint-Truidense Voetbalvereniging,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Royal Standard Club de Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Yellow-Red Koninklijke Voetbalclub Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-FC Verbroedering Denderhoutem Denderleeuw Eendracht Hekelgem,fcv-dender-eh,28,25.5,60.7,6,8548,300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Cercle Brugge Koninklijke Sportvereniging,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Sportvereniging Zulte Waregem,sv-zulte-waregem,31,24.3,54.8,2,12698,9670000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-RAAL La Louvière,raal-la-louviere,25,25.2,76.0,5,8050,-300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
-Sport Lisboa e Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,,2025-liga-portugal,2025,liga-portugal
-Futebol Clube de Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,,2025-liga-portugal,2025,liga-portugal
-Vitória Sport Clube,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,,2025-liga-portugal,2025,liga-portugal
-Sporting Clube de Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,,2025-liga-portugal,2025,liga-portugal
-Sporting Clube de Portugal,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,,2025-liga-portugal,2025,liga-portugal
-Grupo Desportivo Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,,2025-liga-portugal,2025,liga-portugal
-Futebol Clube de Alverca,fc-alverca,29,24.5,79.3,2,6932,6240000.0,,2025-liga-portugal,2025,liga-portugal
-Gil Vicente Futebol Clube,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,,2025-liga-portugal,2025,liga-portugal
-Futebol Clube do Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,,2025-liga-portugal,2025,liga-portugal
-Clube Desportivo Santa Clara,cd-santa-clara,27,26.2,77.8,1,12500,1570000.0,,2025-liga-portugal,2025,liga-portugal
-Casa Pia Atlético Clube,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,,2025-liga-portugal,2025,liga-portugal
-Clube Desportivo Nacional,cd-nacional,30,26.6,73.3,2,5200,-1760000.0,,2025-liga-portugal,2025,liga-portugal
-Rio Ave Futebol Clube,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,,2025-liga-portugal,2025,liga-portugal
-Club Football Estrela da Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,,2025-liga-portugal,2025,liga-portugal
-Clube Desportivo de Tondela,cd-tondela,26,26.9,73.1,2,5000,-1250000.0,,2025-liga-portugal,2025,liga-portugal
-Futebol Clube de Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,,2025-liga-portugal,2025,liga-portugal
-Moreirense Futebol Clube,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,,2025-liga-portugal,2025,liga-portugal
-AVS Futebol SAD,avs-futebol-sad,25,28.4,80.0,0,6230,3000000.0,,2025-liga-portugal,2025,liga-portugal
-AS Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,Daniele De Rossi,2024-serie-a,2024,serie-a
-Juventus FC,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,Thiago Motta,2024-serie-a,2024,serie-a
-AC Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,Paulo Fonseca,2024-serie-a,2024,serie-a
-SSC Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,Antonio Conte,2024-serie-a,2024,serie-a
-Atalanta BC,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,Gian Piero Gasperini,2024-serie-a,2024,serie-a
-Torino FC,fc-turin,30,26.3,80.0,11,28177,21840000.0,Paolo Vanoli,2024-serie-a,2024,serie-a
-ACF Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,Raffaele Palladino,2024-serie-a,2024,serie-a
-Bologna FC 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,Vincenzo Italiano,2024-serie-a,2024,serie-a
-SS Lazio,lazio-rom,28,27.7,60.7,11,70634,12550000.0,Marco Baroni,2024-serie-a,2024,serie-a
-Inter Milan,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,Simone Inzaghi,2024-serie-a,2024,serie-a
-Genoa CFC,genua-cfc,26,26.7,69.2,7,34901,47930000.0,Alberto Gilardino,2024-serie-a,2024,serie-a
-Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,Kosta Runjaić,2024-serie-a,2024,serie-a
-Como 1907,como-1907,27,26.3,92.6,10,12039,-110510000.0,Cesc Fàbregas,2024-serie-a,2024,serie-a
-US Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,Luca Gotti,2024-serie-a,2024,serie-a
-FC Empoli,fc-empoli,33,24.6,27.3,1,19847,23330000.0,Roberto D'Aversa,2024-serie-a,2024,serie-a
-Parma Calcio 1913,parma-calcio-1913,25,24.6,76.0,2,22352,37290000.0,Fabio Pecchia,2024-serie-a,2024,serie-a
-Hellas Verona,hellas-verona,30,26.0,86.7,9,39211,7300000.0,Paolo Zanetti,2024-serie-a,2024,serie-a
-AC Monza,ac-monza,28,26.9,42.9,2,17102,14900000.0,Alessandro Nesta,2024-serie-a,2024,serie-a
-Venezia FC,venezia-fc,29,26.4,65.5,6,12048,-10260000.0,Eusebio Di Francesco,2024-serie-a,2024,serie-a
-Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,Davide Nicola,2024-serie-a,2024,serie-a
+KVC Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,Jonas De Roeck,2023-jupiler-pro-league,2023,jupiler-pro-league
+Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,Marc Brys,2023-jupiler-pro-league,2023,jupiler-pro-league
+RSC Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,Brian Riemer,2023-jupiler-pro-league,2023,jupiler-pro-league
+Royal Antwerp FC,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,Mark van Bommel,2023-jupiler-pro-league,2023,jupiler-pro-league
+KAA Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,Hein Vanhaezebrouck,2023-jupiler-pro-league,2023,jupiler-pro-league
+Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,Alexander Blessin,2023-jupiler-pro-league,2023,jupiler-pro-league
+Cercle Brugge,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,Miron Muslic,2023-jupiler-pro-league,2023,jupiler-pro-league
+Standard Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,Carl Hoefkens,2023-jupiler-pro-league,2023,jupiler-pro-league
+Club Brugge KV,fc-brugge,28,24.2,57.1,12,29062,49000000.0,Ronny Deila,2023-jupiler-pro-league,2023,jupiler-pro-league
+KV Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,Steven Defour,2023-jupiler-pro-league,2023,jupiler-pro-league
+Royal Charleroi SC,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,Felice Mazzù,2023-jupiler-pro-league,2023,jupiler-pro-league
+Sint-Truidense VV,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,Thorsten Fink,2023-jupiler-pro-league,2023,jupiler-pro-league
+KV Kortrijk,kv-kortrijk,27,25.2,51.9,3,9399,4000000.0,Edward Still,2023-jupiler-pro-league,2023,jupiler-pro-league
+KAS Eupen,kas-eupen,31,25.2,64.5,1,8363,-0.0,Florian Kohfeldt,2023-jupiler-pro-league,2023,jupiler-pro-league
+RWDM Brussels,rwd-molenbeek,25,23.6,64.0,3,8090,2930000.0,Vincent Euvrard,2023-jupiler-pro-league,2023,jupiler-pro-league
+KRC Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,Wouter Vrancken,2023-jupiler-pro-league,2023,jupiler-pro-league
 Girona FC,fc-girona,27,28.7,51.9,6,14624,29150000.0,Míchel,2023-laliga,2023,laliga
 FC Barcelona,fc-barcelona,24,25.8,45.8,17,62657,3700000.0,Xavi,2023-laliga,2023,laliga
 Real Betis Balompié,real-betis-sevilla,27,29.2,48.1,11,70000,-875000.0,Manuel Pellegrini,2023-laliga,2023,laliga
@@ -389,3 +53,339 @@ CA Osasuna,ca-osasuna,23,28.1,13.0,3,23576,1500000.0,Jagoba Arrasate,2023-laliga
 Deportivo Alavés,deportivo-alaves,24,28.1,41.7,3,19840,20880000.0,Luis García,2023-laliga,2023,laliga
 RCD Mallorca,rcd-mallorca,26,27.8,42.3,8,26020,800000.0,Javier Aguirre,2023-laliga,2023,laliga
 Cádiz CF,fc-cadiz,28,26.3,35.7,2,21094,-2400000.0,Sergio González,2023-laliga,2023,laliga
+Boavista FC,boavista-porto-fc,3,20.3,0.0,0,28263,100000.0,Petit,2023-liga-portugal,2023,liga-portugal
+GD Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,Álvaro Pacheco,2023-liga-portugal,2023,liga-portugal
+SL Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,Roger Schmidt,2023-liga-portugal,2023,liga-portugal
+FC Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,João Pedro Sousa,2023-liga-portugal,2023,liga-portugal
+Sporting CP,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,Ruben Amorim,2023-liga-portugal,2023,liga-portugal
+FC Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,Daniel Ramos,2023-liga-portugal,2023,liga-portugal
+SC Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,Artur Jorge,2023-liga-portugal,2023,liga-portugal
+Gil Vicente FC,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,Vítor Campelos,2023-liga-portugal,2023,liga-portugal
+FC Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,Sérgio Conceição,2023-liga-portugal,2023,liga-portugal
+Casa Pia AC,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,Filipe Martins,2023-liga-portugal,2023,liga-portugal
+Moreirense FC,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,António da Costa,2023-liga-portugal,2023,liga-portugal
+SC Farense,sc-farense,29,27.5,55.2,1,7000,800000.0,José Mota,2023-liga-portugal,2023,liga-portugal
+CF Estrela Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,Sérgio Vieira,2023-liga-portugal,2023,liga-portugal
+Portimonense SAD,portimonense-sc,27,25.4,70.4,2,4961,2730000.0,Paulo Sérgio,2023-liga-portugal,2023,liga-portugal
+Vitória Guimarães SC,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,Moreno,2023-liga-portugal,2023,liga-portugal
+GD Chaves,gd-chaves,27,27.6,48.1,3,8400,-200000.0,José Gomes,2023-liga-portugal,2023,liga-portugal
+FC Vizela,fc-vizela,30,26.6,76.7,6,6000,4700000.0,Pablo Villar,2023-liga-portugal,2023,liga-portugal
+Rio Ave FC,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,Luís Freire,2023-liga-portugal,2023,liga-portugal
+Montpellier HSC,montpellier-hsc,23,24.4,43.5,2,22000,6550000.0,Michel Der Zakarian,2023-ligue-1,2023,ligue-1
+RC Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,Patrick Vieira,2023-ligue-1,2023,ligue-1
+OGC Nice,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,Francesco Farioli,2023-ligue-1,2023,ligue-1
+RC Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,Franck Haise,2023-ligue-1,2023,ligue-1
+Paris Saint-Germain,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,Luis Enrique,2023-ligue-1,2023,ligue-1
+AS Monaco,as-monaco,28,25.9,100.0,15,18525,135570000.0,Adi Hütter,2023-ligue-1,2023,ligue-1
+Olympique Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,Marcelino,2023-ligue-1,2023,ligue-1
+Stade Rennais FC,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,Bruno Genesio,2023-ligue-1,2023,ligue-1
+Olympique Lyon,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,Laurent Blanc,2023-ligue-1,2023,ligue-1
+Stade Brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,Éric Roy,2023-ligue-1,2023,ligue-1
+FC Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,Pierre Aristouy,2023-ligue-1,2023,ligue-1
+Le Havre AC,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,Luka Elsner,2023-ligue-1,2023,ligue-1
+Stade Reims,stade-reims,24,24.1,79.2,7,20519,81980000.0,Will Still,2023-ligue-1,2023,ligue-1
+LOSC Lille,losc-lille,28,26.4,64.3,12,50186,61600000.0,Paulo Fonseca,2023-ligue-1,2023,ligue-1
+FC Lorient,fc-lorient,25,26.0,72.0,9,16787,600000.0,Régis Le Bris,2023-ligue-1,2023,ligue-1
+FC Toulouse,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,Carles Martínez,2023-ligue-1,2023,ligue-1
+FC Metz,fc-metz,27,25.8,70.4,7,28786,29850000.0,Ladislau Bölöni,2023-ligue-1,2023,ligue-1
+Clermont Foot 63,clermont-foot-63,28,25.9,57.1,1,10800,-0.0,Pascal Gastien,2023-ligue-1,2023,ligue-1
+Tottenham Hotspur,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,Ange Postecoglou,2023-premier-league,2023,premier-league
+Manchester United,manchester-united,24,26.6,75.0,15,74879,-172500000.0,Erik ten Hag,2023-premier-league,2023,premier-league
+Nottingham Forest,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,Steve Cooper,2023-premier-league,2023,premier-league
+Chelsea FC,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,Mauricio Pochettino,2023-premier-league,2023,premier-league
+Manchester City,manchester-city,27,26.1,70.4,22,55097,-199520000.0,Pep Guardiola,2023-premier-league,2023,premier-league
+Liverpool FC,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,Jürgen Klopp,2023-premier-league,2023,premier-league
+Arsenal FC,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,Mikel Arteta,2023-premier-league,2023,premier-league
+Brighton & Hove Albion,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,Roberto De Zerbi,2023-premier-league,2023,premier-league
+Aston Villa,aston-villa,25,28.2,68.0,12,42918,-12650000.0,Unai Emery,2023-premier-league,2023,premier-league
+Crystal Palace,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,Roy Hodgson,2023-premier-league,2023,premier-league
+Brentford FC,fc-brentford,26,25.5,76.9,14,17250,50060000.0,Thomas Frank,2023-premier-league,2023,premier-league
+Everton FC,fc-everton,25,26.8,52.0,11,52769,-117150000.0,Sean Dyche,2023-premier-league,2023,premier-league
+Burnley FC,fc-burnley,29,27.8,72.4,12,21994,-91500000.0,Vincent Kompany,2023-premier-league,2023,premier-league
+Wolverhampton Wanderers,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,Julen Lopetegui,2023-premier-league,2023,premier-league
+West Ham United,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,David Moyes,2023-premier-league,2023,premier-league
+AFC Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,Andoni Iraola,2023-premier-league,2023,premier-league
+Sheffield United,sheffield-united,31,26.4,41.9,5,32702,-910000.0,Paul Heckingbottom,2023-premier-league,2023,premier-league
+Fulham FC,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,Marco Silva,2023-premier-league,2023,premier-league
+Newcastle United,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,Eddie Howe,2023-premier-league,2023,premier-league
+Luton Town,luton-town,26,27.1,53.8,5,11850,12950000.0,Rob Edwards,2023-premier-league,2023,premier-league
+Torino FC,fc-turin,30,26.3,80.0,11,28177,21840000.0,Ivan Juric,2023-serie-a,2023,serie-a
+Juventus FC,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,Massimiliano Allegri,2023-serie-a,2023,serie-a
+Inter Milan,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,Simone Inzaghi,2023-serie-a,2023,serie-a
+Atalanta BC,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,Gian Piero Gasperini,2023-serie-a,2023,serie-a
+SS Lazio,lazio-rom,28,27.7,60.7,11,70634,12550000.0,Maurizio Sarri,2023-serie-a,2023,serie-a
+Genoa CFC,genua-cfc,26,26.7,69.2,7,34901,47930000.0,Alberto Gilardino,2023-serie-a,2023,serie-a
+AC Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,Stefano Pioli,2023-serie-a,2023,serie-a
+SSC Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,Rudi Garcia,2023-serie-a,2023,serie-a
+ACF Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,Vincenzo Italiano,2023-serie-a,2023,serie-a
+AS Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,José Mourinho,2023-serie-a,2023,serie-a
+Bologna FC 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,Thiago Motta,2023-serie-a,2023,serie-a
+US Sassuolo,us-sassuolo,29,26.0,58.6,12,21584,-34680000.0,Alessio Dionisi,2023-serie-a,2023,serie-a
+Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,Andrea Sottil,2023-serie-a,2023,serie-a
+AC Monza,ac-monza,28,26.9,42.9,2,17102,14900000.0,Raffaele Palladino,2023-serie-a,2023,serie-a
+Frosinone Calcio,frosinone-calcio,30,24.4,30.0,4,16227,16850000.0,Eusebio Di Francesco,2023-serie-a,2023,serie-a
+FC Empoli,fc-empoli,33,24.6,27.3,1,19847,23330000.0,Paolo Zanetti,2023-serie-a,2023,serie-a
+US Salernitana 1919,us-salernitana-1919,26,27.0,26.9,0,29739,2140000.0,Paulo Sousa,2023-serie-a,2023,serie-a
+Hellas Verona,hellas-verona,30,26.0,86.7,9,39211,7300000.0,Marco Baroni,2023-serie-a,2023,serie-a
+US Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,Roberto D'Aversa,2023-serie-a,2023,serie-a
+Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,Claudio Ranieri,2023-serie-a,2023,serie-a
+Bayern Munich,fc-bayern-munchen,25,27.0,52.0,16,75000,12900000.0,Vincent Kompany,2024-bundesliga,2024,bundesliga
+Bayer 04 Leverkusen,bayer-04-leverkusen,27,26.6,77.8,14,30210,31800000.0,Xabi Alonso,2024-bundesliga,2024,bundesliga
+VfL Wolfsburg,vfl-wolfsburg,33,25.5,72.7,14,28917,-30980000.0,Ralph Hasenhüttl,2024-bundesliga,2024,bundesliga
+Eintracht Frankfurt,eintracht-frankfurt,29,25.6,65.5,13,59500,53400000.0,Dino Toppmöller,2024-bundesliga,2024,bundesliga
+Borussia Dortmund,borussia-dortmund,26,26.4,53.8,13,81365,-23200000.0,Nuri Şahin,2024-bundesliga,2024,bundesliga
+Borussia Mönchengladbach,borussia-monchengladbach,28,26.0,53.6,10,54042,10650000.0,Gerardo Seoane,2024-bundesliga,2024,bundesliga
+TSG 1899 Hoffenheim,tsg-1899-hoffenheim,29,25.5,69.0,12,30150,1350000.0,Pellegrino Matarazzo,2024-bundesliga,2024,bundesliga
+RB Leipzig,rasenballsport-leipzig,30,23.7,66.7,12,47069,38050000.0,Marco Rose,2024-bundesliga,2024,bundesliga
+SV Werder Bremen,sv-werder-bremen,30,25.4,60.0,10,41800,-2150000.0,Ole Werner,2024-bundesliga,2024,bundesliga
+SC Freiburg,sc-freiburg,25,28.1,36.0,5,34700,-1150000.0,Julian Schuster,2024-bundesliga,2024,bundesliga
+VfB Stuttgart,vfb-stuttgart,30,24.9,46.7,14,60449,57050000.0,Sebastian Hoeneß,2024-bundesliga,2024,bundesliga
+1.FSV Mainz 05,1-fsv-mainz-05,31,27.3,48.4,11,33305,5730000.0,Bo Henriksen,2024-bundesliga,2024,bundesliga
+1.FC Heidenheim 1846,1-fc-heidenheim-1846,29,26.4,24.1,3,15000,7500000.0,Frank Schmidt,2024-bundesliga,2024,bundesliga
+FC St. Pauli,fc-st-pauli,30,26.3,83.3,13,29546,-2450000.0,Alexander Blessin,2024-bundesliga,2024,bundesliga
+VfL Bochum,vfl-bochum,29,25.7,31.0,3,26000,5900000.0,Peter Zeidler,2024-bundesliga,2024,bundesliga
+1.FC Union Berlin,1-fc-union-berlin,26,27.1,65.4,8,22012,300000.0,Bo Svensson,2024-bundesliga,2024,bundesliga
+Holstein Kiel,holstein-kiel,30,25.1,50.0,4,15034,7970000.0,Marcel Rapp,2024-bundesliga,2024,bundesliga
+FC Augsburg,fc-augsburg,29,25.6,65.5,9,30660,-8250000.0,Jess Thorup,2024-bundesliga,2024,bundesliga
+KVC Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,Timmy Simons,2024-jupiler-pro-league,2024,jupiler-pro-league
+Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,Óscar García,2024-jupiler-pro-league,2024,jupiler-pro-league
+Royal Antwerp FC,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,Jonas De Roeck,2024-jupiler-pro-league,2024,jupiler-pro-league
+Club Brugge KV,fc-brugge,28,24.2,57.1,12,29062,49000000.0,Nicky Hayen,2024-jupiler-pro-league,2024,jupiler-pro-league
+Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,Sébastien Pocognoli,2024-jupiler-pro-league,2024,jupiler-pro-league
+KRC Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,Thorsten Fink,2024-jupiler-pro-league,2024,jupiler-pro-league
+Cercle Brugge,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,Miron Muslic,2024-jupiler-pro-league,2024,jupiler-pro-league
+Standard Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,Ivan Leko,2024-jupiler-pro-league,2024,jupiler-pro-league
+KAA Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,Wouter Vrancken,2024-jupiler-pro-league,2024,jupiler-pro-league
+RSC Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,Brian Riemer,2024-jupiler-pro-league,2024,jupiler-pro-league
+KV Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,Besnik Hasi,2024-jupiler-pro-league,2024,jupiler-pro-league
+Royal Charleroi SC,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,Rik De Mil,2024-jupiler-pro-league,2024,jupiler-pro-league
+Sint-Truidense VV,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,Christian Lattanzio,2024-jupiler-pro-league,2024,jupiler-pro-league
+Beerschot VA,beerschot-v-a-,32,26.3,62.5,2,12771,1150000.0,Dirk Kuyt,2024-jupiler-pro-league,2024,jupiler-pro-league
+KV Kortrijk,kv-kortrijk,27,25.2,51.9,3,9399,4000000.0,Freyr Alexandersson,2024-jupiler-pro-league,2024,jupiler-pro-league
+FCV Dender EH,fcv-dender-eh,28,25.5,60.7,6,8548,300000.0,Vincent Euvrard,2024-jupiler-pro-league,2024,jupiler-pro-league
+Villarreal CF,fc-villarreal,27,26.5,48.1,10,23500,2500000.0,Marcelino,2024-laliga,2024,laliga
+Sevilla FC,fc-sevilla,28,28.0,60.7,9,43883,54750000.0,Xavier García Pimienta,2024-laliga,2024,laliga
+Atlético de Madrid,atletico-madrid,23,27.7,69.6,18,70460,-84450000.0,Diego Simeone,2024-laliga,2024,laliga
+Real Madrid,real-madrid,29,25.7,58.6,18,83186,-165500000.0,Carlo Ancelotti,2024-laliga,2024,laliga
+Real Betis Balompié,real-betis-sevilla,27,29.2,48.1,11,70000,-875000.0,Manuel Pellegrini,2024-laliga,2024,laliga
+Girona FC,fc-girona,27,28.7,51.9,6,14624,29150000.0,Míchel,2024-laliga,2024,laliga
+Celta de Vigo,celta-vigo,28,27.1,32.1,6,22803,41700000.0,Claudio Giráldez,2024-laliga,2024,laliga
+Real Sociedad,real-sociedad-san-sebastian,25,26.2,36.0,11,39313,63500000.0,Imanol Alguacil,2024-laliga,2024,laliga
+CA Osasuna,ca-osasuna,23,28.1,13.0,3,23576,1500000.0,Vicente Moreno,2024-laliga,2024,laliga
+RCD Espanyol Barcelona,espanyol-barcelona,23,27.4,30.4,2,37776,9800000.0,Manolo González,2024-laliga,2024,laliga
+Deportivo Alavés,deportivo-alaves,24,28.1,41.7,3,19840,20880000.0,Luis García,2024-laliga,2024,laliga
+RCD Mallorca,rcd-mallorca,26,27.8,42.3,8,26020,800000.0,Jagoba Arrasate,2024-laliga,2024,laliga
+Athletic Bilbao,athletic-bilbao,28,27.2,10.7,6,53289,-17800000.0,Ernesto Valverde,2024-laliga,2024,laliga
+Real Valladolid CF,real-valladolid,28,25.6,50.0,1,27618,11300000.0,Paulo Pezzolano,2024-laliga,2024,laliga
+FC Barcelona,fc-barcelona,24,25.8,45.8,17,62657,3700000.0,Hansi Flick,2024-laliga,2024,laliga
+UD Las Palmas,ud-las-palmas,27,26.8,22.2,1,32400,14060000.0,Luis Carrión,2024-laliga,2024,laliga
+Valencia CF,fc-valencia,27,28.2,51.9,3,49430,9630000.0,Rubén Baraja,2024-laliga,2024,laliga
+Getafe CF,fc-getafe,25,28.3,52.0,3,16800,10800000.0,José Bordalás,2024-laliga,2024,laliga
+CD Leganés,cd-leganes,25,27.6,20.0,3,14422,17050000.0,Borja Jiménez,2024-laliga,2024,laliga
+Rayo Vallecano,rayo-vallecano,27,28.8,51.9,7,14708,-7100000.0,Iñigo Pérez,2024-laliga,2024,laliga
+Rio Ave FC,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,Luís Freire,2024-liga-portugal,2024,liga-portugal
+GD Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,Ian Cathro,2024-liga-portugal,2024,liga-portugal
+Vitória Guimarães SC,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,Rui Borges,2024-liga-portugal,2024,liga-portugal
+CD Santa Clara,cd-santa-clara,27,26.2,77.8,1,12500,1570000.0,Vasco Matos,2024-liga-portugal,2024,liga-portugal
+SC Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,Daniel Sousa,2024-liga-portugal,2024,liga-portugal
+SL Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,Roger Schmidt,2024-liga-portugal,2024,liga-portugal
+Sporting CP,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,Ruben Amorim,2024-liga-portugal,2024,liga-portugal
+FC Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,Armando Evangelista,2024-liga-portugal,2024,liga-portugal
+Gil Vicente FC,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,Tozé Marreco,2024-liga-portugal,2024,liga-portugal
+FC Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,Gonzalo García,2024-liga-portugal,2024,liga-portugal
+Casa Pia AC,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,João Pereira,2024-liga-portugal,2024,liga-portugal
+SC Farense,sc-farense,29,27.5,55.2,1,7000,800000.0,José Mota,2024-liga-portugal,2024,liga-portugal
+Avs Futebol,avs-futebol-sad,25,28.4,80.0,0,6230,3000000.0,Vítor Campelos,2024-liga-portugal,2024,liga-portugal
+Moreirense FC,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,António da Costa,2024-liga-portugal,2024,liga-portugal
+CF Estrela Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,Filipe Martins,2024-liga-portugal,2024,liga-portugal
+Boavista FC,boavista-porto-fc,3,20.3,0.0,0,28263,100000.0,Cristiano Bacci,2024-liga-portugal,2024,liga-portugal
+FC Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,Vítor Bruno,2024-liga-portugal,2024,liga-portugal
+CD Nacional,cd-nacional,30,26.6,73.3,2,5200,-1760000.0,Tiago Margarido,2024-liga-portugal,2024,liga-portugal
+AS Monaco,as-monaco,28,25.9,100.0,15,18525,135570000.0,Adi Hütter,2024-ligue-1,2024,ligue-1
+Paris Saint-Germain,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,Luis Enrique,2024-ligue-1,2024,ligue-1
+LOSC Lille,losc-lille,28,26.4,64.3,12,50186,61600000.0,Bruno Genesio,2024-ligue-1,2024,ligue-1
+OGC Nice,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,Franck Haise,2024-ligue-1,2024,ligue-1
+RC Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,Will Still,2024-ligue-1,2024,ligue-1
+Olympique Lyon,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,Pierre Sage,2024-ligue-1,2024,ligue-1
+Stade Reims,stade-reims,24,24.1,79.2,7,20519,81980000.0,Luka Elsner,2024-ligue-1,2024,ligue-1
+Olympique Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,Roberto De Zerbi,2024-ligue-1,2024,ligue-1
+FC Toulouse,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,Carles Martínez,2024-ligue-1,2024,ligue-1
+Stade Rennais FC,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,Julien Stéphan,2024-ligue-1,2024,ligue-1
+RC Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,Patrick Vieira,2024-ligue-1,2024,ligue-1
+Stade Brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,Éric Roy,2024-ligue-1,2024,ligue-1
+FC Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,Antoine Kombouaré,2024-ligue-1,2024,ligue-1
+AS Saint-Étienne,as-saint-etienne,29,24.2,55.2,8,41965,-22050000.0,Olivier Dall'Oglio,2024-ligue-1,2024,ligue-1
+Le Havre AC,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,Didier Digard,2024-ligue-1,2024,ligue-1
+AJ Auxerre,aj-auxerre,29,24.3,51.7,9,18541,14650000.0,Christophe Pélissier,2024-ligue-1,2024,ligue-1
+Montpellier HSC,montpellier-hsc,23,24.4,43.5,2,22000,6550000.0,Michel Der Zakarian,2024-ligue-1,2024,ligue-1
+Angers SCO,sco-angers,24,25.9,58.3,6,19350,20250000.0,Alexandre Dujeux,2024-ligue-1,2024,ligue-1
+Brighton & Hove Albion,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,Fabian Hürzeler,2024-premier-league,2024,premier-league
+Chelsea FC,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,Enzo Maresca,2024-premier-league,2024,premier-league
+Aston Villa,aston-villa,25,28.2,68.0,12,42918,-12650000.0,Unai Emery,2024-premier-league,2024,premier-league
+Tottenham Hotspur,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,Ange Postecoglou,2024-premier-league,2024,premier-league
+Liverpool FC,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,Arne Slot,2024-premier-league,2024,premier-league
+Arsenal FC,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,Mikel Arteta,2024-premier-league,2024,premier-league
+Manchester City,manchester-city,27,26.1,70.4,22,55097,-199520000.0,Pep Guardiola,2024-premier-league,2024,premier-league
+Crystal Palace,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,Oliver Glasner,2024-premier-league,2024,premier-league
+Manchester United,manchester-united,24,26.6,75.0,15,74879,-172500000.0,Erik ten Hag,2024-premier-league,2024,premier-league
+Newcastle United,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,Eddie Howe,2024-premier-league,2024,premier-league
+AFC Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,Andoni Iraola,2024-premier-league,2024,premier-league
+Nottingham Forest,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,Nuno Espírito Santo,2024-premier-league,2024,premier-league
+Wolverhampton Wanderers,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,Gary O'Neil,2024-premier-league,2024,premier-league
+Southampton FC,fc-southampton,27,26.8,55.6,6,32384,87060000.0,Russell Martin,2024-premier-league,2024,premier-league
+Ipswich Town,ipswich-town,26,27.9,50.0,8,30056,29950000.0,Kieran McKenna,2024-premier-league,2024,premier-league
+Brentford FC,fc-brentford,26,25.5,76.9,14,17250,50060000.0,Thomas Frank,2024-premier-league,2024,premier-league
+Everton FC,fc-everton,25,26.8,52.0,11,52769,-117150000.0,Sean Dyche,2024-premier-league,2024,premier-league
+Leicester City,leicester-city,29,26.1,58.6,7,32259,57300000.0,Steve Cooper,2024-premier-league,2024,premier-league
+Fulham FC,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,Marco Silva,2024-premier-league,2024,premier-league
+West Ham United,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,Julen Lopetegui,2024-premier-league,2024,premier-league
+AS Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,Daniele De Rossi,2024-serie-a,2024,serie-a
+Juventus FC,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,Thiago Motta,2024-serie-a,2024,serie-a
+AC Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,Paulo Fonseca,2024-serie-a,2024,serie-a
+SSC Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,Antonio Conte,2024-serie-a,2024,serie-a
+Atalanta BC,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,Gian Piero Gasperini,2024-serie-a,2024,serie-a
+Torino FC,fc-turin,30,26.3,80.0,11,28177,21840000.0,Paolo Vanoli,2024-serie-a,2024,serie-a
+ACF Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,Raffaele Palladino,2024-serie-a,2024,serie-a
+Bologna FC 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,Vincenzo Italiano,2024-serie-a,2024,serie-a
+SS Lazio,lazio-rom,28,27.7,60.7,11,70634,12550000.0,Marco Baroni,2024-serie-a,2024,serie-a
+Inter Milan,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,Simone Inzaghi,2024-serie-a,2024,serie-a
+Genoa CFC,genua-cfc,26,26.7,69.2,7,34901,47930000.0,Alberto Gilardino,2024-serie-a,2024,serie-a
+Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,Kosta Runjaić,2024-serie-a,2024,serie-a
+Como 1907,como-1907,27,26.3,92.6,10,12039,-110510000.0,Cesc Fàbregas,2024-serie-a,2024,serie-a
+US Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,Luca Gotti,2024-serie-a,2024,serie-a
+FC Empoli,fc-empoli,33,24.6,27.3,1,19847,23330000.0,Roberto D'Aversa,2024-serie-a,2024,serie-a
+Parma Calcio 1913,parma-calcio-1913,25,24.6,76.0,2,22352,37290000.0,Fabio Pecchia,2024-serie-a,2024,serie-a
+Hellas Verona,hellas-verona,30,26.0,86.7,9,39211,7300000.0,Paolo Zanetti,2024-serie-a,2024,serie-a
+AC Monza,ac-monza,28,26.9,42.9,2,17102,14900000.0,Alessandro Nesta,2024-serie-a,2024,serie-a
+Venezia FC,venezia-fc,29,26.4,65.5,6,12048,-10260000.0,Eusebio Di Francesco,2024-serie-a,2024,serie-a
+Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,Davide Nicola,2024-serie-a,2024,serie-a
+RasenBallsport Leipzig,rasenballsport-leipzig,30,23.7,66.7,12,47069,38050000.0,,2025-bundesliga,2025,bundesliga
+FC Bayern München,fc-bayern-munchen,25,27.0,52.0,16,75000,12900000.0,,2025-bundesliga,2025,bundesliga
+Sportverein Werder Bremen von 1899,sv-werder-bremen,30,25.4,60.0,10,41800,-2150000.0,,2025-bundesliga,2025,bundesliga
+Sport-Club Freiburg,sc-freiburg,25,28.1,36.0,5,34700,-1150000.0,,2025-bundesliga,2025,bundesliga
+Eintracht Frankfurt Fußball AG,eintracht-frankfurt,29,25.6,65.5,13,59500,53400000.0,,2025-bundesliga,2025,bundesliga
+Verein für Bewegungsspiele Stuttgart 1893,vfb-stuttgart,30,24.9,46.7,14,60449,57050000.0,,2025-bundesliga,2025,bundesliga
+Borussia Dortmund,borussia-dortmund,26,26.4,53.8,13,81365,-23200000.0,,2025-bundesliga,2025,bundesliga
+Verein für Leibesübungen Wolfsburg,vfl-wolfsburg,33,25.5,72.7,14,28917,-30980000.0,,2025-bundesliga,2025,bundesliga
+Turn- und Sportgemeinschaft 1899 Hoffenheim Fußball-Spielbetriebs,tsg-1899-hoffenheim,29,25.5,69.0,12,30150,1350000.0,,2025-bundesliga,2025,bundesliga
+Bayer 04 Leverkusen Fußball,bayer-04-leverkusen,27,26.6,77.8,14,30210,31800000.0,,2025-bundesliga,2025,bundesliga
+1. Fußballclub Heidenheim 1846,1-fc-heidenheim-1846,29,26.4,24.1,3,15000,7500000.0,,2025-bundesliga,2025,bundesliga
+Fußball-Club Augsburg 1907,fc-augsburg,29,25.6,65.5,9,30660,-8250000.0,,2025-bundesliga,2025,bundesliga
+Hamburger Sport Verein,hamburger-sv,30,25.1,76.7,9,57000,-7960000.0,,2025-bundesliga,2025,bundesliga
+Borussia Verein für Leibesübungen 1900 Mönchengladbach,borussia-monchengladbach,28,26.0,53.6,10,54042,10650000.0,,2025-bundesliga,2025,bundesliga
+1. Fußball-Club Köln,1-fc-koln,30,25.9,40.0,6,50000,-12130000.0,,2025-bundesliga,2025,bundesliga
+1. Fußball- und Sportverein Mainz 05,1-fsv-mainz-05,31,27.3,48.4,11,33305,5730000.0,,2025-bundesliga,2025,bundesliga
+Fußball-Club St. Pauli von 1910,fc-st-pauli,30,26.3,83.3,13,29546,-2450000.0,,2025-bundesliga,2025,bundesliga
+1. Fußballclub Union Berlin,1-fc-union-berlin,26,27.1,65.4,8,22012,300000.0,,2025-bundesliga,2025,bundesliga
+Club Brugge Koninklijke Voetbalvereniging,fc-brugge,28,24.2,57.1,12,29062,49000000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Royal Antwerp Football Club,royal-antwerpen-fc,31,24.5,54.8,5,21000,42750000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Koninklijke Atletiek Associatie Gent,kaa-gent,29,24.3,58.6,7,20185,17850000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Royal Sporting Club Anderlecht,rsc-anderlecht,30,24.5,66.7,6,21900,14190000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Koninklijke Voetbal Club Westerlo,kvc-westerlo,29,23.7,69.0,3,9062,13680000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Royale Union Saint-Gilloise,royale-union-saint-gilloise,27,25.2,66.7,9,9512,48460000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Koninklijke Racing Club Genk,krc-genk,27,23.7,51.9,8,23718,41300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Royal Charleroi Sporting Club,rsc-charleroi,27,24.7,63.0,6,14968,12960000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Koninklijke Sint-Truidense Voetbalvereniging,vv-st-truiden,26,25.5,69.2,4,11337,6200000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Royal Standard Club de Liège,standard-luttich,31,26.3,67.7,5,27221,400000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Yellow-Red Koninklijke Voetbalclub Mechelen,kv-mechelen,29,23.4,65.5,5,16672,5630000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+FC Verbroedering Denderhoutem Denderleeuw Eendracht Hekelgem,fcv-dender-eh,28,25.5,60.7,6,8548,300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Cercle Brugge Koninklijke Sportvereniging,cercle-brugge,26,23.3,69.2,3,29062,10450000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Oud-Heverlee Leuven,oud-heverlee-leuven,28,25.9,50.0,1,9809,14450000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Sportvereniging Zulte Waregem,sv-zulte-waregem,31,24.3,54.8,2,12698,9670000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+RAAL La Louvière,raal-la-louviere,25,25.2,76.0,5,8050,-300000.0,,2025-jupiler-pro-league,2025,jupiler-pro-league
+Real Sociedad de Fútbol S.A.D.,real-sociedad-san-sebastian,25,26.2,36.0,11,39313,63500000.0,,2025-laliga,2025,laliga
+Futbol Club Barcelona,fc-barcelona,24,25.8,45.8,17,62657,3700000.0,,2025-laliga,2025,laliga
+Villarreal Club de Fútbol S.A.D.,fc-villarreal,27,26.5,48.1,10,23500,2500000.0,,2025-laliga,2025,laliga
+Real Betis Balompié S.A.D.,real-betis-sevilla,27,29.2,48.1,11,70000,-875000.0,,2025-laliga,2025,laliga
+Athletic Club Bilbao,athletic-bilbao,28,27.2,10.7,6,53289,-17800000.0,,2025-laliga,2025,laliga
+Girona Fútbol Club S. A. D.,fc-girona,27,28.7,51.9,6,14624,29150000.0,,2025-laliga,2025,laliga
+Real Club Celta de Vigo S. A. D.,celta-vigo,28,27.1,32.1,6,22803,41700000.0,,2025-laliga,2025,laliga
+Real Madrid Club de Fútbol,real-madrid,29,25.7,58.6,18,83186,-165500000.0,,2025-laliga,2025,laliga
+Valencia Club de Fútbol S. A. D.,fc-valencia,27,28.2,51.9,3,49430,9630000.0,,2025-laliga,2025,laliga
+Club Atlético de Madrid S.A.D.,atletico-madrid,23,27.7,69.6,18,70460,-84450000.0,,2025-laliga,2025,laliga
+Club Atlético Osasuna,ca-osasuna,23,28.1,13.0,3,23576,1500000.0,,2025-laliga,2025,laliga
+Rayo Vallecano de Madrid S. A. D.,rayo-vallecano,27,28.8,51.9,7,14708,-7100000.0,,2025-laliga,2025,laliga
+Sevilla Fútbol Club S.A.D.,fc-sevilla,28,28.0,60.7,9,43883,54750000.0,,2025-laliga,2025,laliga
+Reial Club Deportiu Espanyol de Barcelona S.A.D.,espanyol-barcelona,23,27.4,30.4,2,37776,9800000.0,,2025-laliga,2025,laliga
+Real Club Deportivo Mallorca S.A.D.,rcd-mallorca,26,27.8,42.3,8,26020,800000.0,,2025-laliga,2025,laliga
+Levante Unión Deportiva S.A.D.,ud-levante,27,26.0,29.6,3,26354,300000.0,,2025-laliga,2025,laliga
+Deportivo Alavés S. A. D.,deportivo-alaves,24,28.1,41.7,3,19840,20880000.0,,2025-laliga,2025,laliga
+Real Oviedo S.A.D.,real-oviedo,26,28.0,61.5,8,30500,-3950000.0,,2025-laliga,2025,laliga
+Elche Club de Fútbol S.A.D.,fc-elche,26,26.8,38.5,3,31388,22900000.0,,2025-laliga,2025,laliga
+Getafe Club de Fútbol S. A. D. Team Dubai,fc-getafe,25,28.3,52.0,3,16800,10800000.0,,2025-laliga,2025,laliga
+Sport Lisboa e Benfica,benfica-lissabon,28,24.8,57.1,17,68100,-15200000.0,,2025-liga-portugal,2025,liga-portugal
+Futebol Clube de Famalicão,fc-famalicao,25,24.4,72.0,2,5186,450000.0,,2025-liga-portugal,2025,liga-portugal
+Vitória Sport Clube,vitoria-guimaraes-sc,24,24.9,58.3,2,30029,4750000.0,,2025-liga-portugal,2025,liga-portugal
+Sporting Clube de Braga,sc-braga,28,25.5,64.3,9,30286,15240000.0,,2025-liga-portugal,2025,liga-portugal
+Sporting Clube de Portugal,sporting-lissabon,25,25.4,52.0,13,52095,43500000.0,,2025-liga-portugal,2025,liga-portugal
+Grupo Desportivo Estoril Praia,gd-estoril-praia,23,26.5,60.9,5,5094,2300000.0,,2025-liga-portugal,2025,liga-portugal
+Futebol Clube de Alverca,fc-alverca,29,24.5,79.3,2,6932,6240000.0,,2025-liga-portugal,2025,liga-portugal
+Gil Vicente Futebol Clube,gil-vicente-fc,28,24.9,67.9,2,12046,31400000.0,,2025-liga-portugal,2025,liga-portugal
+Futebol Clube do Porto,fc-porto,27,26.4,74.1,13,50033,-24490000.0,,2025-liga-portugal,2025,liga-portugal
+Clube Desportivo Santa Clara,cd-santa-clara,27,26.2,77.8,1,12500,1570000.0,,2025-liga-portugal,2025,liga-portugal
+Casa Pia Atlético Clube,casa-pia-ac,28,27.7,67.9,3,7000,11080000.0,,2025-liga-portugal,2025,liga-portugal
+Clube Desportivo Nacional,cd-nacional,30,26.6,73.3,2,5200,-1760000.0,,2025-liga-portugal,2025,liga-portugal
+Rio Ave Futebol Clube,rio-ave-fc,29,25.0,89.7,4,5300,-1400000.0,,2025-liga-portugal,2025,liga-portugal
+Club Football Estrela da Amadora,cf-estrela-amadora-sad,31,25.2,83.9,4,9288,5830000.0,,2025-liga-portugal,2025,liga-portugal
+Clube Desportivo de Tondela,cd-tondela,26,26.9,73.1,2,5000,-1250000.0,,2025-liga-portugal,2025,liga-portugal
+Futebol Clube de Arouca,fc-arouca,27,25.1,81.5,1,5000,1830000.0,,2025-liga-portugal,2025,liga-portugal
+Moreirense Futebol Clube,moreirense-fc,26,24.6,57.7,1,6150,2500000.0,,2025-liga-portugal,2025,liga-portugal
+AVS Futebol SAD,avs-futebol-sad,25,28.4,80.0,0,6230,3000000.0,,2025-liga-portugal,2025,liga-portugal
+Paris Saint-Germain Football Club,fc-paris-saint-germain,24,24.1,66.7,20,48583,-47200000.0,,2025-ligue-1,2025,ligue-1
+Toulouse Football Club,fc-toulouse,24,24.1,70.8,7,33150,31350000.0,,2025-ligue-1,2025,ligue-1
+Olympique Gymnaste Club Nice Côte d'Azur,ogc-nizza,29,25.8,62.1,12,36178,72820000.0,,2025-ligue-1,2025,ligue-1
+Racing Club de Strasbourg Alsace,rc-strassburg-alsace,26,22.8,84.6,14,32000,-26300000.0,,2025-ligue-1,2025,ligue-1
+Racing Club de Lens,rc-lens,29,26.5,31.0,9,38223,45550000.0,,2025-ligue-1,2025,ligue-1
+Stade Rennais Football Club,fc-stade-rennes,23,25.5,43.5,11,29778,50150000.0,,2025-ligue-1,2025,ligue-1
+Olympique de Marseille,olympique-marseille,23,27.0,95.7,12,67394,20350000.0,,2025-ligue-1,2025,ligue-1
+Lille Olympique Sporting Club,losc-lille,28,26.4,64.3,12,50186,61600000.0,,2025-ligue-1,2025,ligue-1
+Olympique Lyonnais,olympique-lyon,29,25.5,79.3,11,59186,62110000.0,,2025-ligue-1,2025,ligue-1
+Association sportive de Monaco Football Club,as-monaco,28,25.9,100.0,15,18525,135570000.0,,2025-ligue-1,2025,ligue-1
+Football Club de Nantes,fc-nantes,29,26.9,51.7,8,35322,32000000.0,,2025-ligue-1,2025,ligue-1
+Le Havre Athletic Club,ac-le-havre,28,25.4,53.6,8,25178,1000000.0,,2025-ligue-1,2025,ligue-1
+Paris Football Club,paris-fc,31,28.7,54.8,8,19904,-72300000.0,,2025-ligue-1,2025,ligue-1
+Stade brestois 29,stade-brest-29,23,25.5,47.8,6,15220,23700000.0,,2025-ligue-1,2025,ligue-1
+Association de la Jeunesse auxerroise,aj-auxerre,29,24.3,51.7,9,18541,14650000.0,,2025-ligue-1,2025,ligue-1
+Angers Sporting Club de l'Ouest,sco-angers,24,25.9,58.3,6,19350,20250000.0,,2025-ligue-1,2025,ligue-1
+Football Club Lorient-Bretagne Sud,fc-lorient,25,26.0,72.0,9,16787,600000.0,,2025-ligue-1,2025,ligue-1
+Football Club de Metz,fc-metz,27,25.8,70.4,7,28786,29850000.0,,2025-ligue-1,2025,ligue-1
+Manchester City Football Club,manchester-city,27,26.1,70.4,22,55097,-199520000.0,,2025-premier-league,2025,premier-league
+Chelsea Football Club,fc-chelsea,31,23.7,67.7,15,41631,-4900000.0,,2025-premier-league,2025,premier-league
+Newcastle United Football Club,newcastle-united,26,28.2,46.2,15,52258,-102850000.0,,2025-premier-league,2025,premier-league
+Crystal Palace Football Club,crystal-palace,28,26.5,67.9,19,25486,-47850000.0,,2025-premier-league,2025,premier-league
+Tottenham Hotspur Football Club,tottenham-hotspur,28,25.9,78.6,20,62850,-182900000.0,,2025-premier-league,2025,premier-league
+Liverpool Football Club,fc-liverpool,28,26.1,75.0,18,61276,-261850000.0,,2025-premier-league,2025,premier-league
+Aston Villa Football Club,aston-villa,25,28.2,68.0,12,42918,-12650000.0,,2025-premier-league,2025,premier-league
+Arsenal Football Club,fc-arsenal,25,26.3,68.0,20,60704,-280730000.0,,2025-premier-league,2025,premier-league
+Manchester United Football Club,manchester-united,24,26.6,75.0,15,74879,-172500000.0,,2025-premier-league,2025,premier-league
+Brighton and Hove Albion Football Club,brighton-amp-hove-albion,26,27.6,73.1,15,31876,63150000.0,,2025-premier-league,2025,premier-league
+Association Football Club Bournemouth,afc-bournemouth,26,25.6,76.9,13,11307,130310000.0,,2025-premier-league,2025,premier-league
+Everton Football Club,fc-everton,25,26.8,52.0,11,52769,-117150000.0,,2025-premier-league,2025,premier-league
+Nottingham Forest Football Club,nottingham-forest,29,26.7,75.9,14,30404,-111430000.0,,2025-premier-league,2025,premier-league
+Brentford Football Club,fc-brentford,26,25.5,76.9,14,17250,50060000.0,,2025-premier-league,2025,premier-league
+Fulham Football Club,fc-fulham,24,28.3,83.3,12,29589,-56400000.0,,2025-premier-league,2025,premier-league
+Wolverhampton Wanderers Football Club,wolverhampton-wanderers,23,26.3,82.6,12,31750,81100000.0,,2025-premier-league,2025,premier-league
+Burnley Football Club,fc-burnley,29,27.8,72.4,12,21994,-91500000.0,,2025-premier-league,2025,premier-league
+Sunderland Association Football Club,afc-sunderland,28,25.2,82.1,16,48707,-156340000.0,,2025-premier-league,2025,premier-league
+West Ham United Football Club,west-ham-united,24,26.7,70.8,8,62500,-53100000.0,,2025-premier-league,2025,premier-league
+Leeds United Association Football Club,leeds-united,26,27.3,76.9,14,37890,-106700000.0,,2025-premier-league,2025,premier-league
+Atalanta Bergamasca Calcio S.p.a.,atalanta-bergamo,24,27.4,58.3,17,24950,-8280000.0,,2025-serie-a,2025,serie-a
+Associazione Sportiva Roma,as-rom,27,26.2,70.4,13,70634,-24450000.0,,2025-serie-a,2025,serie-a
+Football Club Internazionale Milano S.p.A.,inter-mailand,24,29.4,66.7,14,75923,-48350000.0,,2025-serie-a,2025,serie-a
+Associazione Calcio Milan,ac-mailand,23,27.3,78.3,18,75923,6000000.0,,2025-serie-a,2025,serie-a
+Juventus Football Club,juventus-turin,25,27.4,72.0,19,41507,-49750000.0,,2025-serie-a,2025,serie-a
+Società Sportiva Lazio S.p.A.,lazio-rom,28,27.7,60.7,11,70634,12550000.0,,2025-serie-a,2025,serie-a
+Bologna Football Club 1909,fc-bologna,27,27.3,63.0,11,36462,27700000.0,,2025-serie-a,2025,serie-a
+Società Sportiva Calcio Napoli,ssc-neapel,26,28.7,65.4,16,54726,-15350000.0,,2025-serie-a,2025,serie-a
+Unione Sportiva Sassuolo Calcio,us-sassuolo,29,26.0,58.6,12,21584,-34680000.0,,2025-serie-a,2025,serie-a
+Associazione Calcio Fiorentina,ac-florenz,27,26.0,40.7,11,43147,-29210000.0,,2025-serie-a,2025,serie-a
+Calcio Como,como-1907,27,26.3,92.6,10,12039,-110510000.0,,2025-serie-a,2025,serie-a
+Genoa Cricket and Football Club,genua-cfc,26,26.7,69.2,7,34901,47930000.0,,2025-serie-a,2025,serie-a
+Cagliari Calcio,cagliari-calcio,28,25.3,46.4,8,16416,800000.0,,2025-serie-a,2025,serie-a
+Parma Calcio 1913,parma-calcio-1913,25,24.6,76.0,2,22352,37290000.0,,2025-serie-a,2025,serie-a
+Udinese Calcio,udinese-calcio,26,26.2,80.8,9,25144,47650000.0,,2025-serie-a,2025,serie-a
+Pisa Sporting Club,ac-pisa-1909,29,27.1,72.4,6,12508,-29900000.0,,2025-serie-a,2025,serie-a
+Verona Hellas Football Club,hellas-verona,30,26.0,86.7,9,39211,7300000.0,,2025-serie-a,2025,serie-a
+Torino Calcio,fc-turin,30,26.3,80.0,11,28177,21840000.0,,2025-serie-a,2025,serie-a
+Unione Sportiva Lecce,us-lecce,27,25.2,85.2,10,31559,8620000.0,,2025-serie-a,2025,serie-a
+Unione Sportiva Cremonese S.p.A.,us-cremonese,27,28.6,44.4,3,16003,-17750000.0,,2025-serie-a,2025,serie-a

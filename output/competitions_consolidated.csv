@@ -1,4 +1,496 @@
 competition_name,competition_type,country_name,country_code,total_clubs,total_players,total_value,source_league,season_id,competition_code
+UEFA Champions League,uefa_champions_league,,,,,,2023,,2023
+UEFA Super Cup,uefa_super_cup,,,,,,2023,,2023
+UEFA Europa League,uefa_europa_league,,,,,,2023,,2023
+UEFA Conference League,uefa_conference_league,,,,,,2023,,2023
+UEFA Europa League Qualifying,uefa_europa_league_qualifying,,,,,,2023,,2023
+UEFA Champions League Qualifying,uefa_champions_league_qualifying,,,,,,2023,,2023
+UEFA Youth League,uefa_youth_league,,,,,,2023,,2023
+UEFA Conference League Qualifiers,uefa_conference_league_qualifiers,,,,,,2023,,2023
+UEFA Nations League Play-off,uefa_nations_league_play_off,,,,,,2023,,2023
+UEFA Nations League Finals,uefa_nations_league_finals,,,,,,2023,,2023
+UEFA Nations League A,uefa_nations_league_a,,,,,,2023,,2023
+UEFA Nations League B,uefa_nations_league_b,,,,,,2023,,2023
+UEFA Nations League C,uefa_nations_league_c,,,,,,2023,,2023
+UEFA Nations League D,uefa_nations_league_d,,,,,,2023,,2023
+European Qualifiers Play-offs,european_qualifiers_play_offs,,,,,,2023,,2023
+UEFA Euro,uefa_euro,,,,,,2023,,2023
+European Qualifiers,european_qualifiers,,,,,,2023,,2023
+Africa Cup of Nations,africa_cup_of_nations,,,,,,2023,,2023
+CAF-Champions League,caf_champions_league,,,,,,2023,,2023
+CAF Confederation Cup,caf_confederation_cup,,,,,,2023,,2023
+Africa Cup of Nations Qualification,africa_cup_of_nations_qualification,,,,,,2023,,2023
+Africa U-17 Cup of Nations,africa_u_17_cup_of_nations,,,,,,2023,,2023
+Africa U-20 Cup of Nations,africa_u_20_cup_of_nations,,,,,,2023,,2023
+CAF-Supercup,caf_supercup,,,,,,2023,,2023
+African Nations Championship,african_nations_championship,,,,,,2023,,2023
+ASEAN Club Championship Qualifying,asean_club_championship_qualifying,,,,,,2023,,2023
+WAFF U20 Championship,waff_u20_championship,,,,,,2023,,2023
+ASEAN Club Championship,asean_club_championship,,,,,,2023,,2023
+AFC Champions League Two,afc_champions_league_two,,,,,,2023,,2023
+CAFA U17 Championship,cafa_u17_championship,,,,,,2023,,2023
+CAFA U20 Championship,cafa_u20_championship,,,,,,2023,,2023
+AFC Challenge League Qualifying,afc_challenge_league_qualifying,,,,,,2023,,2023
+AFC Champions League Two Qualifying,afc_champions_league_two_qualifying,,,,,,2023,,2023
+AFC Champions League Elite Qualifying,afc_champions_league_elite_qualifying,,,,,,2023,,2023
+AFC Champions League Elite,afc_champions_league_elite,,,,,,2023,,2023
+AFC Challenge League,afc_challenge_league,,,,,,2023,,2023
+OFC-Champions League,ofc_champions_league,,,,,,2023,,2023
+OFC Professional League,ofc_professional_league,,,,,,2023,,2023
+OFC-Champions League Preliminary,ofc_champions_league_preliminary,,,,,,2023,,2023
+U16-OFC-Championship,u16_ofc_championship,,,,,,2023,,2023
+ASEAN U17 Boys Championship,asean_u17_boys_championship,,,,,,2023,,2023
+ASEAN U19 Boys Championship,asean_u19_boys_championship,,,,,,2023,,2023
+AFC U23 Asian Cup Qualification,afc_u23_asian_cup_qualification,,,,,,2023,,2023
+AFC U23 Asian Cup,afc_u23_asian_cup,,,,,,2023,,2023
+South Asian Football Federation Championship,south_asian_football_federation_championship,,,,,,2023,,2023
+SAFF U20 Championship,saff_u20_championship,,,,,,2023,,2023
+ASEAN Championship Qualification,asean_championship_qualification,,,,,,2023,,2023
+ASEAN Championship,asean_championship,,,,,,2023,,2023
+AFC Asian Cup,afc_asian_cup,,,,,,2023,,2023
+AFC U17 Asian Cup Qualification,afc_u17_asian_cup_qualification,,,,,,2023,,2023
+AFC U17 Asian Cup,afc_u17_asian_cup,,,,,,2023,,2023
+CAFA Nations Cup,cafa_nations_cup,,,,,,2023,,2023
+2022 ASEAN Championship,2022_asean_championship,,,,,,2023,,2023
+FIFA Arab Cup Qualification,fifa_arab_cup_qualification,,,,,,2023,,2023
+Intercontinental Cup,intercontinental_cup,,,,,,2023,,2023
+AFC Solidarity Cup,afc_solidarity_cup,,,,,,2023,,2023
+AFC Challenge Cup Qualifikation (- 2014),afc_challenge_cup_qualifikation_2014,,,,,,2023,,2023
+AFC Challenge Cup (- 2014),afc_challenge_cup_2014,,,,,,2023,,2023
+WAFF Championship,waff_championship,,,,,,2023,,2023
+Arabian Gulf Cup,arabian_gulf_cup,,,,,,2023,,2023
+FIFA Arab Cup,fifa_arab_cup,,,,,,2023,,2023
+East Asian Football Championship,east_asian_football_championship,,,,,,2023,,2023
+OFC Nations Cup,ofc_nations_cup,,,,,,2023,,2023
+Asian Cup qualification,asian_cup_qualification,,,,,,2023,,2023
+LaLiga,first_tier,Spain,ES1,20.0,520.0,,2023,,2023
+LaLiga2,second_tier,Spain,ES1,20.0,520.0,,2023,,2023
+Primera Federación - Gr. I,third_tier,Spain,ES1,20.0,520.0,,2023,,2023
+Copa del Rey,domestic_cup,Spain,ES1,20.0,520.0,,2023,,2023
+Supercopa,domestic_super_cup,Spain,ES1,20.0,520.0,,2023,,2023
+CONCACAF Champions Cup,concacaf_champions_cup,,,,,,2023,,2023
+CONCACAF Central American Cup,concacaf_central_american_cup,,,,,,2023,,2023
+U-17 South American Championship,u_17_south_american_championship,,,,,,2023,,2023
+Copa Libertadores,copa_libertadores,,,,,,2023,,2023
+U20 Copa Libertadores,u20_copa_libertadores,,,,,,2023,,2023
+Copa Sudamericana,copa_sudamericana,,,,,,2023,,2023
+CONCACAF U-20 Championship,concacaf_u_20_championship,,,,,,2023,,2023
+CONCACAF U-20 Championship-Qualifying,concacaf_u_20_championship_qualifying,,,,,,2023,,2023
+CONCACAF U17-Championship,concacaf_u17_championship,,,,,,2023,,2023
+Recopa Sudamericana,recopa_sudamericana,,,,,,2023,,2023
+CONCACAF Caribbean Cup,concacaf_caribbean_cup,,,,,,2023,,2023
+CFU Club Shield,cfu_club_shield,,,,,,2023,,2023
+CONCACAF Nations League Finals,concacaf_nations_league_finals,,,,,,2023,,2023
+CONCACAF Nations League A,concacaf_nations_league_a,,,,,,2023,,2023
+CONCACAF Nations League B,concacaf_nations_league_b,,,,,,2023,,2023
+CONCACAF Nations League C,concacaf_nations_league_c,,,,,,2023,,2023
+CONCACAF Nations League Qualifikation,concacaf_nations_league_qualifikation,,,,,,2023,,2023
+CONCACAF Cup,concacaf_cup,,,,,,2023,,2023
+Copa América Centenario 2016,copa_america_centenario_2016,,,,,,2023,,2023
+Copa América Centenario Play-In,copa_america_centenario_play_in,,,,,,2023,,2023
+Gold Cup Qualification,gold_cup_qualification,,,,,,2023,,2023
+Gold Cup Play-Off,gold_cup_play_off,,,,,,2023,,2023
+UNCAF Nations Cup-Qualifikation,uncaf_nations_cup_qualifikation,,,,,,2023,,2023
+UNCAF Nations Cup,uncaf_nations_cup,,,,,,2023,,2023
+Gold Cup,gold_cup,,,,,,2023,,2023
+Caribbean Cup Qualifikation,caribbean_cup_qualifikation,,,,,,2023,,2023
+Caribbean Cup (- 2017),caribbean_cup_2017,,,,,,2023,,2023
+Copa América,copa_america,,,,,,2023,,2023
+Campeonato Sudamericano 1967,campeonato_sudamericano_1967,,,,,,2023,,2023
+Qualifikation Campeonato Sudamericano,qualifikation_campeonato_sudamericano,,,,,,2023,,2023
+CONCACAF Championship (- 1989),concacaf_championship_1989,,,,,,2023,,2023
+Campeonato Sudamericano 1963,campeonato_sudamericano_1963,,,,,,2023,,2023
+Campeonato Sudamericano 1959,campeonato_sudamericano_1959,,,,,,2023,,2023
+Campeonato Sudamericano 1959 Ecuador,campeonato_sudamericano_1959_ecuador,,,,,,2023,,2023
+Campeonato Sudamericano 1957,campeonato_sudamericano_1957,,,,,,2023,,2023
+Campeonato Sudamericano 1956,campeonato_sudamericano_1956,,,,,,2023,,2023
+Campeonato Sudamericano 1955,campeonato_sudamericano_1955,,,,,,2023,,2023
+Campeonato Sudamericano 1953,campeonato_sudamericano_1953,,,,,,2023,,2023
+Panamerican Championship (- 1960),panamerican_championship_1960,,,,,,2023,,2023
+Campeonato Sudamericano 1949,campeonato_sudamericano_1949,,,,,,2023,,2023
+Campeonato Sudamericano 1947,campeonato_sudamericano_1947,,,,,,2023,,2023
+Campeonato Sudamericano 1946,campeonato_sudamericano_1946,,,,,,2023,,2023
+Campeonato Sudamericano 1945,campeonato_sudamericano_1945,,,,,,2023,,2023
+Campeonato Sudamericano 1942,campeonato_sudamericano_1942,,,,,,2023,,2023
+Campeonato Centroamericano y del Caribe,campeonato_centroamericano_y_del_caribe,,,,,,2023,,2023
+Campeonato Sudamericano 1941,campeonato_sudamericano_1941,,,,,,2023,,2023
+Campeonato Sudamericano 1939,campeonato_sudamericano_1939,,,,,,2023,,2023
+Campeonato Sudamericano 1937,campeonato_sudamericano_1937,,,,,,2023,,2023
+Campeonato Sudamericano 1935,campeonato_sudamericano_1935,,,,,,2023,,2023
+Campeonato Sudamericano 1929,campeonato_sudamericano_1929,,,,,,2023,,2023
+Campeonato Sudamericano 1927,campeonato_sudamericano_1927,,,,,,2023,,2023
+Campeonato Sudamericano 1926,campeonato_sudamericano_1926,,,,,,2023,,2023
+Campeonato Sudamericano 1925,campeonato_sudamericano_1925,,,,,,2023,,2023
+Campeonato Sudamericano 1924,campeonato_sudamericano_1924,,,,,,2023,,2023
+Campeonato Sudamericano 1923,campeonato_sudamericano_1923,,,,,,2023,,2023
+Campeonato Sudamericano 1922,campeonato_sudamericano_1922,,,,,,2023,,2023
+Campeonato Sudamericano 1921,campeonato_sudamericano_1921,,,,,,2023,,2023
+Campeonato Sudamericano 1920,campeonato_sudamericano_1920,,,,,,2023,,2023
+Campeonato Sudamericano 1919,campeonato_sudamericano_1919,,,,,,2023,,2023
+Campeonato Sudamericano 1917,campeonato_sudamericano_1917,,,,,,2023,,2023
+Campeonato Sudamericano 1916,campeonato_sudamericano_1916,,,,,,2023,,2023
+Premier League,first_tier,England,GB1,20.0,528.0,,2023,,2023
+Championship,second_tier,England,GB1,20.0,528.0,,2023,,2023
+League One,third_tier,England,GB1,20.0,528.0,,2023,,2023
+FA Cup,domestic_cup,England,GB1,20.0,528.0,,2023,,2023
+Community Shield,domestic_super_cup,England,GB1,20.0,528.0,,2023,,2023
+Serie A,first_tier,Italy,IT1,20.0,535.0,,2023,,2023
+Serie B,second_tier,Italy,IT1,20.0,535.0,,2023,,2023
+Serie C - C,third_tier,Italy,IT1,20.0,535.0,,2023,,2023
+Italy Cup,domestic_cup,Italy,IT1,20.0,535.0,,2023,,2023
+Supercoppa Italiana,domestic_super_cup,Italy,IT1,20.0,535.0,,2023,,2023
+Bundesliga,first_tier,Germany,L1,18.0,517.0,,2023,,2023
+2. Bundesliga,second_tier,Germany,L1,18.0,517.0,,2023,,2023
+3. Liga,third_tier,Germany,L1,18.0,517.0,,2023,,2023
+DFB-Pokal,domestic_cup,Germany,L1,18.0,517.0,,2023,,2023
+DFL-Supercup,domestic_super_cup,Germany,L1,18.0,517.0,,2023,,2023
+Ligue 1,first_tier,France,FR1,18.0,479.0,,2023,,2023
+Ligue 2,second_tier,France,FR1,18.0,479.0,,2023,,2023
+Championnat National,third_tier,France,FR1,18.0,479.0,,2023,,2023
+Coupe de France,domestic_cup,France,FR1,18.0,479.0,,2023,,2023
+Trophée des Champions,domestic_super_cup,France,FR1,18.0,479.0,,2023,,2023
+Süper Lig,first_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
+1.Lig,second_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
+2.Lig Kirmizi,third_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
+Türkiye Kupasi,domestic_cup,Türkiye,TR1,18.0,515.0,,2023,,2023
+TFF Süper Kupa,domestic_super_cup,Türkiye,TR1,18.0,515.0,,2023,,2023
+Liga Portugal,first_tier,Portugal,PO1,18.0,486.0,,2023,,2023
+Liga Portugal 2,second_tier,Portugal,PO1,18.0,486.0,,2023,,2023
+Liga 3,third_tier,Portugal,PO1,18.0,486.0,,2023,,2023
+Taça de Portugal,domestic_cup,Portugal,PO1,18.0,486.0,,2023,,2023
+Supertaça,domestic_super_cup,Portugal,PO1,18.0,486.0,,2023,,2023
+Premier Liga,first_tier,Russia,RU1,16.0,450.0,,2023,,2023
+1.Division,second_tier,Russia,RU1,16.0,450.0,,2023,,2023
+2. Division A (Phase 2),third_tier,Russia,RU1,16.0,450.0,,2023,,2023
+Russian Cup,domestic_cup,Russia,RU1,16.0,450.0,,2023,,2023
+Russian Super Cup,domestic_super_cup,Russia,RU1,16.0,450.0,,2023,,2023
+Jupiler Pro League,first_tier,Belgium,BE1,16.0,452.0,,2023,,2023
+Challenger Pro League,second_tier,Belgium,BE1,16.0,452.0,,2023,,2023
+1ste Nationale ACFF,third_tier,Belgium,BE1,16.0,452.0,,2023,,2023
+Croky Cup,domestic_cup,Belgium,BE1,16.0,452.0,,2023,,2023
+Volkswagen Supercup,domestic_super_cup,Belgium,BE1,16.0,452.0,,2023,,2023
+Super League 1,first_tier,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
+Super League 2,second_tier,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
+Kypello Elladas,domestic_cup,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
+Super Cup,domestic_super_cup,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
+Eredivisie,first_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
+Keuken Kampioen Divisie,second_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
+Tweede Divisie,third_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
+KNVB Beker,domestic_cup,Netherlands,NL1,18.0,498.0,,2023,,2023
+Johan Cruijff Schaal,domestic_super_cup,Netherlands,NL1,18.0,498.0,,2023,,2023
+Chance Liga,first_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
+ChNL,second_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
+CFL,third_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
+MOL Cup,domestic_cup,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
+Premier Liga,first_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
+Persha Liga,second_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
+Druga Liga,third_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
+Ukrainian Cup,domestic_cup,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
+Premiership,first_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
+Championship,second_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
+League One,third_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
+SFA Cup,domestic_cup,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
+Super League,first_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
+Challenge League,second_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
+Promotion League,third_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
+Swiss Cup,domestic_cup,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
+Allsvenskan,first_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
+Superettan,second_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
+Ettan Norra,third_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
+Svenska Cupen,domestic_cup,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
+SuperSport HNL,first_tier,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
+Prva NL,second_tier,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
+Hrvatski nogometni kup,domestic_cup,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
+Eliteserien,first_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
+OBOS-ligaen,second_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
+PostNord-ligaen Avd. 2,third_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
+NM-Cup,domestic_cup,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
+SuperLiga,first_tier,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
+Liga 2,second_tier,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
+Romanian Cup,domestic_cup,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
+Romanian Supercup,domestic_super_cup,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
+efbet Liga,first_tier,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
+Vtora Liga,second_tier,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
+Bulgarian Cup,domestic_cup,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
+Bulgarian Super Cup,domestic_super_cup,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
+Ligue 1,first_tier,Tunisia,TUN1,16.0,566.0,90660000.0,2023,,2023
+Tunisian Cup,domestic_cup,Tunisia,TUN1,16.0,566.0,90660000.0,2023,,2023
+Super liga Srbije,first_tier,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
+Prva liga Srbije,second_tier,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
+Kup Srbije,domestic_cup,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
+Bundesliga,first_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
+2. Liga,second_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
+Regional League Central,third_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
+ÖFB-Cup,domestic_cup,Austria,A1,12.0,345.0,359260000.0,2023,,2023
+Ekstraklasa,first_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
+Betclic 1 Liga,second_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
+Betclic 2 Liga,third_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
+STS Polish Cup,domestic_cup,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
+Superpuchar,domestic_super_cup,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
+Superliga,first_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
+1.Division,second_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
+2.Division,third_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
+Oddset Pokalen,domestic_cup,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
+Ligat ha'Al,first_tier,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
+Liga Leumit,second_tier,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
+Gvia haMedina,domestic_cup,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
+Aluf haAlufim,domestic_super_cup,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
+Betway Premiership,first_tier,South Africa,SFA1,16.0,574.0,154930000.0,2023,,2023
+Nedbank Cup,domestic_cup,South Africa,SFA1,16.0,574.0,154930000.0,2023,,2023
+Premier League,first_tier,Ethiopia,ETP1,20.0,661.0,32070000.0,2023,,2023
+Premier League,first_tier,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
+Egypt Cup,domestic_cup,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
+Egyptian Super Cup,domestic_super_cup,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
+Ligue 1,first_tier,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
+Coupe d'Algerie,domestic_cup,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
+Supercoupe d'Algérie,domestic_super_cup,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
+Libyan Premier League,first_tier,Libya,LPL,36.0,1.098,88710000.0,2023,,2023
+Ligue 1,first_tier,Senegal,SEN1,16.0,547.0,24630000.0,2023,,2023
+Uganda Premier League,first_tier,Uganda,UGL1,16.0,502.0,34720000.0,2023,,2023
+Premier League,first_tier,Ghana,GHPL,18.0,614.0,26400000.0,2023,,2023
+NPFL,first_tier,Nigeria,NPFL,20.0,849.0,1360000.0,2023,,2023
+D1 Comores,first_tier,Comoros,COM1,30.0,889.0,,2023,,2023
+Botola Pro Inwi,first_tier,Morocco,MAR1,16.0,500.0,146520000.0,2023,,2023
+Coupe du Trône Marocaine,domestic_cup,Morocco,MAR1,16.0,500.0,146520000.0,2023,,2023
+UAE Pro League,first_tier,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
+UAE President's Cup,domestic_cup,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
+UAE Super Cup,domestic_super_cup,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
+Stars League,first_tier,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
+Qatari Second Division,second_tier,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
+Amir Cup,domestic_cup,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
+A-League Men,first_tier,Australia,AUS1,12.0,378.0,105250000.0,2023,,2023
+NPL Victoria,second_tier,Australia,AUS1,12.0,378.0,105250000.0,2023,,2023
+K League 1,first_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
+K League 2,second_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
+K3 League,third_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
+Korean Super Cup,domestic_super_cup,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
+J1 League,first_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
+J2 League,second_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
+J3 League,third_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
+Emperor's Cup,domestic_cup,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
+Iraq Stars League,first_tier,Iraq,IRQ1,20.0,602.0,94840000.0,2023,,2023
+Iraq FA Cup,domestic_cup,Iraq,IRQ1,20.0,602.0,94840000.0,2023,,2023
+Superliga,first_tier,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
+O'zbekiston Pro Liga,second_tier,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
+Uzbekistan Cup,domestic_cup,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
+Uzbekistan Supercup,domestic_super_cup,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
+Super League,first_tier,Malaysia,MYS1,13.0,399.0,56920000.0,2023,,2023
+Piala Malaysia,domestic_cup,Malaysia,MYS1,13.0,399.0,56920000.0,2023,,2023
+Saudi Pro League,first_tier,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
+Saudi First Division League,second_tier,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
+King's Cup,domestic_cup,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
+Saudi Super Cup,domestic_super_cup,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
+Jindal League,first_tier,Oman,OM1L,14.0,515.0,39740000.0,2023,,2023
+Jogorku Liga,first_tier,Kyrgyzstan,KG1L,16.0,434.0,37410000.0,2023,,2023
+Kyrgyzstan Cup,domestic_cup,Kyrgyzstan,KG1L,16.0,434.0,37410000.0,2023,,2023
+V.League 1,first_tier,Vietnam,VIE1,14.0,446.0,56500000.0,2023,,2023
+Vietnam Cup,domestic_cup,Vietnam,VIE1,14.0,446.0,56500000.0,2023,,2023
+Thai League,first_tier,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
+Thai League 2,second_tier,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
+Thai FA Cup,domestic_cup,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
+Indian Super League,first_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
+Indian Football League,second_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
+I-League 2,third_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
+Durand Cup,domestic_cup,India,IND1,14.0,396.0,37200000.0,2023,,2023
+Super Cup,domestic_super_cup,India,IND1,14.0,396.0,37200000.0,2023,,2023
+Super League,first_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
+League One,second_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
+League Two A,third_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
+Chinese FA Cup,domestic_cup,China,CSL,16.0,513.0,165510000.0,2023,,2023
+Chinese Super Cup,domestic_super_cup,China,CSL,16.0,513.0,165510000.0,2023,,2023
+Lebanese Premier League,first_tier,Lebanon,LIB1,12.0,327.0,32909999.999999996,2023,,2023
+Jordanian Pro League,first_tier,Jordan,JO1L,10.0,300.0,30980000.0,2023,,2023
+Persian Gulf League,first_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
+Azadegan League,second_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
+League 2,third_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
+Hazfi Cup,domestic_cup,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
+Iran Super Cup,domestic_super_cup,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
+C. Premier League,first_tier,Cambodia,KHM1,11.0,328.0,17010000.0,2023,,2023
+Cambodian Super Cup,domestic_super_cup,Cambodia,KHM1,11.0,328.0,17010000.0,2023,,2023
+Hong Kong Premier League,first_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
+Hong Kong First Division,second_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
+Hong Kong Second Division,third_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
+Hong Kong FA Cup,domestic_cup,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
+Premier League,first_tier,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
+Singapore Cup,domestic_cup,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
+Singapore Community Shield,domestic_super_cup,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
+Myanmar National League,first_tier,Myanmar,MYA1,12.0,381.0,15730000.0,2023,,2023
+Super League,first_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
+Championship,second_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
+Liga Nusantara,third_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
+Liga MX Clausura,first_tier,Mexico,MEX1,18.0,472.0,925580000.0,2023,,2023
+Liga Expansión MX Cl.,second_tier,Mexico,MEX1,18.0,472.0,925580000.0,2023,,2023
+MLS,first_tier,United States,MLS1,30.0,862.0,,2023,,2023
+USLC,second_tier,United States,MLS1,30.0,862.0,,2023,,2023
+MLS Next Pro,third_tier,United States,MLS1,30.0,862.0,,2023,,2023
+US Open Cup,domestic_cup,United States,MLS1,30.0,862.0,,2023,,2023
+Liga DIMAYOR I,first_tier,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
+Torneo DIMAYOR I,second_tier,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
+Copa Colombia,domestic_cup,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
+Superliga Águila de Campeones,domestic_super_cup,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
+Liga AUF Apertura,first_tier,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
+Torneo Competencia,second_tier,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
+Supercopa ,domestic_super_cup,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
+Série A,first_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
+Série B,second_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
+Série C,third_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
+Copa do Brasil,domestic_cup,Brazil,BRA1,20.0,658.0,,2023,,2023
+Supercopa Rei,domestic_super_cup,Brazil,BRA1,20.0,658.0,,2023,,2023
+Vysshaya Liga,first_tier,Tajikistan,TAD1,12.0,286.0,20050000.0,2023,,2023
+LigaPro Serie A,first_tier,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
+Liga Pro Serie B,second_tier,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
+Copa Ecuador,domestic_cup,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
+Supercopa Ecuador,domestic_super_cup,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
+Liga Primera,first_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
+Liga de Ascenso,second_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
+Segunda División,third_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
+Copa Chile,domestic_cup,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
+Supercopa de Chile,domestic_super_cup,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
+Liga 1 Apertura,first_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
+Liga 2,second_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
+Liga 3,third_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
+Primera División Apertura,first_tier,Paraguay,PR1A,12.0,371.0,136750000.0,2023,,2023
+División Intermedia,second_tier,Paraguay,PR1A,12.0,371.0,136750000.0,2023,,2023
+División Profesional,first_tier,Bolivia,BO1A,16.0,507.0,89250000.0,2023,,2023
+BFL ,first_tier,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
+Federation Cup,domestic_cup,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
+Bangladesh Super Cup,domestic_super_cup,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
+Liga FUTVE Apertura,first_tier,Venezuela,VZ1A,14.0,425.0,84860000.0,2023,,2023
+Liga FUTVE 2,second_tier,Venezuela,VZ1A,14.0,425.0,84860000.0,2023,,2023
+Liga Nacional Apertura,first_tier,Honduras,HO1A,11.0,325.0,29930000.0,2023,,2023
+National League Apertura ,first_tier,Guatemala,GU1A,12.0,323.0,39650000.0,2023,,2023
+NB I.,first_tier,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
+NB II.,second_tier,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
+Magyar Kupa,domestic_cup,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
+Liga Panameña Clausura,first_tier,Panama,PN1C,12.0,281.0,29000000.0,2023,,2023
+Prva Liga,first_tier,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
+Druga Liga,second_tier,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
+Pokal Slovenije,domestic_cup,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
+Kategoria Superiore,first_tier,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
+Kategoria e Parë,second_tier,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
+Kupa e Shqipërisë,domestic_cup,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
+Superkupa e Shqipërisë,domestic_super_cup,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
+Premijer Liga BiH,first_tier,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
+Prva liga FBIH,second_tier,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
+Kup BiH,domestic_cup,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
+Niké Liga,first_tier,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
+MONACObet liga,second_tier,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
+Slovnaft Cup,domestic_cup,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
+Premier League,first_tier,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
+First League,second_tier,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
+Armenian Independence Cup,domestic_cup,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
+Armenian Supercup,domestic_super_cup,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
+Vysheyshaya Liga,first_tier,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
+Pershaya Liga,second_tier,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
+Belarusian Cup,domestic_cup,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
+Belarusian Super Cup,domestic_super_cup,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
+Besta deild,first_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
+Lengjudeild,second_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
+2. deild,third_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
+Mjólkurbikar,domestic_cup,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
+Meistarakeppni,domestic_super_cup,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
+Premier Liga,first_tier,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
+Pervaya Liga,second_tier,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
+Kazakhstan Cup,domestic_cup,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
+Kasachischer Supercup,domestic_super_cup,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
+Erovnuli Liga,first_tier,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
+Erovnuli Liga 2,second_tier,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
+David Kipiani Cup,domestic_cup,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
+Cyprus League,first_tier,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
+2. Division,second_tier,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
+Kypello Kyprou,domestic_cup,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
+Cypriot Super Cup,domestic_super_cup,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
+Veikkausliiga,first_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
+Ykkösliiga,second_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
+Ykkönen,third_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
+Suomen Cup,domestic_cup,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
+Torneo Apertura ,first_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
+Primera Nacional,second_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
+Primera B Metropolitana,third_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
+Copa Argentina,domestic_cup,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
+Supercopa Internacional,domestic_super_cup,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
+Meistaradeildin,first_tier,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
+1. deild,second_tier,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
+Løgmanssteypið,domestic_cup,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
+Stórsteypadystur,domestic_super_cup,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
+Virsliga,first_tier,Latvia,LET2,14.0,413.0,350000.0,2023,,2023
+Futbola Pirmā līga,second_tier,Latvia,LET2,14.0,413.0,350000.0,2023,,2023
+Primera División Apertura,first_tier,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
+Copa de Costa Rica,domestic_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
+Recopa Costa Rica,domestic_super_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
+Primera Divisió,first_tier,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
+Segona Divisió,second_tier,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
+Copa Constitució,domestic_cup,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
+Camp. Sammarinese,first_tier,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
+Coppa Titano,domestic_cup,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
+Supercoppa San Marino,domestic_super_cup,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
+Primera División Apertura,first_tier,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
+Copa El Salvador,domestic_cup,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
+Supercopa de El Salvador,domestic_super_cup,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
+Gibraltar Football League,first_tier,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
+Rock Cup,domestic_cup,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
+Pepe Reyes Cup,domestic_super_cup,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
+Premyer Liqa,first_tier,Azerbaijan,AZ1,12.0,307.0,123430000.0,2023,,2023
+Azerbaycan Kuboku,domestic_cup,Azerbaijan,AZ1,12.0,307.0,123430000.0,2023,,2023
+Superliga e Kosovës,first_tier,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
+Kupa e Kosovës,domestic_cup,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
+Superkupa e Kosovës,domestic_super_cup,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
+Premier Division,first_tier,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
+First Division,second_tier,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
+FAI Cup,domestic_cup,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
+President's Cup,domestic_super_cup,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
+Premium Liiga,first_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
+Esiliiga,second_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
+Esiliiga B,third_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
+Eesti Karikas,domestic_cup,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
+Eesti Superkarikas,domestic_super_cup,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
+Fiji Premier League,first_tier,Fiji,FIJ1,10.0,384.0,13100000.0,2023,,2023
+National League - North,first_tier,New Zealand,NNL1,12.0,290.0,13420000.0,2023,,2023
+Chatham Cup,domestic_cup,New Zealand,NNL1,12.0,290.0,13420000.0,2023,,2023
+BGL Ligue,first_tier,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
+Ehrenpromotion,second_tier,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
+Coupe de Luxembourg,domestic_cup,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
+Super Liga,first_tier,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
+Liga 1 (Promotion),second_tier,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
+Moldovan Cup,domestic_cup,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
+PFL,first_tier,Philippines,PFL1,11.0,343.0,11470000.0,2023,,2023
+Cymru Premier,first_tier,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
+Cymru North,second_tier,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
+Welsh Cup,domestic_cup,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
+Premier League Opening Round,first_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
+Challenge League,second_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
+National Amateur League I,third_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
+Jubilee Cup,domestic_cup,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
+Maltese Super Cup,domestic_super_cup,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
+Football Premier League,first_tier,Chinese Taipei,TFPL,8.0,228.0,4940000.0,2023,,2023
+Football League Div.2,second_tier,Chinese Taipei,TFPL,8.0,228.0,4940000.0,2023,,2023
+Lao League 1,first_tier,Laos,LAO1,10.0,281.0,4810000.0,2023,,2023
+Prime Minister Cup ,domestic_cup,Laos,LAO1,10.0,281.0,4810000.0,2023,,2023
+Sri Lanka Champions League - GS,second_tier,Sri Lanka,SRL1,14.0,333.0,,2023,,2023
+Prva liga,first_tier,North Macedonia,MAZ1,12.0,292.0,36680000.0,2023,,2023
+Kup na Makedonija,domestic_cup,North Macedonia,MAZ1,12.0,292.0,36680000.0,2023,,2023
+D. Premier League,first_tier,Maldives,MLD1,10.0,289.0,1430000.0,2023,,2023
+Bhutan Premier League,first_tier,Bhutan,BH1L,10.0,309.0,945000.0,2023,,2023
+CanPL,first_tier,Canada,CDN1,8.0,204.0,22600000.0,2023,,2023
+Canadian Championship,domestic_cup,Canada,CDN1,8.0,204.0,22600000.0,2023,,2023
+Jamaica Premier League,first_tier,Jamaica,JPL1,14.0,582.0,700000.0,2023,,2023
+Meridianbet 1. CFL,first_tier,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
+2. CFL,second_tier,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
+Montenegro Cup,domestic_cup,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
+Liga Primera Apertura,first_tier,Nicaragua,NC1A,10.0,277.0,2830000.0,2023,,2023
+Copa Primera,domestic_cup,Nicaragua,NC1A,10.0,277.0,2830000.0,2023,,2023
+Liga de Belice Clausura,first_tier,Belize,BZ1C,7.0,213.0,275000.0,2023,,2023
+Premiership,first_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
+Championship ,second_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
+Intermediate,third_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
+Irish League Cup,domestic_cup,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
+NIFL Charity Shield,domestic_super_cup,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
+Liga Puerto Rico Apertura,first_tier,Puerto Rico,PRA1,10.0,356.0,125000.0,2023,,2023
+Liga Dominicana - Liguilla,first_tier,Dominican Republic,DO1P,6.0,139.0,225000.0,2023,,2023
+Toplyga,first_tier,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
+I Lyga,second_tier,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
+Lithuanian Cup,domestic_cup,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
+Lithuanian Supercup,domestic_super_cup,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
 UEFA Champions League,uefa_champions_league,,,,,,2024,,2024
 UEFA Super Cup,uefa_super_cup,,,,,,2024,,2024
 UEFA Europa League,uefa_europa_league,,,,,,2024,,2024
@@ -981,495 +1473,3 @@ Supercopa de Chile,domestic_super_cup,Chile,CLPD,16.0,423.0,161080000.0,2025,,20
 Primera División Apertura,first_tier,Costa Rica,CRPD,10.0,271.0,48270000.0,2025,,2025
 Copa de Costa Rica,domestic_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2025,,2025
 Recopa Costa Rica,domestic_super_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2025,,2025
-UEFA Champions League,uefa_champions_league,,,,,,2023,,2023
-UEFA Super Cup,uefa_super_cup,,,,,,2023,,2023
-UEFA Europa League,uefa_europa_league,,,,,,2023,,2023
-UEFA Conference League,uefa_conference_league,,,,,,2023,,2023
-UEFA Europa League Qualifying,uefa_europa_league_qualifying,,,,,,2023,,2023
-UEFA Champions League Qualifying,uefa_champions_league_qualifying,,,,,,2023,,2023
-UEFA Youth League,uefa_youth_league,,,,,,2023,,2023
-UEFA Conference League Qualifiers,uefa_conference_league_qualifiers,,,,,,2023,,2023
-UEFA Nations League Play-off,uefa_nations_league_play_off,,,,,,2023,,2023
-UEFA Nations League Finals,uefa_nations_league_finals,,,,,,2023,,2023
-UEFA Nations League A,uefa_nations_league_a,,,,,,2023,,2023
-UEFA Nations League B,uefa_nations_league_b,,,,,,2023,,2023
-UEFA Nations League C,uefa_nations_league_c,,,,,,2023,,2023
-UEFA Nations League D,uefa_nations_league_d,,,,,,2023,,2023
-European Qualifiers Play-offs,european_qualifiers_play_offs,,,,,,2023,,2023
-UEFA Euro,uefa_euro,,,,,,2023,,2023
-European Qualifiers,european_qualifiers,,,,,,2023,,2023
-Africa Cup of Nations,africa_cup_of_nations,,,,,,2023,,2023
-CAF-Champions League,caf_champions_league,,,,,,2023,,2023
-CAF Confederation Cup,caf_confederation_cup,,,,,,2023,,2023
-Africa Cup of Nations Qualification,africa_cup_of_nations_qualification,,,,,,2023,,2023
-Africa U-17 Cup of Nations,africa_u_17_cup_of_nations,,,,,,2023,,2023
-Africa U-20 Cup of Nations,africa_u_20_cup_of_nations,,,,,,2023,,2023
-CAF-Supercup,caf_supercup,,,,,,2023,,2023
-African Nations Championship,african_nations_championship,,,,,,2023,,2023
-ASEAN Club Championship Qualifying,asean_club_championship_qualifying,,,,,,2023,,2023
-WAFF U20 Championship,waff_u20_championship,,,,,,2023,,2023
-ASEAN Club Championship,asean_club_championship,,,,,,2023,,2023
-AFC Champions League Two,afc_champions_league_two,,,,,,2023,,2023
-CAFA U17 Championship,cafa_u17_championship,,,,,,2023,,2023
-CAFA U20 Championship,cafa_u20_championship,,,,,,2023,,2023
-AFC Challenge League Qualifying,afc_challenge_league_qualifying,,,,,,2023,,2023
-AFC Champions League Two Qualifying,afc_champions_league_two_qualifying,,,,,,2023,,2023
-AFC Champions League Elite Qualifying,afc_champions_league_elite_qualifying,,,,,,2023,,2023
-AFC Champions League Elite,afc_champions_league_elite,,,,,,2023,,2023
-AFC Challenge League,afc_challenge_league,,,,,,2023,,2023
-OFC-Champions League,ofc_champions_league,,,,,,2023,,2023
-OFC Professional League,ofc_professional_league,,,,,,2023,,2023
-OFC-Champions League Preliminary,ofc_champions_league_preliminary,,,,,,2023,,2023
-U16-OFC-Championship,u16_ofc_championship,,,,,,2023,,2023
-ASEAN U17 Boys Championship,asean_u17_boys_championship,,,,,,2023,,2023
-ASEAN U19 Boys Championship,asean_u19_boys_championship,,,,,,2023,,2023
-AFC U23 Asian Cup Qualification,afc_u23_asian_cup_qualification,,,,,,2023,,2023
-AFC U23 Asian Cup,afc_u23_asian_cup,,,,,,2023,,2023
-South Asian Football Federation Championship,south_asian_football_federation_championship,,,,,,2023,,2023
-SAFF U20 Championship,saff_u20_championship,,,,,,2023,,2023
-ASEAN Championship Qualification,asean_championship_qualification,,,,,,2023,,2023
-ASEAN Championship,asean_championship,,,,,,2023,,2023
-AFC Asian Cup,afc_asian_cup,,,,,,2023,,2023
-AFC U17 Asian Cup Qualification,afc_u17_asian_cup_qualification,,,,,,2023,,2023
-AFC U17 Asian Cup,afc_u17_asian_cup,,,,,,2023,,2023
-CAFA Nations Cup,cafa_nations_cup,,,,,,2023,,2023
-2022 ASEAN Championship,2022_asean_championship,,,,,,2023,,2023
-FIFA Arab Cup Qualification,fifa_arab_cup_qualification,,,,,,2023,,2023
-Intercontinental Cup,intercontinental_cup,,,,,,2023,,2023
-AFC Solidarity Cup,afc_solidarity_cup,,,,,,2023,,2023
-AFC Challenge Cup Qualifikation (- 2014),afc_challenge_cup_qualifikation_2014,,,,,,2023,,2023
-AFC Challenge Cup (- 2014),afc_challenge_cup_2014,,,,,,2023,,2023
-WAFF Championship,waff_championship,,,,,,2023,,2023
-Arabian Gulf Cup,arabian_gulf_cup,,,,,,2023,,2023
-FIFA Arab Cup,fifa_arab_cup,,,,,,2023,,2023
-East Asian Football Championship,east_asian_football_championship,,,,,,2023,,2023
-OFC Nations Cup,ofc_nations_cup,,,,,,2023,,2023
-Asian Cup qualification,asian_cup_qualification,,,,,,2023,,2023
-LaLiga,first_tier,Spain,ES1,20.0,520.0,,2023,,2023
-LaLiga2,second_tier,Spain,ES1,20.0,520.0,,2023,,2023
-Primera Federación - Gr. I,third_tier,Spain,ES1,20.0,520.0,,2023,,2023
-Copa del Rey,domestic_cup,Spain,ES1,20.0,520.0,,2023,,2023
-Supercopa,domestic_super_cup,Spain,ES1,20.0,520.0,,2023,,2023
-CONCACAF Champions Cup,concacaf_champions_cup,,,,,,2023,,2023
-CONCACAF Central American Cup,concacaf_central_american_cup,,,,,,2023,,2023
-U-17 South American Championship,u_17_south_american_championship,,,,,,2023,,2023
-Copa Libertadores,copa_libertadores,,,,,,2023,,2023
-U20 Copa Libertadores,u20_copa_libertadores,,,,,,2023,,2023
-Copa Sudamericana,copa_sudamericana,,,,,,2023,,2023
-CONCACAF U-20 Championship,concacaf_u_20_championship,,,,,,2023,,2023
-CONCACAF U-20 Championship-Qualifying,concacaf_u_20_championship_qualifying,,,,,,2023,,2023
-CONCACAF U17-Championship,concacaf_u17_championship,,,,,,2023,,2023
-Recopa Sudamericana,recopa_sudamericana,,,,,,2023,,2023
-CONCACAF Caribbean Cup,concacaf_caribbean_cup,,,,,,2023,,2023
-CFU Club Shield,cfu_club_shield,,,,,,2023,,2023
-CONCACAF Nations League Finals,concacaf_nations_league_finals,,,,,,2023,,2023
-CONCACAF Nations League A,concacaf_nations_league_a,,,,,,2023,,2023
-CONCACAF Nations League B,concacaf_nations_league_b,,,,,,2023,,2023
-CONCACAF Nations League C,concacaf_nations_league_c,,,,,,2023,,2023
-CONCACAF Nations League Qualifikation,concacaf_nations_league_qualifikation,,,,,,2023,,2023
-CONCACAF Cup,concacaf_cup,,,,,,2023,,2023
-Copa América Centenario 2016,copa_america_centenario_2016,,,,,,2023,,2023
-Copa América Centenario Play-In,copa_america_centenario_play_in,,,,,,2023,,2023
-Gold Cup Qualification,gold_cup_qualification,,,,,,2023,,2023
-Gold Cup Play-Off,gold_cup_play_off,,,,,,2023,,2023
-UNCAF Nations Cup-Qualifikation,uncaf_nations_cup_qualifikation,,,,,,2023,,2023
-UNCAF Nations Cup,uncaf_nations_cup,,,,,,2023,,2023
-Gold Cup,gold_cup,,,,,,2023,,2023
-Caribbean Cup Qualifikation,caribbean_cup_qualifikation,,,,,,2023,,2023
-Caribbean Cup (- 2017),caribbean_cup_2017,,,,,,2023,,2023
-Copa América,copa_america,,,,,,2023,,2023
-Campeonato Sudamericano 1967,campeonato_sudamericano_1967,,,,,,2023,,2023
-Qualifikation Campeonato Sudamericano,qualifikation_campeonato_sudamericano,,,,,,2023,,2023
-CONCACAF Championship (- 1989),concacaf_championship_1989,,,,,,2023,,2023
-Campeonato Sudamericano 1963,campeonato_sudamericano_1963,,,,,,2023,,2023
-Campeonato Sudamericano 1959,campeonato_sudamericano_1959,,,,,,2023,,2023
-Campeonato Sudamericano 1959 Ecuador,campeonato_sudamericano_1959_ecuador,,,,,,2023,,2023
-Campeonato Sudamericano 1957,campeonato_sudamericano_1957,,,,,,2023,,2023
-Campeonato Sudamericano 1956,campeonato_sudamericano_1956,,,,,,2023,,2023
-Campeonato Sudamericano 1955,campeonato_sudamericano_1955,,,,,,2023,,2023
-Campeonato Sudamericano 1953,campeonato_sudamericano_1953,,,,,,2023,,2023
-Panamerican Championship (- 1960),panamerican_championship_1960,,,,,,2023,,2023
-Campeonato Sudamericano 1949,campeonato_sudamericano_1949,,,,,,2023,,2023
-Campeonato Sudamericano 1947,campeonato_sudamericano_1947,,,,,,2023,,2023
-Campeonato Sudamericano 1946,campeonato_sudamericano_1946,,,,,,2023,,2023
-Campeonato Sudamericano 1945,campeonato_sudamericano_1945,,,,,,2023,,2023
-Campeonato Sudamericano 1942,campeonato_sudamericano_1942,,,,,,2023,,2023
-Campeonato Centroamericano y del Caribe,campeonato_centroamericano_y_del_caribe,,,,,,2023,,2023
-Campeonato Sudamericano 1941,campeonato_sudamericano_1941,,,,,,2023,,2023
-Campeonato Sudamericano 1939,campeonato_sudamericano_1939,,,,,,2023,,2023
-Campeonato Sudamericano 1937,campeonato_sudamericano_1937,,,,,,2023,,2023
-Campeonato Sudamericano 1935,campeonato_sudamericano_1935,,,,,,2023,,2023
-Campeonato Sudamericano 1929,campeonato_sudamericano_1929,,,,,,2023,,2023
-Campeonato Sudamericano 1927,campeonato_sudamericano_1927,,,,,,2023,,2023
-Campeonato Sudamericano 1926,campeonato_sudamericano_1926,,,,,,2023,,2023
-Campeonato Sudamericano 1925,campeonato_sudamericano_1925,,,,,,2023,,2023
-Campeonato Sudamericano 1924,campeonato_sudamericano_1924,,,,,,2023,,2023
-Campeonato Sudamericano 1923,campeonato_sudamericano_1923,,,,,,2023,,2023
-Campeonato Sudamericano 1922,campeonato_sudamericano_1922,,,,,,2023,,2023
-Campeonato Sudamericano 1921,campeonato_sudamericano_1921,,,,,,2023,,2023
-Campeonato Sudamericano 1920,campeonato_sudamericano_1920,,,,,,2023,,2023
-Campeonato Sudamericano 1919,campeonato_sudamericano_1919,,,,,,2023,,2023
-Campeonato Sudamericano 1917,campeonato_sudamericano_1917,,,,,,2023,,2023
-Campeonato Sudamericano 1916,campeonato_sudamericano_1916,,,,,,2023,,2023
-Premier League,first_tier,England,GB1,20.0,528.0,,2023,,2023
-Championship,second_tier,England,GB1,20.0,528.0,,2023,,2023
-League One,third_tier,England,GB1,20.0,528.0,,2023,,2023
-FA Cup,domestic_cup,England,GB1,20.0,528.0,,2023,,2023
-Community Shield,domestic_super_cup,England,GB1,20.0,528.0,,2023,,2023
-Serie A,first_tier,Italy,IT1,20.0,535.0,,2023,,2023
-Serie B,second_tier,Italy,IT1,20.0,535.0,,2023,,2023
-Serie C - C,third_tier,Italy,IT1,20.0,535.0,,2023,,2023
-Italy Cup,domestic_cup,Italy,IT1,20.0,535.0,,2023,,2023
-Supercoppa Italiana,domestic_super_cup,Italy,IT1,20.0,535.0,,2023,,2023
-Bundesliga,first_tier,Germany,L1,18.0,517.0,,2023,,2023
-2. Bundesliga,second_tier,Germany,L1,18.0,517.0,,2023,,2023
-3. Liga,third_tier,Germany,L1,18.0,517.0,,2023,,2023
-DFB-Pokal,domestic_cup,Germany,L1,18.0,517.0,,2023,,2023
-DFL-Supercup,domestic_super_cup,Germany,L1,18.0,517.0,,2023,,2023
-Ligue 1,first_tier,France,FR1,18.0,479.0,,2023,,2023
-Ligue 2,second_tier,France,FR1,18.0,479.0,,2023,,2023
-Championnat National,third_tier,France,FR1,18.0,479.0,,2023,,2023
-Coupe de France,domestic_cup,France,FR1,18.0,479.0,,2023,,2023
-Trophée des Champions,domestic_super_cup,France,FR1,18.0,479.0,,2023,,2023
-Süper Lig,first_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
-1.Lig,second_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
-2.Lig Kirmizi,third_tier,Türkiye,TR1,18.0,515.0,,2023,,2023
-Türkiye Kupasi,domestic_cup,Türkiye,TR1,18.0,515.0,,2023,,2023
-TFF Süper Kupa,domestic_super_cup,Türkiye,TR1,18.0,515.0,,2023,,2023
-Liga Portugal,first_tier,Portugal,PO1,18.0,486.0,,2023,,2023
-Liga Portugal 2,second_tier,Portugal,PO1,18.0,486.0,,2023,,2023
-Liga 3,third_tier,Portugal,PO1,18.0,486.0,,2023,,2023
-Taça de Portugal,domestic_cup,Portugal,PO1,18.0,486.0,,2023,,2023
-Supertaça,domestic_super_cup,Portugal,PO1,18.0,486.0,,2023,,2023
-Premier Liga,first_tier,Russia,RU1,16.0,450.0,,2023,,2023
-1.Division,second_tier,Russia,RU1,16.0,450.0,,2023,,2023
-2. Division A (Phase 2),third_tier,Russia,RU1,16.0,450.0,,2023,,2023
-Russian Cup,domestic_cup,Russia,RU1,16.0,450.0,,2023,,2023
-Russian Super Cup,domestic_super_cup,Russia,RU1,16.0,450.0,,2023,,2023
-Jupiler Pro League,first_tier,Belgium,BE1,16.0,452.0,,2023,,2023
-Challenger Pro League,second_tier,Belgium,BE1,16.0,452.0,,2023,,2023
-1ste Nationale ACFF,third_tier,Belgium,BE1,16.0,452.0,,2023,,2023
-Croky Cup,domestic_cup,Belgium,BE1,16.0,452.0,,2023,,2023
-Volkswagen Supercup,domestic_super_cup,Belgium,BE1,16.0,452.0,,2023,,2023
-Super League 1,first_tier,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
-Super League 2,second_tier,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
-Kypello Elladas,domestic_cup,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
-Super Cup,domestic_super_cup,Greece,GR1,14.0,437.0,539580000.0,2023,,2023
-Eredivisie,first_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
-Keuken Kampioen Divisie,second_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
-Tweede Divisie,third_tier,Netherlands,NL1,18.0,498.0,,2023,,2023
-KNVB Beker,domestic_cup,Netherlands,NL1,18.0,498.0,,2023,,2023
-Johan Cruijff Schaal,domestic_super_cup,Netherlands,NL1,18.0,498.0,,2023,,2023
-Chance Liga,first_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
-ChNL,second_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
-CFL,third_tier,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
-MOL Cup,domestic_cup,Czech Republic,TS1,16.0,465.0,413160000.0,2023,,2023
-Premier Liga,first_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
-Persha Liga,second_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
-Druga Liga,third_tier,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
-Ukrainian Cup,domestic_cup,Ukraine,UKR1,16.0,439.0,423980000.0,2023,,2023
-Premiership,first_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
-Championship,second_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
-League One,third_tier,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
-SFA Cup,domestic_cup,Scotland,SC1,12.0,324.0,394150000.0,2023,,2023
-Super League,first_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
-Challenge League,second_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
-Promotion League,third_tier,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
-Swiss Cup,domestic_cup,Switzerland,C1,12.0,344.0,384500000.0,2023,,2023
-Allsvenskan,first_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
-Superettan,second_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
-Ettan Norra,third_tier,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
-Svenska Cupen,domestic_cup,Sweden,SE1,16.0,427.0,241060000.0,2023,,2023
-SuperSport HNL,first_tier,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
-Prva NL,second_tier,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
-Hrvatski nogometni kup,domestic_cup,Croatia,KR1,10.0,300.0,201550000.0,2023,,2023
-Eliteserien,first_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
-OBOS-ligaen,second_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
-PostNord-ligaen Avd. 2,third_tier,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
-NM-Cup,domestic_cup,Norway,NO1,16.0,416.0,339630000.0,2023,,2023
-SuperLiga,first_tier,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
-Liga 2,second_tier,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
-Romanian Cup,domestic_cup,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
-Romanian Supercup,domestic_super_cup,Romania,RO1,16.0,477.0,239080000.0,2023,,2023
-efbet Liga,first_tier,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
-Vtora Liga,second_tier,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
-Bulgarian Cup,domestic_cup,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
-Bulgarian Super Cup,domestic_super_cup,Bulgaria,BU1,16.0,406.0,198740000.0,2023,,2023
-Ligue 1,first_tier,Tunisia,TUN1,16.0,566.0,90660000.0,2023,,2023
-Tunisian Cup,domestic_cup,Tunisia,TUN1,16.0,566.0,90660000.0,2023,,2023
-Super liga Srbije,first_tier,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
-Prva liga Srbije,second_tier,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
-Kup Srbije,domestic_cup,Serbia,SER1,16.0,476.0,314750000.0,2023,,2023
-Bundesliga,first_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
-2. Liga,second_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
-Regional League Central,third_tier,Austria,A1,12.0,345.0,359260000.0,2023,,2023
-ÖFB-Cup,domestic_cup,Austria,A1,12.0,345.0,359260000.0,2023,,2023
-Ekstraklasa,first_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
-Betclic 1 Liga,second_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
-Betclic 2 Liga,third_tier,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
-STS Polish Cup,domestic_cup,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
-Superpuchar,domestic_super_cup,Poland,PL1,18.0,518.0,388680000.0,2023,,2023
-Superliga,first_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
-1.Division,second_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
-2.Division,third_tier,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
-Oddset Pokalen,domestic_cup,Denmark,DK1,12.0,324.0,409400000.0,2023,,2023
-Ligat ha'Al,first_tier,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
-Liga Leumit,second_tier,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
-Gvia haMedina,domestic_cup,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
-Aluf haAlufim,domestic_super_cup,Israel,ISR1,14.0,384.0,167900000.0,2023,,2023
-Betway Premiership,first_tier,South Africa,SFA1,16.0,574.0,154930000.0,2023,,2023
-Nedbank Cup,domestic_cup,South Africa,SFA1,16.0,574.0,154930000.0,2023,,2023
-Premier League,first_tier,Ethiopia,ETP1,20.0,661.0,32070000.0,2023,,2023
-Premier League,first_tier,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
-Egypt Cup,domestic_cup,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
-Egyptian Super Cup,domestic_super_cup,Egypt,EGY1,21.0,708.0,183930000.0,2023,,2023
-Ligue 1,first_tier,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
-Coupe d'Algerie,domestic_cup,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
-Supercoupe d'Algérie,domestic_super_cup,Algeria,ALG1,16.0,420.0,98180000.0,2023,,2023
-Libyan Premier League,first_tier,Libya,LPL,36.0,1.098,88710000.0,2023,,2023
-Ligue 1,first_tier,Senegal,SEN1,16.0,547.0,24630000.0,2023,,2023
-Uganda Premier League,first_tier,Uganda,UGL1,16.0,502.0,34720000.0,2023,,2023
-Premier League,first_tier,Ghana,GHPL,18.0,614.0,26400000.0,2023,,2023
-NPFL,first_tier,Nigeria,NPFL,20.0,849.0,1360000.0,2023,,2023
-D1 Comores,first_tier,Comoros,COM1,30.0,889.0,,2023,,2023
-Botola Pro Inwi,first_tier,Morocco,MAR1,16.0,500.0,146520000.0,2023,,2023
-Coupe du Trône Marocaine,domestic_cup,Morocco,MAR1,16.0,500.0,146520000.0,2023,,2023
-UAE Pro League,first_tier,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
-UAE President's Cup,domestic_cup,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
-UAE Super Cup,domestic_super_cup,United Arab Emirates,UAE1,14.0,426.0,361440000.0,2023,,2023
-Stars League,first_tier,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
-Qatari Second Division,second_tier,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
-Amir Cup,domestic_cup,Qatar,QSL,12.0,353.0,360600000.0,2023,,2023
-A-League Men,first_tier,Australia,AUS1,12.0,378.0,105250000.0,2023,,2023
-NPL Victoria,second_tier,Australia,AUS1,12.0,378.0,105250000.0,2023,,2023
-K League 1,first_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
-K League 2,second_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
-K3 League,third_tier,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
-Korean Super Cup,domestic_super_cup,"Korea, South",RSK1,12.0,435.0,122650000.0,2023,,2023
-J1 League,first_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
-J2 League,second_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
-J3 League,third_tier,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
-Emperor's Cup,domestic_cup,Japan,JAP1,20.0,697.0,310080000.0,2023,,2023
-Iraq Stars League,first_tier,Iraq,IRQ1,20.0,602.0,94840000.0,2023,,2023
-Iraq FA Cup,domestic_cup,Iraq,IRQ1,20.0,602.0,94840000.0,2023,,2023
-Superliga,first_tier,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
-O'zbekiston Pro Liga,second_tier,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
-Uzbekistan Cup,domestic_cup,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
-Uzbekistan Supercup,domestic_super_cup,Uzbekistan,UZ1,16.0,403.0,93430000.0,2023,,2023
-Super League,first_tier,Malaysia,MYS1,13.0,399.0,56920000.0,2023,,2023
-Piala Malaysia,domestic_cup,Malaysia,MYS1,13.0,399.0,56920000.0,2023,,2023
-Saudi Pro League,first_tier,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
-Saudi First Division League,second_tier,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
-King's Cup,domestic_cup,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
-Saudi Super Cup,domestic_super_cup,Saudi Arabia,SA1,18.0,502.0,,2023,,2023
-Jindal League,first_tier,Oman,OM1L,14.0,515.0,39740000.0,2023,,2023
-Jogorku Liga,first_tier,Kyrgyzstan,KG1L,16.0,434.0,37410000.0,2023,,2023
-Kyrgyzstan Cup,domestic_cup,Kyrgyzstan,KG1L,16.0,434.0,37410000.0,2023,,2023
-V.League 1,first_tier,Vietnam,VIE1,14.0,446.0,56500000.0,2023,,2023
-Vietnam Cup,domestic_cup,Vietnam,VIE1,14.0,446.0,56500000.0,2023,,2023
-Thai League,first_tier,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
-Thai League 2,second_tier,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
-Thai FA Cup,domestic_cup,Thailand,THA1,16.0,492.0,80930000.0,2023,,2023
-Indian Super League,first_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
-Indian Football League,second_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
-I-League 2,third_tier,India,IND1,14.0,396.0,37200000.0,2023,,2023
-Durand Cup,domestic_cup,India,IND1,14.0,396.0,37200000.0,2023,,2023
-Super Cup,domestic_super_cup,India,IND1,14.0,396.0,37200000.0,2023,,2023
-Super League,first_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
-League One,second_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
-League Two A,third_tier,China,CSL,16.0,513.0,165510000.0,2023,,2023
-Chinese FA Cup,domestic_cup,China,CSL,16.0,513.0,165510000.0,2023,,2023
-Chinese Super Cup,domestic_super_cup,China,CSL,16.0,513.0,165510000.0,2023,,2023
-Lebanese Premier League,first_tier,Lebanon,LIB1,12.0,327.0,32909999.999999996,2023,,2023
-Jordanian Pro League,first_tier,Jordan,JO1L,10.0,300.0,30980000.0,2023,,2023
-Persian Gulf League,first_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
-Azadegan League,second_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
-League 2,third_tier,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
-Hazfi Cup,domestic_cup,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
-Iran Super Cup,domestic_super_cup,Iran,IRN1,16.0,490.0,132880000.0,2023,,2023
-C. Premier League,first_tier,Cambodia,KHM1,11.0,328.0,17010000.0,2023,,2023
-Cambodian Super Cup,domestic_super_cup,Cambodia,KHM1,11.0,328.0,17010000.0,2023,,2023
-Hong Kong Premier League,first_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
-Hong Kong First Division,second_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
-Hong Kong Second Division,third_tier,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
-Hong Kong FA Cup,domestic_cup,Hongkong,HGKG,10.0,323.0,20850000.0,2023,,2023
-Premier League,first_tier,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
-Singapore Cup,domestic_cup,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
-Singapore Community Shield,domestic_super_cup,Singapore,SIN1,8.0,197.0,19110000.0,2023,,2023
-Myanmar National League,first_tier,Myanmar,MYA1,12.0,381.0,15730000.0,2023,,2023
-Super League,first_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
-Championship,second_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
-Liga Nusantara,third_tier,Indonesia,IN1L,18.0,580.0,87670000.0,2023,,2023
-Liga MX Clausura,first_tier,Mexico,MEX1,18.0,472.0,925580000.0,2023,,2023
-Liga Expansión MX Cl.,second_tier,Mexico,MEX1,18.0,472.0,925580000.0,2023,,2023
-MLS,first_tier,United States,MLS1,30.0,862.0,,2023,,2023
-USLC,second_tier,United States,MLS1,30.0,862.0,,2023,,2023
-MLS Next Pro,third_tier,United States,MLS1,30.0,862.0,,2023,,2023
-US Open Cup,domestic_cup,United States,MLS1,30.0,862.0,,2023,,2023
-Liga DIMAYOR I,first_tier,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
-Torneo DIMAYOR I,second_tier,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
-Copa Colombia,domestic_cup,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
-Superliga Águila de Campeones,domestic_super_cup,Colombia,COLP,20.0,525.0,205080000.0,2023,,2023
-Liga AUF Apertura,first_tier,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
-Torneo Competencia,second_tier,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
-Supercopa ,domestic_super_cup,Uruguay,URU1,16.0,471.0,167850000.0,2023,,2023
-Série A,first_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
-Série B,second_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
-Série C,third_tier,Brazil,BRA1,20.0,658.0,,2023,,2023
-Copa do Brasil,domestic_cup,Brazil,BRA1,20.0,658.0,,2023,,2023
-Supercopa Rei,domestic_super_cup,Brazil,BRA1,20.0,658.0,,2023,,2023
-Vysshaya Liga,first_tier,Tajikistan,TAD1,12.0,286.0,20050000.0,2023,,2023
-LigaPro Serie A,first_tier,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
-Liga Pro Serie B,second_tier,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
-Copa Ecuador,domestic_cup,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
-Supercopa Ecuador,domestic_super_cup,Ecuador,EC1N,16.0,447.0,162040000.0,2023,,2023
-Liga Primera,first_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
-Liga de Ascenso,second_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
-Segunda División,third_tier,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
-Copa Chile,domestic_cup,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
-Supercopa de Chile,domestic_super_cup,Chile,CLPD,16.0,423.0,161080000.0,2023,,2023
-Liga 1 Apertura,first_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
-Liga 2,second_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
-Liga 3,third_tier,Peru,TDeA,18.0,533.0,139770000.0,2023,,2023
-Primera División Apertura,first_tier,Paraguay,PR1A,12.0,371.0,136750000.0,2023,,2023
-División Intermedia,second_tier,Paraguay,PR1A,12.0,371.0,136750000.0,2023,,2023
-División Profesional,first_tier,Bolivia,BO1A,16.0,507.0,89250000.0,2023,,2023
-BFL ,first_tier,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
-Federation Cup,domestic_cup,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
-Bangladesh Super Cup,domestic_super_cup,Bangladesh,BGD1,10.0,337.0,15230000.0,2023,,2023
-Liga FUTVE Apertura,first_tier,Venezuela,VZ1A,14.0,425.0,84860000.0,2023,,2023
-Liga FUTVE 2,second_tier,Venezuela,VZ1A,14.0,425.0,84860000.0,2023,,2023
-Liga Nacional Apertura,first_tier,Honduras,HO1A,11.0,325.0,29930000.0,2023,,2023
-National League Apertura ,first_tier,Guatemala,GU1A,12.0,323.0,39650000.0,2023,,2023
-NB I.,first_tier,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
-NB II.,second_tier,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
-Magyar Kupa,domestic_cup,Hungary,UN2,16.0,426.0,37710000.0,2023,,2023
-Liga Panameña Clausura,first_tier,Panama,PN1C,12.0,281.0,29000000.0,2023,,2023
-Prva Liga,first_tier,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
-Druga Liga,second_tier,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
-Pokal Slovenije,domestic_cup,Slovenia,SL2,16.0,395.0,21680000.0,2023,,2023
-Kategoria Superiore,first_tier,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
-Kategoria e Parë,second_tier,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
-Kupa e Shqipërisë,domestic_cup,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
-Superkupa e Shqipërisë,domestic_super_cup,Albania,ALB2,12.0,300.0,21360000.0,2023,,2023
-Premijer Liga BiH,first_tier,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
-Prva liga FBIH,second_tier,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
-Kup BiH,domestic_cup,Bosnia-Herzegovina,BOS2,14.0,323.0,19670000.0,2023,,2023
-Niké Liga,first_tier,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
-MONACObet liga,second_tier,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
-Slovnaft Cup,domestic_cup,Slovakia,SK2,16.0,399.0,19030000.0,2023,,2023
-Premier League,first_tier,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
-First League,second_tier,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
-Armenian Independence Cup,domestic_cup,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
-Armenian Supercup,domestic_super_cup,Armenia,ARM2,16.0,489.0,8680000.0,2023,,2023
-Vysheyshaya Liga,first_tier,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
-Pershaya Liga,second_tier,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
-Belarusian Cup,domestic_cup,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
-Belarusian Super Cup,domestic_super_cup,Belarus,WER2,18.0,461.0,18480000.0,2023,,2023
-Besta deild,first_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
-Lengjudeild,second_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
-2. deild,third_tier,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
-Mjólkurbikar,domestic_cup,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
-Meistarakeppni,domestic_super_cup,Iceland,IS2,12.0,280.0,8220000.000000001,2023,,2023
-Premier Liga,first_tier,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
-Pervaya Liga,second_tier,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
-Kazakhstan Cup,domestic_cup,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
-Kasachischer Supercup,domestic_super_cup,Kazakhstan,KAS2,14.0,397.0,1530000.0,2023,,2023
-Erovnuli Liga,first_tier,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
-Erovnuli Liga 2,second_tier,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
-David Kipiani Cup,domestic_cup,Georgia,GEO2,10.0,252.0,1230000.0,2023,,2023
-Cyprus League,first_tier,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
-2. Division,second_tier,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
-Kypello Kyprou,domestic_cup,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
-Cypriot Super Cup,domestic_super_cup,Cyprus,CYP2,16.0,426.0,975000.0,2023,,2023
-Veikkausliiga,first_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
-Ykkösliiga,second_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
-Ykkönen,third_tier,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
-Suomen Cup,domestic_cup,Finland,FI2,10.0,253.0,4760000.0,2023,,2023
-Torneo Apertura ,first_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
-Primera Nacional,second_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
-Primera B Metropolitana,third_tier,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
-Copa Argentina,domestic_cup,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
-Supercopa Internacional,domestic_super_cup,Argentina,ARG1,30.0,916.0,965930000.0,2023,,2023
-Meistaradeildin,first_tier,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
-1. deild,second_tier,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
-Løgmanssteypið,domestic_cup,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
-Stórsteypadystur,domestic_super_cup,Faroe Islands,FAR2,10.0,352.0,685000.0,2023,,2023
-Virsliga,first_tier,Latvia,LET2,14.0,413.0,350000.0,2023,,2023
-Futbola Pirmā līga,second_tier,Latvia,LET2,14.0,413.0,350000.0,2023,,2023
-Primera División Apertura,first_tier,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
-Copa de Costa Rica,domestic_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
-Recopa Costa Rica,domestic_super_cup,Costa Rica,CRPD,10.0,271.0,48270000.0,2023,,2023
-Primera Divisió,first_tier,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
-Segona Divisió,second_tier,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
-Copa Constitució,domestic_cup,Andorra,AND1,10.0,231.0,24350000.0,2023,,2023
-Camp. Sammarinese,first_tier,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
-Coppa Titano,domestic_cup,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
-Supercoppa San Marino,domestic_super_cup,San Marino,SMR1,16.0,385.0,11140000.0,2023,,2023
-Primera División Apertura,first_tier,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
-Copa El Salvador,domestic_cup,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
-Supercopa de El Salvador,domestic_super_cup,El Salvador,SL1A,12.0,313.0,34060000.0,2023,,2023
-Gibraltar Football League,first_tier,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
-Rock Cup,domestic_cup,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
-Pepe Reyes Cup,domestic_super_cup,Gibraltar,GI1,12.0,317.0,12490000.0,2023,,2023
-Premyer Liqa,first_tier,Azerbaijan,AZ1,12.0,307.0,123430000.0,2023,,2023
-Azerbaycan Kuboku,domestic_cup,Azerbaijan,AZ1,12.0,307.0,123430000.0,2023,,2023
-Superliga e Kosovës,first_tier,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
-Kupa e Kosovës,domestic_cup,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
-Superkupa e Kosovës,domestic_super_cup,Kosovo,KO1,10.0,277.0,50230000.0,2023,,2023
-Premier Division,first_tier,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
-First Division,second_tier,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
-FAI Cup,domestic_cup,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
-President's Cup,domestic_super_cup,Ireland,IR1,10.0,312.0,32630000.000000004,2023,,2023
-Premium Liiga,first_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
-Esiliiga,second_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
-Esiliiga B,third_tier,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
-Eesti Karikas,domestic_cup,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
-Eesti Superkarikas,domestic_super_cup,Estonia,EST1,10.0,260.0,28140000.0,2023,,2023
-Fiji Premier League,first_tier,Fiji,FIJ1,10.0,384.0,13100000.0,2023,,2023
-National League - North,first_tier,New Zealand,NNL1,12.0,290.0,13420000.0,2023,,2023
-Chatham Cup,domestic_cup,New Zealand,NNL1,12.0,290.0,13420000.0,2023,,2023
-BGL Ligue,first_tier,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
-Ehrenpromotion,second_tier,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
-Coupe de Luxembourg,domestic_cup,Luxembourg,LUX1,16.0,438.0,26130000.0,2023,,2023
-Super Liga,first_tier,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
-Liga 1 (Promotion),second_tier,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
-Moldovan Cup,domestic_cup,Moldova,ML1P,6.0,206.0,1850000.0,2023,,2023
-PFL,first_tier,Philippines,PFL1,11.0,343.0,11470000.0,2023,,2023
-Cymru Premier,first_tier,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
-Cymru North,second_tier,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
-Welsh Cup,domestic_cup,Wales,WAL1,12.0,264.0,14840000.0,2023,,2023
-Premier League Opening Round,first_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
-Challenge League,second_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
-National Amateur League I,third_tier,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
-Jubilee Cup,domestic_cup,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
-Maltese Super Cup,domestic_super_cup,Malta,MAL2,16.0,452.0,385000.0,2023,,2023
-Football Premier League,first_tier,Chinese Taipei,TFPL,8.0,228.0,4940000.0,2023,,2023
-Football League Div.2,second_tier,Chinese Taipei,TFPL,8.0,228.0,4940000.0,2023,,2023
-Lao League 1,first_tier,Laos,LAO1,10.0,281.0,4810000.0,2023,,2023
-Prime Minister Cup ,domestic_cup,Laos,LAO1,10.0,281.0,4810000.0,2023,,2023
-Sri Lanka Champions League - GS,second_tier,Sri Lanka,SRL1,14.0,333.0,,2023,,2023
-Prva liga,first_tier,North Macedonia,MAZ1,12.0,292.0,36680000.0,2023,,2023
-Kup na Makedonija,domestic_cup,North Macedonia,MAZ1,12.0,292.0,36680000.0,2023,,2023
-D. Premier League,first_tier,Maldives,MLD1,10.0,289.0,1430000.0,2023,,2023
-Bhutan Premier League,first_tier,Bhutan,BH1L,10.0,309.0,945000.0,2023,,2023
-CanPL,first_tier,Canada,CDN1,8.0,204.0,22600000.0,2023,,2023
-Canadian Championship,domestic_cup,Canada,CDN1,8.0,204.0,22600000.0,2023,,2023
-Jamaica Premier League,first_tier,Jamaica,JPL1,14.0,582.0,700000.0,2023,,2023
-Meridianbet 1. CFL,first_tier,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
-2. CFL,second_tier,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
-Montenegro Cup,domestic_cup,Montenegro,MNE1,10.0,251.0,29210000.0,2023,,2023
-Liga Primera Apertura,first_tier,Nicaragua,NC1A,10.0,277.0,2830000.0,2023,,2023
-Copa Primera,domestic_cup,Nicaragua,NC1A,10.0,277.0,2830000.0,2023,,2023
-Liga de Belice Clausura,first_tier,Belize,BZ1C,7.0,213.0,275000.0,2023,,2023
-Premiership,first_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
-Championship ,second_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
-Intermediate,third_tier,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
-Irish League Cup,domestic_cup,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
-NIFL Charity Shield,domestic_super_cup,Northern Ireland,NIR1,12.0,311.0,29960000.0,2023,,2023
-Liga Puerto Rico Apertura,first_tier,Puerto Rico,PRA1,10.0,356.0,125000.0,2023,,2023
-Liga Dominicana - Liguilla,first_tier,Dominican Republic,DO1P,6.0,139.0,225000.0,2023,,2023
-Toplyga,first_tier,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
-I Lyga,second_tier,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
-Lithuanian Cup,domestic_cup,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
-Lithuanian Supercup,domestic_super_cup,Lithuania,LTU2,16.0,393.0,400000.0,2023,,2023
