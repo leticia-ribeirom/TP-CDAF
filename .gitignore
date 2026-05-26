@@ -1,0 +1,12 @@
+# Ambiente virtual local (específico da máquina)
+.venv/
+
+# Caches Python
+__pycache__/
+*.pyc
+
+# Checkpoints do Jupyter
+.ipynb_checkpoints/
+
+# Artefatos de SO
+.DS_Store
