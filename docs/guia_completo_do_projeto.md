@@ -498,54 +498,80 @@ com o ATE geral nulo. Mas a **direção** está certa: ligas menores têm θ mai
 com a teoria (clubes de ligas menores são tipicamente vendedores e sofrem mais pressão de
 reposição). A falta de significância é provavelmente falta de poder estatístico (n menor).
 
-### Teste 4 — Placebos (já descrito na Etapa 2)
+### Teste 4 — Placebos globais (já descrito na Etapa 2)
 
 D embaralhado: θ = 0,0024 (n.s.) ✅  
 D com ruído: θ = 0,0009 (n.s.) ✅
 
+### Teste 5 — Placebo dentro da temporada (valida 2022/2023)
+
+O placebo global só testa o efeito médio. Para testar o desenho **onde o efeito vive**, permutamos
+D **entre os clubes de 2022** (e de 2023), recalculamos θ e repetimos 200×. Resultado: o θ
+observado (+0,064 em 2022; +0,044 em 2023) fica muito além do percentil 97,5 da distribuição nula
+(~+0,012), com **p empírico = 0,005** para ambos. **É o placebo mais informativo do trabalho:**
+confirma que o efeito de 2022/2023 não é artefato do desenho.
+
+### Teste 6 — Sensibilidade ao corte de fee (viés de seleção, C6)
+
+Filtrar por `fee ≥ €250k` poderia truncar a cauda esquerda (pechinchas) e enviesar o resultado.
+Reconstruímos o pipeline **inteiro** para os limiares €0/100k/250k/500k/1M:
+
+| Limiar | n | ATE | 2022 | 2023 |
+|--------|---|-----|------|------|
+| €0 | 5.339 | +0,001 (n.s.) | +0,064\* | +0,062\* |
+| €100k | 5.291 | +0,002 (n.s.) | +0,046\* | +0,068\* |
+| €250k (principal) | 5.146 | +0,004 (n.s.) | +0,065\* | +0,047\* |
+| €500k | 4.915 | +0,002 (n.s.) | +0,053\* | +0,043\* |
+| €1M | 4.506 | +0,002 (n.s.) | +0,015 (n.s.) | +0,029\* |
+
+**O ATE é nulo em todos os limiares** e 2022/2023 são estáveis de €0 a €500k. Baixar o corte para
+€0 (que reintroduz as pechinchas supostamente truncadas) não muda nada. **Os achados não são
+artefato do corte.**
+
+### Teste 7 — Sensibilidade à identificação (confundidor omitido)
+
+A maior fragilidade causal é o confundidor omitido (W não tem o bloco financeiro direto). Dois testes:
+
+- **Robustness Value (Cinelli & Hazlett, 2020):** um confundidor não-observado precisaria explicar
+  **~24% (2023) a ~27% (2022)** da variação residual de *ambos* D e Y para anular o efeito — patamar
+  alto, que confundidores plausíveis (UCL, troca de técnico) dificilmente atingiriam sozinhos.
+- **Stress test (over-control financeiro):** ao incluir `n_buys` + `log(gasto)` no W (controles
+  contemporâneos, parcialmente mediadores), **2023 sobrevive** (θ≈+0,037, p≈0,003) e **2022 atenua**
+  para não-significativo (θ≈+0,032), mantendo o ponto positivo. 2023 é robusto até a over-control.
+
 ---
 
-## 7. IVB — Índice de Vulnerabilidade de Barganha
+## 7. IVB — Índice de Vulnerabilidade de Barganha (apêndice exploratório)
 
 ### O que é
 
-O IVB é um índice que pontua cada clube de 0 a 1 com base em quanto ele sofre o efeito do
-prêmio do vendedor quando tem liquidez.
-
-$$IVB_c = \frac{\theta_c - \min(\Theta)}{\max(\Theta) - \min(\Theta)}$$
+O IVB pontua cada clube de 0 a 1 com base em quanto ele sofre o prêmio do vendedor quando tem
+liquidez. O CATE (efeito causal individual por clube, via R-learner) vira o IVB após normalização.
 
 - **IVB ≈ 1 ("presa fácil"):** clube que paga os maiores sobrepreços quando capitalizado
 - **IVB ≈ 0 ("negociador disciplinado"):** clube que não deixa a liquidez afetar suas compras
 
-O CATE (efeito causal individual estimado por clube) vira o IVB após normalização.
+### Normalização robusta (corrige o problema do outlier)
 
-### Como foi calculado
+A versão antiga usava min-max: `(θ_c − min)/(max − min)`. Como o Nîmes (8 obs) tinha CATE altíssimo,
+o `max` explodia e comprimia todos os demais clubes perto de zero — a escala ficava sem sentido.
+**Trocamos por percentil:** `IVB_c = percentil(θ̄_c)` entre os clubes elegíveis (≥3 transações). Como
+usa só a *ordenação*, a escala fica uniforme em [0,1] e imune à magnitude do outlier. (Para o boxplot
+por liga usamos min-max winsorizado a p5–p95.)
 
-Usamos o **R-learner** (Nie & Wager, 2021) — uma variante do DML que estima um efeito por
-observação ao invés de um único ATE médio. O CATE de cada observação é então agregado por clube
-(média das transferências do clube que tenham ≥ 3 observações para estabilidade).
+### Por que continua sendo só um apêndice
 
-**Limitação importante:** o desenho original previa `CausalForestDML` do pacote econml. O econml
-não instala no nosso ambiente (Python 3.12 + NumPy 2.x têm incompatibilidade de build). O
-R-learner é uma aproximação válida, mas os números **não são diretamente comparáveis** com o
-que o econml daria. Por isso o IVB deve ser tratado como **ilustrativo**.
-
-### O problema do outlier e da normalização min-max
-
-O ranking atual tem Nîmes Olympique no topo (IVB ≈ 0,52, apenas 8 obs) — um clube da Ligue 1 com
-poucas transferências na base. O problema: a normalização min-max divide pelo range (max − min). Se
-um outlier tem CATE muito alto, o max explode, e todos os outros clubes ficam comprimidos
-perto de zero. **O Nîmes domina o denominador e distorce o ranking.**
-
-Por isso não usamos o IVB como ranking definitivo, mas como prova de conceito de ferramenta de
-inteligência de mercado.
+Mesmo com a escala corrigida, o **ordenamento** reflete CATEs ruidosos: o R² de 1ª etapa em Y é só
+0,06, então há pouco sinal genuíno de heterogeneidade. O Nîmes segue nominalmente no topo (maior CATE
+pontual, mas com 8 obs). Soma-se a isso que o R-learner é uma aproximação do `CausalForestDML` (econml
+não instala no ambiente). Por tudo isso, o IVB é **apêndice ilustrativo / prova de conceito** — não
+deve ser usado como ferramenta de decisão.
 
 ### O que seria se funcionasse corretamente
 
-Com `CausalForestDML` e sem o problema do outlier, o IVB seria uma ferramenta real para:
-- Um clube identificar, antes de negociar, quais rivais são mais vulneráveis à exploração quando
-  estão capitalizados
-- Um clube verificar se ele mesmo é uma "presa fácil" e ajustar sua estratégia de timing
+Com `CausalForestDML`, mais observações por clube e sinal de heterogeneidade real, o IVB seria uma
+ferramenta para um clube identificar rivais vulneráveis quando capitalizados, ou checar se ele mesmo
+é uma "presa fácil". Fica como trabalho futuro.
 
 ---
 

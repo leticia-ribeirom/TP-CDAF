@@ -107,29 +107,29 @@ Estima um efeito causal **por observação** (X = W). *Antes via `CausalForestDM
 média, mas na dispersão. ⚠️ A cauda superior (máx +2,25) é dominada por **um outlier** (Nîmes,
 poucas obs), o que comprime a normalização do IVB — tratar o ranking como **ilustrativo**.
 
-## 7. IVB — Índice de Vulnerabilidade de Barganha
+## 7. IVB — Índice de Vulnerabilidade de Barganha (apêndice)
 
-Normaliza o CATE de cada clube no intervalo [0, 1]:
+Normalização **robusta por percentil** do CATE médio do clube (substitui o min-max, que era
+dominado pelo outlier Nîmes e comprimia todos os demais):
 
-$$IVB_c = \frac{\theta_c - \min(\Theta)}{\max(\Theta) - \min(\Theta)}$$
+$$IVB_c = \text{percentil}_c(\overline{\theta}_c) \quad \text{entre clubes com} \geq 3 \text{ transações}$$
 
-- **IVB ≈ 1 — "presa fácil":** paga os maiores sobrepreços quando chega capitalizado.
-- **IVB ≈ 0 — "negociador disciplinado":** imune à pressão da liquidez.
+- **IVB ≈ 1 — "presa fácil":** maior CATE médio entre os clubes elegíveis.
+- **IVB ≈ 0 — "negociador disciplinado":** menor CATE médio.
 
-Filtro de **≥ 3 transações** para estabilidade. Saída: `resultados_etapa2_ivb.csv` (190 clubes,
-colunas `buyer, theta_medio, ivb_medio, n_transacoes, ivb_std, rank`).
+Saída: `resultados_etapa2_ivb.csv` (190 clubes; col. `buyer, theta_medio, ivb_pct, n_transacoes, rank`).
 
-Ranking atual (8 temporadas, R-learner) — *ilustrativo*:
+Ranking (8 temporadas, R-learner) — *apêndice ilustrativo*:
 
-| "Presas fáceis" (IVB alto) | "Negociadores disciplinados" (IVB baixo) |
+| "Presas fáceis" (IVB pct alto) | "Negociadores disciplinados" (IVB pct baixo) |
 |----------------------------|------------------------------------------|
-| Nîmes Olympique — 0,52 | SD Eibar — 0,09 |
-| KV Mechelen — 0,18 | Hellas Verona — 0,11 |
-| Sunderland AFC — 0,18 | Arminia Bielefeld — 0,12 |
+| Nîmes Olympique — 1,00 | SD Eibar — baixo |
+| KV Mechelen — 0,99 | Hellas Verona |
+| Sunderland AFC — 0,99 | Arminia Bielefeld |
 
-> ⚠️ O ranking **mudou completamente** vs. a versão de 3 temporadas (antes FC Arouca/Elche/Sporting
-> no topo) — efeito combinado de mais dados **e** da troca de método (R-learner vs. CausalForestDML).
-> O topo (Nîmes, 0,52, 8 obs) é um **outlier**. Tratar como **ilustrativo**.
+> ⚠️ A normalização por percentil corrige a **escala** (não é mais distorcida pelo outlier), mas o
+> **ordenamento** ainda reflete CATEs ruidosos (R²_y=0,06). Nîmes (8 obs) segue nominalmente no topo.
+> Tratar como **apêndice ilustrativo**, não ferramenta de decisão.
 
 **Por liga:** com os dados novos a diferença entre ligas é **desprezível** (IVB médio ~0,126–0,138
 para todas). O padrão antigo ("La Liga/Ligue 1 mais disciplinadas") **não se sustentou** — aliás, a

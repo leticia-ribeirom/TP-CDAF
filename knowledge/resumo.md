@@ -85,13 +85,18 @@ O problema foi quebrado em duas etapas encadeadas:
 | 1ª etapa: R² model_t (m̂) | 0,37 |
 | 1ª etapa: R² model_y (ĝ) | 0,06 |
 | **θ por temporada** | só **2022 (+0,064\*)** e **2023 (+0,047\*)**, ambos **sobrevivem Bonferroni/FDR** |
+| **Placebo dentro da safra** | permuta D em 2022/2023 → **p_emp=0,005** (efeito não é artefato) |
+| **Sensibilidade ao corte de fee** | ATE nulo de €0 a €1M; 2022/2023 estáveis €0–€500k |
+| **Robustness Value (Cinelli-Hazlett)** | 0,27 (2022) / 0,24 (2023) — confundidor omitido precisaria ser forte |
+| **Stress test financeiro (over-control)** | 2023 sobrevive (p≈0,003); 2022 atenua (p≈0,13) |
 | **Teste de lag (C2)** | θ defasado = **0,0051\*** [0,0012; 0,0090] → enfraquece C2 (não conclusivo) |
 | **D alternativo (exploratório)** | D₂/D₃ signif. no bruto, mas **n.s.** ao controlar atividade (n_buys+gasto) |
 
-### IVB — Índice de Vulnerabilidade de Barganha (190 clubes) — *ilustrativo (R-learner)*
+### IVB — Índice de Vulnerabilidade de Barganha (190 clubes) — *apêndice (R-learner, percentil)*
+- Normalização **robusta por percentil** do CATE médio (substitui min-max dominado pelo outlier).
 - **"Presas fáceis" (IVB alto):** Nîmes Olympique, KV Mechelen, Sunderland.
 - **"Negociadores disciplinados" (IVB baixo):** SD Eibar, Hellas Verona, Arminia Bielefeld.
-- ⚠️ Ranking mudou de método e composição vs. a versão de 3 temporadas — tratar como ilustrativo
+- ⚠️ Ordenamento ainda reflete CATEs ruidosos (R²_y=0,06) — apêndice ilustrativo, não ferramenta de decisão
   até reprocessar com `CausalForestDML` (econml).
 
 ## 6. A descoberta de fato (e a tensão narrativa)

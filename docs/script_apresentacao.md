@@ -273,6 +273,21 @@
 > robusto — em 2022–2023 é +6,4% e +4,7%, **sobrevivendo à correção de Bonferroni e FDR**.
 > O achado é mais rico: o prêmio depende do regime de mercado (boom pós-COVID).
 
+**"Como vocês sabem que 2022/2023 não é só sorte de testar 8 anos?"** (a defesa mais forte)
+> Três camadas: (1) Bonferroni/FDR — sobrevivem; (2) **placebo de permutação dentro da safra**:
+> embaralhando D entre os clubes de 2022/2023, θ colapsa para ~0 e o observado fica fora do
+> percentil 97,5 do nulo, com **p empírico = 0,005**; (3) **sensibilidade ao corte de fee**: o
+> efeito de 2022/2023 é estável de €0 a €500k. Não é artefato.
+
+**"O corte de €250k não enviesa o resultado?"**
+> Testamos limiares de €0 a €1M reconstruindo o pipeline inteiro. O **ATE é nulo em todos** e
+> 2022/2023 são estáveis. Baixar para €0 (que reinclui as pechinchas) não muda nada.
+
+**"E o confundidor 'clube rico' que vocês não controlam diretamente?"**
+> Quantificamos: o **Robustness Value** é ~24–27% — um confundidor omitido teria de explicar um
+> quarto da variação residual de D *e* de Y para anular 2022/2023. Além disso, num stress test que
+> joga controles financeiros no W (over-control), 2023 ainda sobrevive (p≈0,003).
+
 **"Por que o OLS com controles também não encontrou o efeito, se DML também não?"**
 > Ambos dão θ ≈ 0,004–0,005 e IC cruzando zero. A diferença é que o DML controla as
 > não-linearidades em W de forma mais flexível. O resultado nulo é robusto a ambas as

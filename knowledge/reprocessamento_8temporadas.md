@@ -109,15 +109,25 @@ causado pela compra atual → **enfraquece a causalidade reversa (C2)**. **Ressa
 mesma subamostra o contemporâneo é n.s. mas o lag é significativo, o que sugere que o lag capta um
 **traço persistente de clube** (corr=0,44), não um efeito limpo. **Não é conclusivo.**
 
+### Bateria de robustez avançada (Fase 5 da auditoria)
+Adicionada ao `etapa2_robustez.ipynb` (seções 8–9) e ao `etapa2_double_ml.ipynb` (seção 6.1):
+
+| Teste | Resultado | Leitura |
+|-------|-----------|---------|
+| **Placebo dentro da safra** (permuta D em 2022/2023, 200×) | θ_obs fora do nulo, **p_emp=0,005** (ambos) | 2022/2023 **não** são artefato do desenho |
+| **Sensibilidade ao corte de fee** (€0–€1M, pipeline reconstruído) | ATE nulo em todos; 2022/2023 estáveis €0–€500k | achados **não** dependem do corte de €250k |
+| **Robustness Value** (Cinelli-Hazlett) | RV=0,27 (2022), 0,24 (2023) | confundidor omitido precisaria explicar ~¼ da variação de D e Y |
+| **Stress test financeiro** (W + n_buys + log_spend) | 2023 sobrevive (p≈0,003); 2022 atenua (p≈0,13) | 2023 robusto até over-control |
+
 ## 3. Leitura — como isso muda a história
 
 1. **A manchete muda de "existe um prêmio causal" para "o prêmio é condicional ao regime de
    mercado".** Liderar pela significância do ATE agora seria **incorreto** — o ATE não é
    significativo. A narrativa honesta é a da **heterogeneidade temporal**: o prêmio emerge quando
    o mercado está aquecido (2022–2023).
-2. **A heterogeneidade entre clubes (IVB) continua existindo**, mas os números mudaram de método
-   (R-learner) e de composição (clubes menores no topo). Tratar o IVB como **ilustrativo**, não
-   como ranking definitivo, até reprocessar com `CausalForestDML`.
+2. **O IVB virou apêndice exploratório** com normalização robusta (percentil do CATE médio, imune
+   ao outlier Nîmes, no lugar do min-max). Mesmo assim o ordenamento reflete CATEs ruidosos
+   (R²_y=0,06) — não usar como ferramenta de decisão.
 3. **O teste de lag dá suporte modesto** à direção causal (enfraquece C2), mas **não é conclusivo**
    — o contemporâneo é n.s. na mesma amostra, sinal de contaminação por traço de clube.
 4. **O "mecanismo de sinalização" (D₂/D₃) é exploratório, não confirmatório:** significativo no
