@@ -27,10 +27,10 @@ que precisa comprar.
 
 ## 2. Mensagens-chave (o que a audiência deve levar)
 
-1. **Rigor causal > correlação.** OLS ingênuo encontra θ = 0,012 (significativo). DML mostra
-   θ = 0,003 (nulo). A diferença é o confundidor "clube rico" — nosso desenho o separa.
+1. **Rigor causal > correlação.** OLS ingênuo encontra θ = 0,0142 (significativo). DML mostra
+   θ = 0,0044 (nulo, inclusive com SE clusterizado). A diferença é o confundidor "clube rico".
 2. **O achado honesto é a condicionalidade temporal.** O prêmio existe **quando o mercado está
-   quente** (2022–2023, θ ≈ 5% e 4% respectivamente), não sempre. Liderar por isso é o que
+   quente** (2022–2023, θ ≈ 6,4% e 4,7%; sobrevive a Bonferroni/FDR), não sempre. Liderar por isso é o que
    diferencia o trabalho.
 3. **O mecanismo importa: sinalização, não volume.** Volume de euros (D₁) → não significativo.
    Número de vendas (D₂, θ = 3,6%\*) e venda blockbuster (D₃, θ = 6,0%\*) → **significativos**.
@@ -54,10 +54,10 @@ Tempo entre parênteses.
 | 5 | **Metodologia — visão geral** | Diagrama das 2 etapas (hedônico → DML). "Tiro o jogador da conta, depois isolo a liquidez" | 1:15 |
 | 6 | **Etapa 1 — hedônico (+ baseline)** | 44k→5,1k; 8 temp, 7 ligas. **Baseline = só MV**; RF → **R² 0,76**. Resíduo = sobrepreço | 1:15 |
 | 7 | **Etapa 2 — Double ML** | D = log(receita), Y = resíduo, W = 19 confundidores. Intuição de ortogonalização | 1:15 |
-| 8 | **Resultado 1 — a reviravolta** | **OLS ingênuo θ = 0,012\*; DML θ = 0,003 (n.s.)** Placebos ≈ 0. *Gancho dramático: a correlação mente* | 1:45 |
-| 9 | **Resultado 2 — onde o efeito vive** | θ por temporada: **2022 (+5,2%\*)** e **2023 (+3,9%\*)**; resto ≈ 0. Forest plot. *O achado central* | 1:15 |
-| 10 | **Resultado 3 — o mecanismo** | D₁ log(revenue) n.s. → D₂ log(n_sales) θ=3,6%\* → D₃ big_sale θ=6,0%\*. **"Não é o dinheiro — é a sinalização"** | 1:15 |
-| 11 | **Resultado 4 — robustez** | Lag (C2 enfraquecida, θ=0,38%\*); placebos limpos; subgrupos liga coerentes | 0:45 |
+| 8 | **Resultado 1 — a reviravolta** | **OLS ingênuo θ = 0,0142\*; DML θ = 0,0044 (n.s., HC1 e cluster)** Placebos ≈ 0. *Gancho dramático: a correlação mente* | 1:45 |
+| 9 | **Resultado 2 — onde o efeito vive** | θ por temporada: **2022 (+6,4%\*)** e **2023 (+4,7%\*)**, sobrevivem Bonferroni; resto ≈ 0. Forest plot. *O achado central* | 1:15 |
+| 10 | **Resultado 3 — o mecanismo (EXPLORATÓRIO)** | D₂/D₃ significativos no bruto, mas **perdem significância** ao controlar "clube ativo". Apresentar como hipótese, não achado | 1:15 |
+| 11 | **Resultado 4 — robustez** | Lag (C2 enfraquecida, θ=0,51%\*, não conclusivo); placebos limpos; subgrupos liga n.s. | 0:45 |
 | 12 | **Conclusões & implicações** | Prêmio condicional ao regime + mecanismo de sinalização. Valor: *timing* + IVB como ferramenta | 1:15 |
 | 13 | **Limitações & futuro** | Granularidade sazonal; sem FBref; IVB via R-learner; PSM como trabalho futuro | 0:30 |
 | 14 | **Encerramento** | Frase-síntese; obrigado/perguntas | 0:20 |
@@ -81,20 +81,21 @@ Tempo entre parênteses.
 | **1. Introdução** | Contexto do mercado-rede; problema (prêmio do vendedor); pergunta de pesquisa; contribuições (pipeline causal + achado condicional + mecanismo de sinalização); organização do artigo | [resumo.md](resumo.md) |
 | **2. Trabalhos Relacionados** | Redes de transferência (Li et al., Palazzo, Dieles); valuation Transfermarkt (Peeters); inferência causal (Chernozhukov DML; Nie & Wager R-learner; Angrist & Pischke). *Diferencial: foco no preço/contexto, não na estrutura da rede* | proposta |
 | **3. Metodologia** | Dados (Transfermarkt, 8 temporadas, 7 ligas, funil 44k→5,1k); feature engineering; Etapa 1 hedônica (19 features, split temporal, 4 modelos, R²=0,76); Etapa 2 DML (D, Y, W, ortogonalização, cross-fitting, HC1); IVB | [dados_e_features.md](dados_e_features.md), [hedonic_ml.md](hedonic_ml.md), [double_ml.md](double_ml.md) |
-| **4. Resultados e Discussão** | **Baseline**: OLS ingênuo θ=0,012\* vs DML θ=0,003 n.s.; **ATE nulo** + placebos; **θ sazonal** (2022–2023); **D alternativo** (D₂ θ=0,036\*, D₃ θ=0,060\*); **lag/C2**; **IVB** ilustrativo. Discussão: mecanismo de sinalização vs. volume | [reprocessamento_8temporadas.md](reprocessamento_8temporadas.md), [double_ml.md](double_ml.md) |
-| **5. Aplicações** | *Timing* de compra em mercado aquecido; alerta para clubes que fizeram vendas blockbuster; IVB como ferramenta de inteligência; alerta contra ler correlação como causa | resumo §6 |
-| **6. Conclusão e Trabalhos Futuros** | Síntese (prêmio condicional + sinalização); futuro: FBref, datas diárias, PSM, IVB com CausalForestDML, lado vendedor | [pendencias.md](pendencias.md) |
+| **4. Resultados e Discussão** | **Baseline**: OLS ingênuo θ=0,0142\* vs DML θ=0,0044 n.s. (HC1 e cluster); **ATE nulo** + placebos; **θ sazonal** (2022/2023, sobrevivem Bonferroni); **D alternativo** (D₂ θ=0,049\*, D₃ θ=0,075\* no bruto, mas **n.s. com controle de atividade → exploratório**); **lag/C2** (não conclusivo); **IVB** ilustrativo | [reprocessamento_8temporadas.md](reprocessamento_8temporadas.md), [double_ml.md](double_ml.md) |
+| **5. Aplicações** | *Timing* de compra em mercado aquecido; alerta contra ler correlação como causa; IVB como prova de conceito (ilustrativo) | resumo §6 |
+| **6. Conclusão e Trabalhos Futuros** | Síntese (prêmio condicional ao regime); futuro: FBref, datas diárias, PSM, IVB com CausalForestDML, lado vendedor, testar mecanismo de sinalização com granularidade fina | [pendencias.md](pendencias.md) |
 | **7. Referências** | SBC/ABNT; completar com Chernozhukov (2018) e Nie & Wager (2021) | proposta |
 
-**Tom do artigo:** o resultado nulo médio é uma **contribuição** (refuta a intuição ingênua). O
-achado de sinalização (D₂/D₃) é o diferencial original. Destacar heterogeneidade temporal + validação.
+**Tom do artigo:** o resultado nulo médio é uma **contribuição** (refuta a intuição ingênua); o
+efeito sazonal 2022/2023 (robusto a Bonferroni) é o achado central. O mecanismo de sinalização é
+**exploratório** (não sobrevive ao controle de atividade) — apresentar como hipótese, não diferencial.
 
 ---
 
 ## 5. Decisões resolvidas
 
-1. ✅ **Framing:** "prêmio condicional ao mercado aquecido + mecanismo de sinalização".
+1. ✅ **Framing:** "prêmio condicional ao mercado aquecido (2022/2023)"; mecanismo de sinalização rebaixado a exploratório.
 2. ✅ **IVB nos slides:** 1 slide leve (slide 12) como ferramenta ilustrativa, com ressalva explícita.
-3. ✅ **Baseline OLS:** θ_naive = 0,0117\* (IC [0,007; 0,016]) vs θ_DML = 0,0031 n.s. — contraste pronto.
-4. ✅ **D alternativo rodado:** D₂ θ=0,036\*, D₃ θ=0,060\* — entra no slide 10 e na seção 4 do artigo.
+3. ✅ **Baseline OLS:** θ_naive = 0,0142\* (IC [0,009; 0,019]) vs θ_DML = 0,0044 n.s. — contraste pronto.
+4. ✅ **D alternativo rodado:** D₂ θ=0,049\*, D₃ θ=0,075\* no bruto, mas **n.s. ao controlar n_buys+gasto** → exploratório.
 5. ⚠️ **IVB com econml:** ainda pendente. Manter como ilustrativo (R-learner) na entrega.

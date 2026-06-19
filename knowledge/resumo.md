@@ -69,8 +69,8 @@ O problema foi quebrado em duas etapas encadeadas:
 | Test RMSE | 0,673 |
 | Split | treino 2017–24 (4.396) · teste 2025 (750) |
 | Feature dominante (SHAP) | `log_mv` (valor de mercado), depois `age`, `age_sq`, liga |
-| Transferências com prêmio positivo | **51,7%** |
-| Prêmio mediano (resíduo) | **+0,019** (≈ +1,9%) |
+| Transferências com prêmio positivo | **52,5%** (resíduo out-of-fold) |
+| Prêmio mediano (resíduo) | **+0,035** (≈ +3,5%) |
 
 ### Etapa 2 — Causal (Double ML)
 > Calculada com **DML manual** (econml não instala no ambiente atual). CATE/IVB via **R-learner**
@@ -79,13 +79,14 @@ O problema foi quebrado em duas etapas encadeadas:
 
 | Métrica | Valor |
 |---------|-------|
-| **ATE (θ)** | **0,0031** · IC 95% **[−0,0022; 0,0083]** → **NÃO significativo** |
-| Placebo (D embaralhado) | θ = 0,0023 (≈ do tamanho do ATE → reforça nulidade) |
-| Placebo (ruído gaussiano) | θ = 0,0006 · IC cruza zero |
+| **ATE (θ)** | **0,0044** · IC HC1 **[−0,0016; 0,0104]** · IC cluster **[−0,0021; 0,0110]** → **NÃO significativo** |
+| Placebo (D embaralhado) | θ = 0,0024 (≈ do tamanho do ATE → reforça nulidade média) |
+| Placebo (ruído gaussiano) | θ = 0,0009 · IC cruza zero |
 | 1ª etapa: R² model_t (m̂) | 0,37 |
 | 1ª etapa: R² model_y (ĝ) | 0,06 |
-| **θ por temporada** | só **2022 (+0,052\*)** e **2023 (+0,039\*)** são significativos |
-| **Teste de lag (C2)** | θ defasado = **0,0038\*** [0,0003; 0,0073] → enfraquece causalidade reversa |
+| **θ por temporada** | só **2022 (+0,064\*)** e **2023 (+0,047\*)**, ambos **sobrevivem Bonferroni/FDR** |
+| **Teste de lag (C2)** | θ defasado = **0,0051\*** [0,0012; 0,0090] → enfraquece C2 (não conclusivo) |
+| **D alternativo (exploratório)** | D₂/D₃ signif. no bruto, mas **n.s.** ao controlar atividade (n_buys+gasto) |
 
 ### IVB — Índice de Vulnerabilidade de Barganha (190 clubes) — *ilustrativo (R-learner)*
 - **"Presas fáceis" (IVB alto):** Nîmes Olympique, KV Mechelen, Sunderland.
@@ -95,8 +96,8 @@ O problema foi quebrado em duas etapas encadeadas:
 
 ## 6. A descoberta de fato (e a tensão narrativa)
 
-Com 8 temporadas, o efeito causal **médio** virou **estatisticamente nulo** (θ = 0,0031, IC cruza
-zero; o placebo embaralhado dá quase o mesmo valor). **A história não está na média — está em
+Com 8 temporadas, o efeito causal **médio** virou **estatisticamente nulo** (θ = 0,0044, IC cruza
+zero com HC1 e com cluster; o placebo embaralhado dá quase o mesmo valor). **A história não está na média — está em
 quando o efeito aparece:** ele é significativo **só nos anos de mercado aquecido (2022 e 2023, boom
 pós-COVID)** e some no resto. A análise antiga (2023–2025) parecia significativa justamente porque
 "pegou" o 2023 forte.

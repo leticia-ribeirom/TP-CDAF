@@ -17,9 +17,9 @@ causal é válida (placebos limpos) e o IVB entrega um resultado original e tang
 que assumido com honestidade no relatório.
 
 **Há, porém, lacunas que merecem decisão consciente** (não apenas serem ignoradas):
-1. **`econml` não instala** no ambiente (Python 3.14) → Etapa 2 roda via DML manual e o **IVB saiu
-   por R-learner** (≠ CausalForestDML). Para um IVB comparável/definitivo, rodar em ambiente com
-   econml (Colab/py3.12).
+1. **`econml` não instala** no ambiente (Python 3.12 + NumPy 2.x) → Etapa 2 roda via DML manual e o
+   **IVB saiu por R-learner** (≠ CausalForestDML). Para um IVB comparável/definitivo, rodar em
+   ambiente com econml.
 2. ~~`etapa2_double_ml.ipynb` não executa (importa econml)~~ ✅ **Portado para DML manual** —
    o notebook agora roda sem econml e reproduz os números (ATE, placebos, CATE/IVB via R-learner,
    sazonal). O CATE permanece como aproximação (R-learner) do CausalForestDML — ver item 1.

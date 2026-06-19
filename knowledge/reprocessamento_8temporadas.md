@@ -28,7 +28,7 @@ O re-run **não foi mecânico** — dois hardcodes teriam invalidado os resultad
    também foi corrigida para manter só temporadas cujo `t-1` existe na base.
 
 ### Restrição de ambiente (importante)
-O **`econml` não instala neste ambiente** (Python 3.14 + NumPy 2.4 → build Cython falha). Por isso:
+O **`econml` não instala neste ambiente** (Python 3.12 + NumPy 2.4 → build Cython falha). Por isso:
 - A **etapa 2 foi recalculada com DML manual** (cross-fitting + *partialling-out*, HC1), a mesma
   implementação **validada** no `etapa2_robustez` (reproduz o ATE do econml).
 - O **CATE/IVB** foi estimado por **R-learner** (Nie & Wager), que **não é idêntico** ao
@@ -47,8 +47,8 @@ O **`econml` não instala neste ambiente** (Python 3.14 + NumPy 2.4 → build Cy
 | **Test R²** | 0,753 | **0,762** |
 | Test RMSE | 0,685 | 0,673 |
 | Dummies de temporada (FE) | 2 | **7** |
-| % com prêmio positivo | 51,6% | 51,7% |
-| Prêmio mediano (resíduo) | +0,018 | +0,019 |
+| % com prêmio positivo | 51,6% | 52,5% (out-of-fold) |
+| Prêmio mediano (resíduo) | +0,018 | +0,035 (out-of-fold) |
 
 ➡️ A Etapa 1 ficou praticamente **igual em qualidade** (log_mv domina), mas agora é **legítima
 sobre 8 temporadas**, com inflação de mercado controlada (7 dummies de temporada; total de **19
@@ -61,47 +61,53 @@ features**, antes 14 com o hardcode).
 ### Etapa 2 (causal) — a mudança que importa
 | Item | 3 temporadas | 8 temporadas |
 |------|--------------|--------------|
-| **ATE (θ)** | **0,0118** | **0,0031** |
-| IC 95% | [0,0003; 0,0232] | [−0,0022; 0,0083] |
-| **Significativo a 5%?** | Sim (no limiar) | **NÃO** |
-| Placebo shuffle | −0,0027 | 0,0023 |
-| Placebo noise | −0,0027 | 0,0006 |
+| **ATE (θ)** | **0,0118** | **0,0044** |
+| IC 95% (HC1) | [0,0003; 0,0232] | [−0,0016; 0,0104] |
+| IC 95% (cluster) | — | [−0,0021; 0,0110] |
+| **Significativo a 5%?** | Sim (no limiar) | **NÃO** (HC1 e cluster) |
+| Placebo shuffle | −0,0027 | 0,0024 |
+| Placebo noise | −0,0027 | 0,0009 |
 | R² 1ª etapa (model_t) | 0,60 | 0,37 |
 | R² 1ª etapa (model_y) | 0,11 | 0,06 |
-| CATE — faixa | [−0,089; +0,171] (CausalForest) | [−0,365; +2,56] (R-learner) |
-| IVB — top "presa" | FC Arouca (0,81) | Nîmes Olympique (0,41) |
+| CATE — faixa | [−0,089; +0,171] (CausalForest) | [−0,39; +2,25] (R-learner) |
+| IVB — top "presa" | FC Arouca (0,81) | Nîmes Olympique (0,52) |
 
-➡️ **O efeito causal médio encolheu para perto de zero e perdeu a significância.** O placebo
-shuffle (0,0023) ficou quase do tamanho do ATE (0,0031) — forte sinal de que, *na média*, o efeito
-é nulo com a base ampliada.
+➡️ **O efeito causal médio encolheu para perto de zero e perdeu a significância** (com HC1 e com SE
+clusterizado). O placebo shuffle (0,0024) ficou quase do tamanho do ATE (0,0044) — forte sinal de
+que, *na média*, o efeito é nulo com a base ampliada. (Valores sobre o Y **out-of-fold**, sem
+vazamento; o ATE subiu levemente vs. a versão in-sample anterior.)
 
 ### θ por temporada — onde o efeito realmente vive
 | Temporada | θ | IC 95% | Significativo? |
 |-----------|-----|--------|----------------|
 | 2017 | −0,006 | [−0,026; 0,014] | não |
-| 2018 | −0,014 | [−0,040; 0,012] | não |
-| 2019 | +0,016 | [−0,011; 0,044] | não |
-| 2021 | +0,011 | [−0,002; 0,025] | não |
-| **2022** | **+0,052** | [0,012; 0,092] | **SIM** |
-| **2023** | **+0,039** | [0,003; 0,075] | **SIM** |
+| 2018 | −0,013 | [−0,036; 0,011] | não |
+| 2019 | +0,024 | [−0,011; 0,058] | não |
+| 2021 | +0,012 | [−0,001; 0,025] | não |
+| **2022** | **+0,064** | [0,028; 0,101] | **SIM** (p_bonf=0,005) |
+| **2023** | **+0,047** | [0,017; 0,077] | **SIM** (p_bonf=0,019) |
 | 2024 | +0,003 | [−0,053; 0,059] | não |
-| 2025 | +0,013 | [−0,017; 0,042] | não |
+| 2025 | +0,015 | [−0,010; 0,040] | não |
+
+(IC clusterizado por clube; 2022/2023 **sobrevivem a Bonferroni e FDR**.)
 
 ➡️ **O "prêmio do vendedor" não é uma lei universal — ele aparece nos anos de mercado aquecido
 (2022 e 2023, o boom pós-COVID) e some no resto.** A análise antiga (2023–2025) "pegou" justamente
 o 2023 forte, o que explica por que o efeito parecia significativo com 3 temporadas.
 
-### Teste de lag (causalidade reversa, C2) — agora conclusivo
+### Teste de lag (causalidade reversa, C2) — enfraquece C2, mas não conclusivo
+(SE clusterizado clube×temporada)
+
 | Especificação | n | θ | IC 95% | Significativo? |
 |---------------|---|-----|--------|----------------|
-| Contemporâneo (amostra completa) | 5.146 | 0,0031 | [−0,0022; 0,0083] | não |
-| Contemporâneo (subamostra com lag) | 4.008 | 0,0040 | [−0,0026; 0,0105] | não |
-| **DEFASADO t-1** | 4.008 | **0,0038** | **[0,0003; 0,0073]** | **SIM** |
+| Contemporâneo (amostra completa) | 5.146 | 0,0044 | [−0,0021; 0,0110] | não |
+| Contemporâneo (subamostra com lag) | 4.008 | 0,0055 | [−0,0027; 0,0136] | não |
+| **DEFASADO t-1** | 4.008 | **0,0051** | **[0,0012; 0,0090]** | **SIM** |
 
-➡️ Com 6 temporadas de lag observável (2018,19,22,23,24,25), a **liquidez defasada tem efeito
-positivo significativo** — e o ano anterior não pode ter sido causado pela compra atual. Isso
-**enfraquece a causalidade reversa (C2)**. Curiosamente, o defasado é *mais* significativo que o
-contemporâneo (efeito pode operar com atraso / liquidez defasada é um sinal mais "limpo").
+➡️ A liquidez defasada tem efeito positivo significativo — e o ano anterior não pode ter sido
+causado pela compra atual → **enfraquece a causalidade reversa (C2)**. **Ressalva honesta:** na
+mesma subamostra o contemporâneo é n.s. mas o lag é significativo, o que sugere que o lag capta um
+**traço persistente de clube** (corr=0,44), não um efeito limpo. **Não é conclusivo.**
 
 ## 3. Leitura — como isso muda a história
 
@@ -112,8 +118,10 @@ contemporâneo (efeito pode operar com atraso / liquidez defasada é um sinal ma
 2. **A heterogeneidade entre clubes (IVB) continua existindo**, mas os números mudaram de método
    (R-learner) e de composição (clubes menores no topo). Tratar o IVB como **ilustrativo**, não
    como ranking definitivo, até reprocessar com `CausalForestDML`.
-3. **O teste de lag virou um ponto forte:** com mais dados, deixou de ser inconclusivo e passou a
-   dar suporte (modesto) à direção causal.
+3. **O teste de lag dá suporte modesto** à direção causal (enfraquece C2), mas **não é conclusivo**
+   — o contemporâneo é n.s. na mesma amostra, sinal de contaminação por traço de clube.
+4. **O "mecanismo de sinalização" (D₂/D₃) é exploratório, não confirmatório:** significativo no
+   bruto, mas **perde a significância** ao controlar intensidade de janela (clube ativo).
 
 ## 4. Ressalvas / pendências abertas deste reprocessamento
 

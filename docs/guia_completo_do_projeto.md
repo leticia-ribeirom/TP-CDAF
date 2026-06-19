@@ -118,7 +118,7 @@ O projeto começou com 3 temporadas (2023–2025) e foi expandido para **8 tempo
 
 **Consequência importante:** a expansão para 8 temporadas **mudou o resultado principal**.
 Com 3 temporadas, o ATE era significativo (θ = 0,012). Com 8 temporadas, o ATE médio ficou
-**não significativo** (θ = 0,003). Isso não é uma falha — é um resultado mais honesto e mais
+**não significativo** (θ = 0,0044). Isso não é uma falha — é um resultado mais honesto e mais
 rico. Explicamos por quê na seção 5.
 
 ---
@@ -280,10 +280,14 @@ $$Y_i = \ln(P_i) - \ln(\hat{P}_i)$$
 - **Y = 0:** clube pagou exatamente o valor justo
 - **Y < 0:** clube fez um bom negócio — comprou abaixo do valor justo
 
-**51,7% das transferências têm Y > 0** — mais da metade do mercado paga algum prêmio. A mediana
-é +1,9%, o que significa um leve sobrepreço típico. Mas atenção: isso não significa que o prêmio
-do vendedor existe — pode ser simplesmente que o mercado sempre tem um small ágio médio por
-incerteza e urgência. O efeito causal da liquidez é testado na Etapa 2.
+**52,5% das transferências têm Y > 0** (resíduo out-of-fold) — mais da metade do mercado paga
+algum prêmio. A mediana é +3,5%, um leve sobrepreço típico. Mas atenção: isso não significa que
+o prêmio do vendedor existe — pode ser simplesmente que o mercado sempre tem um pequeno ágio médio
+por incerteza e urgência. O efeito causal da liquidez é testado na Etapa 2.
+
+> **Nota metodológica (correção importante):** o resíduo é gerado **out-of-fold** (`cross_val_predict`),
+> não prevendo o próprio dado de treino. Isso evita resíduos in-sample artificialmente pequenos para
+> 85% das observações — um vazamento que contaminava a Etapa 2 na versão anterior.
 
 ---
 
@@ -335,28 +339,33 @@ out-of-sample para todas as observações — sem overfitting.
 direto). O confundidor C1 é controlado por *proxies* (centralidade na rede + tamanho do elenco),
 não pelo volume financeiro direto. Isso é uma limitação reconhecida — declaramos nas limitações.
 
-### O resultado principal: ATE = 0,003 (não significativo)
+### O resultado principal: ATE = 0,0044 (não significativo)
 
-**ATE (Average Treatment Effect)** = efeito médio causal. O que significa θ = 0,003?
+**ATE (Average Treatment Effect)** = efeito médio causal. θ = 0,0044 é uma **semielasticidade**
+(variação do sobrepreço por unidade-log de receita de vendas — **não** "por 1% de receita").
 
-Para cada 1% de aumento na receita de vendas do clube, o sobrepreço nas compras aumenta em
-média 0,003 pontos percentuais. **O IC 95% é [−0,002; 0,008] — cruza zero.** Não podemos
-rejeitar a hipótese de que o efeito é zero.
+**O IC 95% cruza zero tanto com HC1 [−0,0016; 0,0104] quanto com erro-padrão clusterizado
+clube×temporada [−0,0021; 0,0110].** Não podemos rejeitar a hipótese de que o efeito médio é zero.
+
+> **Por que clusterizar?** D e W são constantes dentro de cada clube×temporada (só 974 clusters
+> para 5.146 transferências). Tratar as 5.146 obs como independentes subestima os SE; por isso
+> reportamos também o IC clusterizado, que é o nível de inferência correto.
 
 **Por que isso é um resultado válido e não uma falha?**
 
 Porque o contraste com a correlação ingênua revela algo importante:
 
-| Estimador | θ | IC 95% | Significativo? |
-|-----------|---|--------|----------------|
-| OLS sem controles (`Y ~ D`) | **0,012** | [0,007; 0,016] | **Sim** |
-| OLS com controles lineares | 0,004 | [−0,001; 0,009] | Não |
-| **DML (não-linear)** | **0,003** | [−0,002; 0,008] | **Não** |
+| Estimador | θ | IC 95% (HC1) | Significativo? |
+|-----------|---|--------------|----------------|
+| OLS sem controles (`Y ~ D`) | **0,0142** | [0,009; 0,019] | **Sim** |
+| OLS com controles lineares | 0,0051 | [−0,000; 0,010] | Não |
+| **DML (não-linear)** | **0,0044** | [−0,002; 0,010] | **Não** |
 
 A progressão é clara: à medida que controlamos os confundidores de forma cada vez mais adequada,
-o efeito estimado encolhe de 0,012 para 0,003 e perde significância. **Isso mostra que a
-correlação bruta (0,012) era, em grande parte, o confundidor "clube rico" em ação.** O DML
-separou o efeito real do ruído de confundimento.
+o efeito estimado encolhe de 0,0142 para 0,0044 e perde significância. **Isso mostra que a
+correlação bruta (0,0142) era, em grande parte, o confundidor "clube rico" em ação.** O DML
+separou o efeito real do ruído de confundimento. (A correlação bruta também é significativa com
+SE clusterizado; o DML não.)
 
 ### Os placebos: validando que o modelo não inventa efeito
 
@@ -364,14 +373,15 @@ Dois testes de sanidade:
 
 **Placebo 1 — D embaralhado:** embaralhamos aleatoriamente quem recebeu qual valor de receita
 de vendas. Se o modelo encontrar um efeito aqui, ele está inventando efeito onde não há. Resultado:
-θ = 0,0023 (IC cruza zero) ✅
+θ = 0,0024 (IC cruza zero) ✅
 
 **Placebo 2 — D → ruído gaussiano:** substituímos D por números aleatórios. Resultado:
-θ = 0,0006 (IC cruza zero) ✅
+θ = 0,0009 (IC cruza zero) ✅
 
-**Atenção:** o placebo embaralhado deu θ = 0,0023 — quase do tamanho do ATE real (0,0031).
-Isso reforça que o ATE médio é genuinamente nulo: o modelo mal consegue distinguir o tratamento
-real do ruído. Esse padrão é coerente com a conclusão de ausência de efeito médio.
+**Atenção:** o placebo embaralhado deu θ = 0,0024 — quase do tamanho do ATE real (0,0044).
+Isso reforça que o ATE **médio** é genuinamente nulo: o modelo mal distingue o tratamento real do
+ruído na amostra completa. (Esse placebo embaralha D globalmente, então testa o efeito médio, não
+o poder de detectar os efeitos sazonais de 2022/2023 — ver limitações.)
 
 ### O R² da primeira etapa
 
@@ -387,23 +397,29 @@ Antes de estimar θ, o DML precisa que os modelos ĝ e m̂ funcionem minimamente
 
 Quando olhamos o efeito separado por temporada, a história muda completamente:
 
-| Temporada | θ | IC 95% | Significativo? | Contexto |
-|-----------|---|--------|----------------|----------|
-| 2017 | −0,006 | [−0,026; 0,014] | Não | Mercado normal |
-| 2018 | −0,014 | [−0,040; 0,012] | Não | Mercado normal |
-| 2019 | +0,016 | [−0,011; 0,044] | Não | Mercado normal |
-| 2021 | +0,011 | [−0,002; 0,025] | Não | Pós-COVID (cautela) |
-| **2022** | **+0,052** | **[0,012; 0,092]** | **Sim** | **Boom pós-COVID** |
-| **2023** | **+0,039** | **[0,003; 0,075]** | **Sim** | **Boom pós-COVID** |
-| 2024 | +0,003 | [−0,053; 0,059] | Não | Normalização |
-| 2025 | +0,013 | [−0,017; 0,042] | Não | Normalização |
+(θ por temporada, IC clusterizado por clube; `p_bonf` = p-valor após Bonferroni para os 8 testes.)
+
+| Temporada | θ | IC 95% (cluster) | Sig.? | p_bonf | Contexto |
+|-----------|---|------------------|-------|--------|----------|
+| 2017 | −0,006 | [−0,026; 0,014] | Não | 1,00 | Mercado normal |
+| 2018 | −0,013 | [−0,036; 0,011] | Não | 1,00 | Mercado normal |
+| 2019 | +0,024 | [−0,011; 0,058] | Não | 1,00 | Mercado normal |
+| 2021 | +0,012 | [−0,001; 0,025] | Não | 0,63 | Pós-COVID (cautela) |
+| **2022** | **+0,064** | **[0,028; 0,101]** | **Sim** | **0,005** | **Boom pós-COVID** |
+| **2023** | **+0,047** | **[0,017; 0,077]** | **Sim** | **0,019** | **Boom pós-COVID** |
+| 2024 | +0,003 | [−0,053; 0,059] | Não | 1,00 | Normalização |
+| 2025 | +0,015 | [−0,010; 0,040] | Não | 1,00 | Normalização |
+
+**2022 e 2023 sobrevivem à correção de Bonferroni E ao FDR** — não são falsos-positivos do
+"garden of forking paths". Este é o achado confirmatório mais forte sobre o efeito sazonal.
 
 **O que isso significa:**
 
 Em 2022 e 2023, o mercado de transferências viveu um boom sem precedentes após 2 anos de
 restrições pandêmicas. Os volumes bateram recordes. Nesse contexto de escassez de talento
 disponível e urgência generalizada de reposição, o prêmio do vendedor emergiu: clubes com
-liquidez pagavam +5,2% (2022) e +3,9% (2023) acima do preço justo.
+liquidez pagavam significativamente acima do preço justo (efeito sazonal +0,064 em 2022 e
++0,047 em 2023, ambos sobrevivendo a Bonferroni/FDR).
 
 Nos outros 6 anos, o efeito é estatisticamente zero. A média das 8 temporadas dilui o efeito
 de 2022–2023 com 6 anos de zero — daí o ATE médio ser nulo.
@@ -432,52 +448,50 @@ Nesse caso, a compra causaria a venda — e não o contrário.
 A receita de t-1 é *predeterminada* em relação à compra de t — uma compra de 2024 não pode ter
 causado as vendas de 2023.
 
-**Resultado:** θ_defasado = **0,0038\*** (IC [0,0003; 0,0073]) — significativo.
+**Resultado (SE clusterizado):** θ_defasado = **0,0051\*** (IC [0,0012; 0,0090]) — significativo.
 
 **O que significa:** quando usamos a liquidez do ano anterior, o efeito persiste e é
-significativo. Se o efeito fosse de causalidade reversa (compra → venda), usar o ano anterior
-deveria zerar o coeficiente. Como não zeramos, a direção "venda → prêmio" é mais plausível.
-**A causalidade reversa (C2) fica enfraquecida** — não eliminada, mas menos provável.
+significativo. A direção "venda → prêmio" fica mais plausível e **a causalidade reversa (C2)
+enfraquece** — não eliminada.
+
+> **Ressalva honesta:** na *mesma* subamostra, o contemporâneo é **não significativo** (θ=0,0055)
+> mas o defasado é significativo. Isso é estranho se a história fosse puramente contemporânea — o
+> lag provavelmente capta um **traço persistente de clube** ("clube que sempre vende", corr=0,44),
+> parte do confundidor de porte. Logo o teste é **direcionalmente tranquilizador, não conclusivo**.
 
 ### Teste 2 — D Alternativo (Especificações do Tratamento)
 
 **O problema:** medimos liquidez como `D = log(receita em euros)`. Mas e se o mecanismo for
 diferente? E se não for o volume de dinheiro, mas outra coisa?
 
-Testamos 3 definições:
+Testamos 3 definições (SE clusterizado):
 
 | Tratamento | Interpretação | θ | Significativo? |
 |------------|---------------|---|----------------|
-| D₁ = log(receita €) — **principal** | Volume de dinheiro recebido | 0,003 | **Não** |
-| D₂ = log(n° de vendas) | Quantas vendas foram feitas | **0,036** | **Sim** |
-| D₃ = flag de venda > €30M | Fez uma venda blockbuster? | **0,060** | **Sim** |
+| D₁ = log(receita €) — **principal** | Volume de dinheiro recebido | 0,0044 | **Não** |
+| D₂ = log(n° de vendas) | Quantas vendas foram feitas | **0,049** | **Sim** |
+| D₃ = flag de venda > €30M | Fez uma venda blockbuster? | **0,075** | **Sim** |
 
-**O que significa — este é o achado mais importante do projeto:**
+**Leitura inicial (sedutora, mas frágil):** D₁ (volume em euros) não prediz sobrepreço, mas D₂
+(número de vendas) e D₃ (venda blockbuster) sim. Isso *sugeria* que o mecanismo é "**sinalizar**
+que precisa comprar" (urgência de reposição / venda de ativo-chave), não o volume monetário.
 
-D₁ (volume em euros) não prediz sobrepreço. Mas D₂ (número de vendas) e D₃ (venda blockbuster)
-**sim**. Por quê?
+> ⚠️ **Teste do artefato "clube ativo" derruba a leitura.** Clubes com janela movimentada
+> compram **e** vendem muito. Ao adicionar ao W controles de intensidade de janela (`n_buys` + log
+> do gasto total), **D₂ e D₃ perdem completamente a significância** (D₂: θ=0,015, p=0,40; D₃:
+> θ=0,005, p=0,86). Ou seja, o sinal de D₂/D₃ era em grande parte **intensidade de atividade**, não
+> um canal causal limpo de sinalização.
 
-- **D₂:** um clube que vendeu 8 jogadores na temporada precisa repor 8 — há urgência de múltiplas
-  reposições simultâneas. Os vendedores sabem que ele vai ao mercado de qualquer jeito. Essa
-  pressão de reposição múltipla ativa o prêmio.
-
-- **D₃:** uma venda de €50M de um ativo-chave sinaliza abertamente ao mercado: "esse clube vai
-  comprar um substituto". Os preços sobem antes da negociação começar.
-
-**O mecanismo não é "ter dinheiro" — é "sinalizar que precisa comprar".**
-
-Um clube que vendeu por €50M em receitas concentradas em uma única venda (D₁ alto mas D₃ = 1)
-ativa o prêmio. Um clube que vendeu €50M em 10 vendas pequenas (D₁ alto e D₂ alto) também
-ativa, mas pelo mecanismo de urgência de reposição múltipla.
-
-Isso é mais fiel à intuição original do "efeito dominó" do que a medida de volume em euros.
+**Conclusão honesta:** o "mecanismo de sinalização" é **exploratório e NÃO robusto** — não deve
+ser apresentado como achado confirmatório. Fica como hipótese a investigar com dados de melhor
+granularidade (datas diárias, urgência observável).
 
 ### Teste 3 — Subgrupos por Tier de Liga
 
 Dividimos as transferências em duas categorias:
 
-- **Top-4:** Bundesliga, Premier League, La Liga, Serie A (3.450 obs) → θ = 0,0036 (n.s.)
-- **Ligas menores:** Jupiler Pro League, Liga Portugal, Ligue-1 (1.696 obs) → θ = 0,0089 (n.s.)
+- **Top-4:** Bundesliga, Premier League, La Liga, Serie A (3.450 obs) → θ = 0,0041 (n.s.)
+- **Ligas menores:** Jupiler Pro League, Liga Portugal, Ligue-1 (1.696 obs) → θ = 0,0106 (n.s.)
 
 **O que significa:** nenhum grupo tem efeito significativo na média das 8 temporadas — coerente
 com o ATE geral nulo. Mas a **direção** está certa: ligas menores têm θ maior, o que é consistente
@@ -486,8 +500,8 @@ reposição). A falta de significância é provavelmente falta de poder estatís
 
 ### Teste 4 — Placebos (já descrito na Etapa 2)
 
-D embaralhado: θ = 0,002 (n.s.) ✅  
-D com ruído: θ = 0,001 (n.s.) ✅
+D embaralhado: θ = 0,0024 (n.s.) ✅  
+D com ruído: θ = 0,0009 (n.s.) ✅
 
 ---
 
@@ -518,8 +532,8 @@ que o econml daria. Por isso o IVB deve ser tratado como **ilustrativo**.
 
 ### O problema do outlier e da normalização min-max
 
-O ranking atual tem Nîmes Olympique no topo (IVB ≈ 0,41) — um clube da Ligue 1 com poucas
-transferências na base. O problema: a normalização min-max divide pelo range (max − min). Se
+O ranking atual tem Nîmes Olympique no topo (IVB ≈ 0,52, apenas 8 obs) — um clube da Ligue 1 com
+poucas transferências na base. O problema: a normalização min-max divide pelo range (max − min). Se
 um outlier tem CATE muito alto, o max explode, e todos os outros clubes ficam comprimidos
 perto de zero. **O Nîmes domina o denominador e distorce o ranking.**
 
@@ -535,38 +549,43 @@ Com `CausalForestDML` e sem o problema do outlier, o IVB seria uma ferramenta re
 
 ---
 
-## 8. Os Três Achados Principais
+## 8. Os Achados: 2 Confirmatórios + 1 Exploratório
 
-### Achado 1 — A Correlação Mente
+> Disciplina inferencial: tratamos como **confirmatório** apenas o que sobrevive a SE clusterizado
+> e (no caso sazonal) à correção de múltiplas comparações. O resto é **exploratório / gerador de
+> hipótese** e está rotulado como tal.
 
-OLS ingênuo: θ = **0,012\*** (significativo)  
-DML causal: θ = **0,003** (não significativo)
+### Achado 1 (confirmatório) — A Correlação Mente
 
-A correlação bruta entre "recebeu de vendas" e "pagou sobrepreço" é 4× maior que o efeito causal
-real — e enganosamente significativa. Isso é o confundidor "clube rico" contaminando a correlação.
+OLS ingênuo: θ = **0,0142\*** (significativo)  
+DML causal: θ = **0,0044** (não significativo, inclusive com SE clusterizado)
+
+A correlação bruta entre "recebeu de vendas" e "pagou sobrepreço" é ~3× maior que o efeito causal
+real — e enganosamente significativa. É o confundidor "clube rico" contaminando a correlação.
 Sem o Double ML, teríamos publicado um resultado falso.
 
-**Mensagem:** em análise de dados de futebol (e de mercados em geral), correlação não é
-causalidade. O pipeline causal de duas etapas que desenvolvemos é o que torna o resultado
-defensável.
+**Mensagem:** correlação não é causalidade. O pipeline causal de duas etapas é o que torna o
+resultado defensável.
 
-### Achado 2 — O Prêmio é Condicional ao Regime
+### Achado 2 (confirmatório) — O Prêmio é Condicional ao Regime
 
-Na média de 8 temporadas, o efeito é nulo. Mas em **2022 (+5,2%\*) e 2023 (+3,9%\*)** — o boom
-pós-COVID — o prêmio emerge de forma significativa. Nos outros 6 anos, não há efeito detectável.
+Na média de 8 temporadas, o efeito é nulo. Mas em **2022 (+0,064\*) e 2023 (+0,047\*)** — o boom
+pós-COVID — o prêmio emerge de forma significativa, **sobrevivendo a Bonferroni e FDR**. Nos
+outros 6 anos, não há efeito detectável.
 
 **Mensagem:** o "efeito dominó" não é uma lei do mercado — é um fenômeno emergente em condições
-específicas de escassez e urgência generalizada. O timing importa.
+específicas de escassez e urgência. O timing importa.
 
-### Achado 3 — O Mecanismo é Sinalização, Não Volume
+### Achado 3 (EXPLORATÓRIO, não robusto) — Sinalização vs. Volume
 
-Volume em euros (D₁): não prediz sobrepreço.  
-Número de vendas (D₂): prediz sobrepreço (**+3,6%\***).  
-Venda blockbuster >€30M (D₃): prediz sobrepreço (**+6,0%\***).
+Na especificação bruta, o número de vendas (D₂, +0,049\*) e a venda blockbuster (D₃, +0,075\*)
+prediziam sobrepreço, enquanto o volume em euros (D₁) não — o que *sugeria* um mecanismo de
+"sinalização". **Porém**, ao controlar por intensidade de janela (`n_buys` + gasto total), **D₂ e
+D₃ perdem toda a significância** (p=0,40 e p=0,86).
 
-**Mensagem:** o clube não paga mais porque tem mais dinheiro — paga mais porque sinalizou ao
-mercado que precisa comprar. A urgência de reposição (D₂) e a venda de ativo-chave (D₃) são as
-formas de sinalização que ativam o prêmio. O volume monetário total (D₁) não é o gatilho.
+**Mensagem honesta:** o sinal de D₂/D₃ reflete em grande parte "clube com janela movimentada", não
+um canal causal limpo de sinalização. **Este achado NÃO deve ser apresentado como confirmatório** —
+é uma hipótese a investigar com dados de melhor granularidade.
 
 ---
 

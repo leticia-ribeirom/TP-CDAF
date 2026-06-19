@@ -122,13 +122,14 @@
 
 > Antes de mostrar o resultado causal, vejamos o que a correlação ingênua diz.
 
-> **OLS sem controles:** θ = **0,012\*** — IC [0,007; 0,016]. Significativo, positivo. "Prova"
+> **OLS sem controles:** θ = **0,0142\*** — IC [0,009; 0,019]. Significativo, positivo. "Prova"
 > que existe prêmio do vendedor.
 
 > *[pausa]*
 
 > **Agora o Double ML** — com os confundidores controlados de forma não-linear:
-> θ = **0,003** — IC [−0,002; 0,008]. **O IC cruza zero. Não significativo.**
+> θ = **0,0044** — IC [−0,002; 0,010]. **O IC cruza zero (inclusive com erro-padrão clusterizado).
+> Não significativo.**
 
 > E o placebo — embaralhamos o tratamento D aleatoriamente — dá θ = 0,002. Quase do tamanho do
 > efeito real. O modelo não encontra efeito causal médio.
@@ -146,8 +147,10 @@
 
 > De 2017 a 2021 e em 2024–2025 — **nada**. ICs cruzam zero, efeito indistinguível de zero.
 
-> **2022: θ = +5,2%\*** — significativo.
-> **2023: θ = +3,9%\*** — significativo.
+> **2022: θ = +0,064\*** — significativo.
+> **2023: θ = +0,047\*** — significativo.
+> E o mais importante: **ambos sobrevivem à correção de Bonferroni e ao FDR** para os 8 testes —
+> não são falso-positivo de "testar muita coisa".
 
 > Esses são os anos do **boom pós-COVID** — o mercado de transferências atingiu volumes recordes
 > depois de 2 anos de restrição. Clubes com liquidez enfrentavam escassez de talentos disponíveis
@@ -166,17 +169,21 @@
 
 > Testamos três definições de tratamento:
 
-> **D₁ = log(receita em euros):** θ = 0,003 — **não significativo**. Volume de dinheiro em si
+> **D₁ = log(receita em euros):** θ = 0,0044 — **não significativo**. Volume de dinheiro em si
 > não prediz sobrepreço.
 
-> **D₂ = log(número de vendas):** θ = **3,6%\*** — significativo. Fazer muitas vendas, precisar
-> repor muitos jogadores, expõe o clube ao prêmio.
+> **D₂ = log(número de vendas):** θ = **4,9%\*** e **D₃ = venda blockbuster (>€30M):** θ = **7,5%\***
+> — ambos significativos na especificação bruta. Isso *sugeria* que o que importa é **sinalizar
+> necessidade**, não o volume.
 
-> **D₃ = flag de venda blockbuster (> €30M):** θ = **6,0%\*** — significativo. Uma única venda
-> de alto impacto sinaliza ao mercado: "esse clube vai comprar".
+> **MAS — e aqui está a honestidade do trabalho:** quando controlamos por "clube de janela
+> movimentada" (nº de compras + gasto total), **D₂ e D₃ perdem toda a significância** (p=0,40 e
+> p=0,86). Ou seja, esse sinal era em boa parte "clube ativo compra e vende muito", não um canal
+> causal limpo.
 
-> **Conclusão de mecanismo:** não é o caixa que importa — é a **sinalização de necessidade**.
-> Como quando você vai comprar um carro e o vendedor já sabe que você precisa sair com um hoje.
+> **Conclusão de mecanismo:** o mecanismo de sinalização é uma **hipótese exploratória, não um
+> achado confirmado**. Os resultados sólidos são o Achado 1 (a correlação mente) e o efeito sazonal
+> de 2022–2023. *[Se a banca perguntar do mecanismo, esta é a resposta honesta e que demonstra rigor.]*
 
 `[clica]`
 
@@ -262,24 +269,26 @@
 # Q&A — Respostas preparadas
 
 **"O ATE é nulo — então o prêmio do vendedor não existe?"**
-> Não exatamente. O ATE *médio* de 8 temporadas é nulo, mas o efeito *condicional* existe — em
-> 2022–2023 é 4–5%, e com os tratamentos D₂/D₃ é significativo também na amostra completa.
-> O achado é mais rico: o prêmio depende do regime de mercado e do tipo de venda.
+> Não exatamente. O ATE *médio* de 8 temporadas é nulo, mas o efeito *condicional* existe e é
+> robusto — em 2022–2023 é +6,4% e +4,7%, **sobrevivendo à correção de Bonferroni e FDR**.
+> O achado é mais rico: o prêmio depende do regime de mercado (boom pós-COVID).
 
 **"Por que o OLS com controles também não encontrou o efeito, se DML também não?"**
-> Ambos dão θ ≈ 0,003–0,004 e IC cruzando zero. A diferença é que o DML controla as
+> Ambos dão θ ≈ 0,004–0,005 e IC cruzando zero. A diferença é que o DML controla as
 > não-linearidades em W de forma mais flexível. O resultado nulo é robusto a ambas as
 > especificações — isso reforça a conclusão, não enfraquece.
 
 **"D₃ (big sale > €30M) ser significativo não pode ser endogeneidade? Grandes clubes vendem caro e compram caro."**
-> Boa pergunta. W inclui pagerank e graus da rede, que capturam o porte do clube na rede de
-> transferências. O efeito de D₃ persiste após remover essa influência. Ainda assim, reconhecemos
-> que o controle de C1 é por proxies — W não tem o volume financeiro direto. Está nas limitações.
+> Excelente pergunta — e nós **testamos exatamente isso**. Quando adicionamos ao W controles de
+> intensidade de janela (nº de compras + gasto total), **D₂ e D₃ perdem toda a significância**.
+> Ou seja, esse sinal era em grande parte "clube ativo", não um canal causal limpo. Por isso
+> tratamos o "mecanismo de sinalização" como **exploratório**, não como achado confirmado.
 
 **"O teste de lag prova causalidade reversa?"**
-> Não prova — *enfraquece*. Se o efeito fosse puramente de causalidade reversa, usar a receita do
-> ano anterior deveria zerar θ. Como persiste e é significativo, a direção "venda → prêmio" é
-> mais plausível. Mas não é um teste de causalidade definitivo.
+> Não prova — *enfraquece*, e nem isso de forma conclusiva. O lag t-1 é significativo (cluster),
+> mas na mesma subamostra o contemporâneo é não significativo — o que sugere que o lag capta um
+> traço persistente de clube ("sempre vende"), não um efeito limpo. Reportamos isso abertamente.
+> Um teste decisivo exigiria datas diárias ou um instrumento.
 
 **"Por que não usaram econml/CausalForestDML para o IVB?"**
 > O econml não instala no ambiente Python 3.12 desta máquina por incompatibilidade com NumPy 2.x.
@@ -298,17 +307,17 @@
 | Ligas | 7 |
 | RF Test R² | 0,762 |
 | RF Test RMSE | 0,673 |
-| % com sobrepreço | 51,7% |
-| Prêmio mediano | +1,9% |
-| **OLS sem controles θ** | **0,0117\*** |
-| **DML ATE θ** | **0,0031 (n.s.)** |
-| DML 2022 θ | +5,2%\* |
-| DML 2023 θ | +3,9%\* |
-| **D₂ (n_sales) θ** | **+3,6%\*** |
-| **D₃ (big_sale) θ** | **+6,0%\*** |
-| Lag (C2) θ | +0,38%\* |
-| Placebo shuffle θ | 0,0023 (n.s.) |
+| % com sobrepreço | 52,5% (out-of-fold) |
+| Prêmio mediano | +3,5% |
+| **OLS sem controles θ** | **0,0142\*** |
+| **DML ATE θ** | **0,0044 (n.s., HC1 e cluster)** |
+| DML 2022 θ | +0,064\* (sobrevive Bonferroni) |
+| DML 2023 θ | +0,047\* (sobrevive Bonferroni) |
+| D₂ (n_sales) θ | +0,049\* bruto → n.s. com controle de atividade (exploratório) |
+| D₃ (big_sale) θ | +0,075\* bruto → n.s. com controle de atividade (exploratório) |
+| Lag (C2) θ | +0,0051\* (cluster; não conclusivo) |
+| Placebo shuffle θ | 0,0024 (n.s.) |
 | R² model_t (m̂) | 0,37 |
 | R² model_y (ĝ) | 0,06 |
-| Confundidores em W | 19 |
+| Confundidores em W | 19 (+ SE clusterizado em 974 clusters clube×temporada) |
 | IVB top "presa" | Nîmes Olympique (ilustrativo) |

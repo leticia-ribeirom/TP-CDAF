@@ -6,10 +6,10 @@ Saída: `output/resultados_etapa2_ivb.csv` (ranking IVB de 190 clubes)
 Spec original: `deliverables/etapa2_modelagem_causal (1).docx`
 
 > ⚠️ **Atualizado para 8 temporadas — e a conclusão mudou.** Com mais dados o **ATE deixou de ser
-> significativo** (era 0,0118\* com 3 temporadas; agora 0,0031 n.s.). O efeito é significativo só em
-> 2022–2023.
+> significativo** (era 0,0118\* com 3 temporadas; agora 0,0044 n.s. com HC1 e com SE clusterizado).
+> O efeito é significativo só em 2022–2023 (e sobrevive a Bonferroni/FDR).
 >
-> 🔧 **Notebook portado:** como o `econml` não instala no ambiente (Python 3.14), o
+> 🔧 **Notebook portado:** como o `econml` não instala no ambiente (Python 3.12 + NumPy 2.x), o
 > `etapa2_double_ml.ipynb` foi **portado para Double ML manual** (Robinson + cross-fitting + HC1) e
 > **roda sem econml**. O CATE/IVB usa **R-learner** (aproximação do CausalForestDML). Texto abaixo
 > descreve o **desenho**; números atuais e ressalvas no changelog:
@@ -65,25 +65,27 @@ instala no ambiente; modelos de 1ª etapa = Random Forest. CATE via **R-learner*
 
 | Métrica | 3 temporadas (antigo) | **8 temporadas (atual)** |
 |---------|------------------------|--------------------------|
-| **θ₀ (ATE)** | 0,0118 | **0,0031** |
-| IC 95% | [0,0003; 0,0232] | **[−0,0022; 0,0083]** |
-| Significância | Sim, a 5% (no limiar) | **NÃO** |
+| **θ₀ (ATE)** | 0,0118 | **0,0044** |
+| IC 95% (HC1) | [0,0003; 0,0232] | **[−0,0016; 0,0104]** |
+| IC 95% (cluster clube×temporada) | — | **[−0,0021; 0,0110]** |
+| Significância | Sim, a 5% (no limiar) | **NÃO** (HC1 e cluster) |
 
 **Interpretação (atual):** na média de 8 temporadas, **não há efeito causal significativo** — o IC
-cruza zero e o placebo embaralhado (0,0023) fica quase do tamanho do ATE. O efeito significativo
-da versão de 3 temporadas era, em boa parte, **reflexo do período 2022–2023** (mercado aquecido
-pós-COVID). Ver θ por temporada na seção 8 e o [changelog](reprocessamento_8temporadas.md).
+cruza zero (com HC1 e com SE clusterizado) e o placebo embaralhado (0,0024) fica quase do tamanho
+do ATE. O efeito significativo da versão de 3 temporadas era, em boa parte, **reflexo do período
+2022–2023** (mercado aquecido pós-COVID). Ver θ por temporada na seção 8 e o
+[changelog](reprocessamento_8temporadas.md).
 
 ## 5. Validação
 
 ### Placebos (8 temporadas)
 | Placebo | θ estimado | IC 95% |
 |---------|-----------|--------|
-| D embaralhado (shuffle) | 0,0023 | cruza zero ✔ |
-| D → ruído gaussiano | 0,0006 | cruza zero ✔ |
+| D embaralhado (shuffle) | 0,0024 | cruza zero ✔ |
+| D → ruído gaussiano | 0,0009 | cruza zero ✔ |
 
-Ambos centrados em zero → o modelo **não inventa efeito** onde não há. Note que o shuffle (0,0023)
-está **quase do tamanho do ATE (0,0031)** — coerente com o ATE ser, na média, **nulo**.
+Ambos centrados em zero → o modelo **não inventa efeito** onde não há. Note que o shuffle (0,0024)
+está **quase do tamanho do ATE (0,0044)** — coerente com o ATE ser, na média, **nulo**.
 
 ### Diagnóstico de primeira etapa (8 temporadas)
 - **R² model_t (m̂) = 0,37** — confundidores preveem moderadamente a receita.
@@ -96,13 +98,13 @@ Estima um efeito causal **por observação** (X = W). *Antes via `CausalForestDM
 
 | Métrica | Valor |
 |---------|-------|
-| média dos CATEs | 0,007 (≈ ATE, como esperado) |
-| desvio-padrão | 0,060 |
-| faixa | **[−0,365; +2,55]** |
+| média dos CATEs | 0,010 (≈ ATE, como esperado) |
+| desvio-padrão | 0,066 |
+| faixa | **[−0,39; +2,25]** |
 
 **Heterogeneidade substancial:** há clubes com efeito muito acima da média e clubes com efeito
 **negativo** (mais liquidez → menor prêmio). **É aqui que mora a história do projeto** — não na
-média, mas na dispersão. ⚠️ A cauda superior (máx +2,55) é dominada por **um outlier** (Nîmes,
+média, mas na dispersão. ⚠️ A cauda superior (máx +2,25) é dominada por **um outlier** (Nîmes,
 poucas obs), o que comprime a normalização do IVB — tratar o ranking como **ilustrativo**.
 
 ## 7. IVB — Índice de Vulnerabilidade de Barganha
@@ -121,13 +123,13 @@ Ranking atual (8 temporadas, R-learner) — *ilustrativo*:
 
 | "Presas fáceis" (IVB alto) | "Negociadores disciplinados" (IVB baixo) |
 |----------------------------|------------------------------------------|
-| Nîmes Olympique — 0,41 | SD Eibar — 0,07 |
-| KV Mechelen — 0,17 | Hellas Verona — 0,09 |
-| Sunderland AFC — 0,16 | Arminia Bielefeld — 0,11 |
+| Nîmes Olympique — 0,52 | SD Eibar — 0,09 |
+| KV Mechelen — 0,18 | Hellas Verona — 0,11 |
+| Sunderland AFC — 0,18 | Arminia Bielefeld — 0,12 |
 
 > ⚠️ O ranking **mudou completamente** vs. a versão de 3 temporadas (antes FC Arouca/Elche/Sporting
 > no topo) — efeito combinado de mais dados **e** da troca de método (R-learner vs. CausalForestDML).
-> O topo (Nîmes, 0,41) é um **outlier** com poucas obs. Tratar como **ilustrativo**.
+> O topo (Nîmes, 0,52, 8 obs) é um **outlier**. Tratar como **ilustrativo**.
 
 **Por liga:** com os dados novos a diferença entre ligas é **desprezível** (IVB médio ~0,126–0,138
 para todas). O padrão antigo ("La Liga/Ligue 1 mais disciplinadas") **não se sustentou** — aliás, a
@@ -142,16 +144,18 @@ Sem datas diárias não dá para estimar a curva de decaimento θ(Δt) proposta.
 estima-se θ por temporada. **Com 8 temporadas, fica claro que o efeito NÃO é estável** — ele se
 concentra nos anos de mercado aquecido:
 
-| Temporada | θ | IC 95% | Significativo? |
-|-----------|-----|--------|----------------|
-| 2017 | −0,006 | [−0,026; 0,014] | não |
-| 2018 | −0,014 | [−0,040; 0,012] | não |
-| 2019 | +0,016 | [−0,011; 0,044] | não |
-| 2021 | +0,011 | [−0,002; 0,025] | não |
-| **2022** | **+0,052** | [0,012; 0,092] | **SIM** |
-| **2023** | **+0,039** | [0,003; 0,075] | **SIM** |
-| 2024 | +0,003 | [−0,053; 0,059] | não |
-| 2025 | +0,013 | [−0,017; 0,042] | não |
+(IC clusterizado por clube; `p_bonf` = p após Bonferroni nos 8 testes)
+
+| Temporada | θ | IC 95% (cluster) | Significativo? | p_bonf |
+|-----------|-----|------------------|----------------|--------|
+| 2017 | −0,006 | [−0,026; 0,014] | não | 1,00 |
+| 2018 | −0,013 | [−0,036; 0,011] | não | 1,00 |
+| 2019 | +0,024 | [−0,011; 0,058] | não | 1,00 |
+| 2021 | +0,012 | [−0,001; 0,025] | não | 0,63 |
+| **2022** | **+0,064** | [0,028; 0,101] | **SIM** | **0,005** |
+| **2023** | **+0,047** | [0,017; 0,077] | **SIM** | **0,019** |
+| 2024 | +0,003 | [−0,053; 0,059] | não | 1,00 |
+| 2025 | +0,015 | [−0,010; 0,040] | não | 1,00 |
 
 ➡️ O prêmio do vendedor emerge em **2022–2023** (boom pós-COVID) e desaparece nos demais anos.
 Esse é o achado central do reprocessamento. A análise antiga (2023–2025) parecia significativa por
@@ -159,9 +163,10 @@ Esse é o achado central do reprocessamento. A análise antiga (2023–2025) par
 
 ### Robustez — teste de tratamento defasado (C2)
 Implementado em `etapa2_robustez.ipynb`. Usando a liquidez **da temporada anterior** (predeterminada
-em relação à compra), o efeito é **positivo e significativo**: θ_defasado = **0,0038**, IC
-[0,0003; 0,0073] (n=4.008, temporadas com t-1 observável). Como o ano anterior não pode ser causado
-pela compra atual, isso **enfraquece a causalidade reversa (C2)**.
+em relação à compra), com SE clusterizado: θ_defasado = **0,0051\***, IC [0,0012; 0,0090] (n=4.008).
+Isso **enfraquece a causalidade reversa (C2)**, mas **não é conclusivo**: na mesma subamostra o
+contemporâneo é n.s., sugerindo que o lag capta um traço persistente de clube (corr=0,44), não um
+efeito limpo. Reportado abertamente.
 
 ## 9. Limitações reconhecidas
 

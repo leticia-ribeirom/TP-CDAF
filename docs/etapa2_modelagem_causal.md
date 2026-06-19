@@ -1,10 +1,17 @@
 # Etapa 2 — Estimação Causal por Aprendizado de Máquina Duplo
 
-> Versão adaptada à realidade do dataset `transfers_etapa2_ready.csv`
-> (2.079 transferências · 3 temporadas · 7 ligas).
-> Substitui a "Etapa 2" descrita no documento de estratégia original onde a
-> proposta dependia de variáveis que ainda não estão disponíveis na base
+> **Status: documento alinhado à implementação final** (`notebooks/etapa2_double_ml.ipynb` e
+> `etapa2_robustez.ipynb`), sobre `transfers_etapa2_ready.csv`
+> (**5.146 transferências · 8 temporadas (2017–2025, exceto 2020) · 7 ligas**).
+> Substitui a "Etapa 2" da proposta original, que dependia de variáveis indisponíveis na base
 > (data exata da transferência, contexto esportivo, performance individual).
+>
+> **Decisões da implementação que diferem da proposta:** (1) o `econml` não instala no ambiente
+> (Python 3.12 + NumPy 2.x) → usamos **DML manual** (Robinson + cross-fitting + HC1 **e SE
+> clusterizado clube×temporada**) e **R-learner** no lugar do `CausalForestDML`; (2) o vetor `W`
+> **NÃO** inclui o bloco financeiro direto (`total_spend`, `n_buys`, `net_balance`) — o confundidor
+> C1 é controlado por *proxies* de rede e elenco (decisão para evitar *bad control*, já que esses
+> agregados são parcialmente mediadores/colliders); (3) o resíduo Y da Etapa 1 é **out-of-fold**.
 
 ## 1. Da Etapa 1 para a Etapa 2
 
@@ -45,19 +52,21 @@ onde $W$ é o vetor de confundidores estruturais do comprador, da liga e da
 temporada. A escolha de $W$ é direta dado o que o dataset oferece e está
 detalhada na Tabela 1.
 
+**Vetor $W$ efetivamente usado (19 variáveis):**
+
 | Bloco | Variáveis em $W$ | Confundidor neutralizado |
 |---|---|---|
-| Financeiro do clube | `total_spend`, `n_buys`, `net_balance`, `net_transfer_record` | C1 — poder financeiro |
 | Estrutural do elenco | `squad_size`, `average_age`, `national_team_players` | C1, C6 — perfil/prestígio |
-| Posição na rede | `pagerank`, `in_strength`, `out_strength`, `net_flow`, `in_degree`, `out_degree` | C1, C6 — poder de barganha estrutural |
-| Mercado / liga | `log_league_mv`, 6 dummies `competition_code_*` | C4, C5 — sazonalidade e inflação |
-| Temporada | `season_2024`, `season_2025` | C4 — efeito de calendário |
+| Posição na rede | `pagerank`, `in_degree`, `out_degree` | C1, C6 — poder de barganha estrutural |
+| Liga | 6 dummies `competition_code_*` | C4, C5 — poder econômico da liga |
+| Temporada | 7 dummies `season_*` (base: 2017) | C4, C5 — sazonalidade e inflação |
 
-A inclusão das features de rede é uma melhoria sobre a proposta original,
-que tratava apenas de receita, dias restantes na janela, team rating e
-classificação para a UCL — três das quatro não estão disponíveis na base atual.
-O PageRank e as métricas de força capturam de forma compacta o mesmo sinal
-de "poder estrutural" que aquelas variáveis pretendiam representar.
+**Importante (decisão de desenho):** `W` **não** inclui o bloco financeiro direto (`total_spend`,
+`n_buys`, `net_balance`, `net_transfer_record`) nem `in_strength`/`out_strength`/`net_flow`/`log_league_mv`.
+Esses agregados são contemporâneos e parcialmente **mediadores/colliders** (p.ex. `net_balance`
+contém o próprio `revenue_sales`); incluí-los seria *bad control*. O confundidor C1 ("clube rico")
+é, portanto, controlado por **proxies** de centralidade na rede (PageRank, graus) e porte de elenco —
+uma aproximação reconhecida nas limitações, não o controle financeiro direto ideal.
 
 ### Confundidores ainda não controlados
 
@@ -85,48 +94,53 @@ A estimação segue os três pilares do DML:
 3. **Inferência robusta.** Erros-padrão são clusterizados por clube comprador
    para acomodar correlação intra-clube ao longo das temporadas.
 
-### Implementação em Python (EconML)
+### Implementação em Python (DML manual, sem econml)
 
 ```python
+import re
 import numpy as np
 import pandas as pd
-from econml.dml import LinearDML, CausalForestDML
+from scipy import stats
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import KFold
 
 df = pd.read_csv('output/transfers_etapa2_ready.csv')
 
-Y = df['premio_reinvestimento'].values
+Y = df['premio_reinvestimento'].clip(*df['premio_reinvestimento'].quantile([.01, .99])).values
 D = df['log_revenue'].values
 
-W_cols = [
-    # financeiro
-    'total_spend', 'n_buys', 'net_balance', 'net_transfer_record',
-    # elenco
-    'squad_size', 'average_age', 'national_team_players',
-    # rede
-    'pagerank', 'in_strength', 'out_strength', 'net_flow',
-    'in_degree', 'out_degree',
-    # liga e temporada
-    'log_league_mv', 'season_2024', 'season_2025',
-    'competition_code_premier-league', 'competition_code_laliga',
-    'competition_code_serie-a', 'competition_code_ligue-1',
-    'competition_code_liga-portugal', 'competition_code_jupiler-pro-league',
-]
-W = df[W_cols].fillna(0).values
+# W efetivo: rede + elenco + dummies de liga e temporada (19 vars). SEM bloco financeiro.
+structural = ['in_degree', 'out_degree', 'pagerank',
+              'squad_size', 'average_age', 'national_team_players']
+seasons = sorted(c for c in df.columns if re.fullmatch(r'season_\d{4}', c))
+ligas   = [c for c in df.columns if c.startswith('competition_code_')]
+W = df[structural + seasons + ligas].values
 
-dml = LinearDML(
-    model_y=RandomForestRegressor(n_estimators=300, max_depth=5, random_state=42),
-    model_t=RandomForestRegressor(n_estimators=300, max_depth=5, random_state=42),
-    discrete_treatment=False,
-    cv=5,
-    random_state=42,
-)
-dml.fit(Y, D, X=None, W=W, inference='auto')
-print(dml.summary())
+# Cluster clube x temporada (D/W constantes dentro do grupo).
+cluster = (df['buyer'].astype(str) + '_' + df['season_id'].astype(str)).values
+
+def dml(Y, D, W, cluster, K=5, seed=42):
+    n = len(Y); yhat = np.zeros(n); dhat = np.zeros(n)
+    for tr, te in KFold(K, shuffle=True, random_state=seed).split(W):
+        RF = lambda: RandomForestRegressor(200, max_depth=5, random_state=seed, n_jobs=-1)
+        yhat[te] = RF().fit(W[tr], Y[tr]).predict(W[te])
+        dhat[te] = RF().fit(W[tr], D[tr]).predict(W[te])
+    yr, dr = Y - yhat, D - dhat
+    X = np.column_stack([np.ones(n), dr]); inv = np.linalg.inv(X.T @ X)
+    b = inv @ (X.T @ yr); u = yr - X @ b; theta = b[1]
+    meat = np.zeros((2, 2))                                  # SE clusterizado (CR1)
+    for c in np.unique(cluster):
+        m = cluster == c; sg = X[m].T @ u[m]; meat += np.outer(sg, sg)
+    G = len(np.unique(cluster)); cov = inv @ meat @ inv * (G/(G-1)) * ((n-1)/(n-2))
+    se = np.sqrt(cov[1, 1])
+    return theta, (theta - 1.96*se, theta + 1.96*se), 2*stats.norm.sf(abs(theta/se))
+
+theta, ci, p = dml(Y, D, W, cluster)
+print(f'theta={theta:.4f}  IC95%={ci}  p={p:.4f}')
 ```
 
-A saída fornece $\hat{\theta}$, erro-padrão, intervalo de confiança 95 % e
-p-valor para a hipótese $H_0: \theta = 0$ (ausência de prêmio do vendedor).
+A saída fornece $\hat{\theta}$, IC 95 % (clusterizado clube×temporada) e p-valor para
+$H_0: \theta = 0$. O CATE/IVB usa **R-learner** (Nie & Wager) no lugar do `CausalForestDML`.
 
 ## 5. Métricas inovadoras adaptadas
 
@@ -138,9 +152,9 @@ disponibilidade das features de rede.
 
 ### 5.1 Índice de Vulnerabilidade de Barganha (IVB)
 
-Estimando efeitos heterogêneos com `CausalForestDML`, obtemos $\theta_c$
-para cada clube comprador presente em pelo menos duas temporadas. O IVB
-normaliza esse efeito no intervalo $[0,1]$:
+Estimando efeitos heterogêneos com o **R-learner** (substituto do `CausalForestDML`), obtemos
+$\theta_c$ para cada clube comprador (com ≥ 3 transações). O IVB normaliza esse efeito no
+intervalo $[0,1]$ (tratado como **exploratório/ilustrativo** — dominado por outlier; ver notebook):
 
 $$IVB_c = \frac{\theta_c - \min(\Theta)}{\max(\Theta) - \min(\Theta)}$$
 
@@ -170,9 +184,9 @@ euros, estar posicionado no núcleo da rede de transferências*.
 ### 5.3 Curva temporal por temporada (proxy do decaimento)
 
 Como degradação aceitável da curva $\theta(\Delta t)$ original, estimamos
-$\theta_t$ separadamente para cada temporada $t \in \{2023, 2024, 2025\}$.
-A tendência $\theta_{2023} \to \theta_{2025}$ indica se o prêmio do vendedor
-se intensificou ou se dissipou com a correção de mercado observada em 2025.
+$\theta_t$ separadamente para cada temporada $t \in \{2017, \dots, 2025\}$ (exceto 2020).
+O resultado é o **achado central**: o efeito é significativo apenas em **2022 e 2023** (boom
+pós-COVID), sobrevivendo a Bonferroni/FDR; nas demais temporadas é indistinguível de zero.
 
 ## 6. Testes de robustez planejados
 

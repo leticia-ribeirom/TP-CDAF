@@ -91,14 +91,18 @@ Distribuição do resíduo (n = 5.146):
 
 | Estatística | Valor |
 |-------------|-------|
-| média | −0,014 (≈ 0, como esperado) |
-| mediana | **+0,019** |
-| desvio-padrão | 0,587 |
-| mínimo / máximo | −4,50 / +2,26 |
-| **% com prêmio positivo** | **51,7%** |
+| média | −0,001 (≈ 0, como esperado) |
+| mediana | **+0,035** |
+| desvio-padrão | 0,671 |
+| mínimo / máximo | −4,47 / +2,64 |
+| **% com prêmio positivo** | **52,5%** |
 
 Ou seja: pouco mais da metade das transferências saem **acima** do preço justo estimado, com um
 sobrepreço mediano modesto. Esse resíduo é a matéria-prima da análise causal.
+
+> **Nota:** o resíduo é gerado **out-of-fold** (`cross_val_predict`), sem vazamento in-sample. O
+> desvio-padrão (0,671) é maior que na versão anterior (0,587) justamente porque a variância deixou
+> de ser artificialmente comprimida.
 
 ## 8. Pontos de atenção
 
