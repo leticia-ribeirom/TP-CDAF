@@ -142,85 +142,58 @@ print(f'theta={theta:.4f}  IC95%={ci}  p={p:.4f}')
 A saída fornece $\hat{\theta}$, IC 95 % (clusterizado clube×temporada) e p-valor para
 $H_0: \theta = 0$. O CATE/IVB usa **R-learner** (Nie & Wager) no lugar do `CausalForestDML`.
 
-## 5. Métricas inovadoras adaptadas
+## 5. Achado central e heterogeneidade
 
-A proposta original sugeria duas métricas: a Curva de Decaimento Temporal e
-o Índice de Vulnerabilidade de Barganha. A primeira é inviável na base atual
-porque exige a data exata da transferência. Mantemos a segunda integralmente
-e propomos uma terceira métrica, originalmente nossa, que aproveita a
-disponibilidade das features de rede.
+### 5.1 Efeito médio (ATE) e o achado por temporada
 
-### 5.1 Índice de Vulnerabilidade de Barganha (IVB)
+O ATE estimado é **θ = 0,0044** (IC 95 % HC1 [−0,0016; 0,0104]; IC clusterizado clube×temporada
+[−0,0021; 0,0110]) — **não significativo**. A progressão OLS-ingênuo (0,0142\*) → OLS+W (0,0051) →
+DML (0,0044) mostra que a correlação bruta era majoritariamente o confundidor de porte ("clube rico").
 
-Estimando efeitos heterogêneos com o **R-learner** (substituto do `CausalForestDML`), obtemos
-$\theta_c$ para cada clube comprador (com ≥ 3 transações). O IVB normaliza esse efeito no
-intervalo $[0,1]$ (tratado como **exploratório/ilustrativo** — dominado por outlier; ver notebook):
+Estimando θ **por temporada** (IC clusterizado por clube + correção de múltiplas comparações), o
+efeito é significativo **apenas em 2022 (+0,064) e 2023 (+0,047)** — o boom pós-COVID — e **sobrevive
+a Bonferroni e FDR**. Este é o achado confirmatório: o prêmio do vendedor não é universal, emerge em
+regime de mercado aquecido. (Validações na seção 6.)
 
-$$IVB_c = \frac{\theta_c - \min(\Theta)}{\max(\Theta) - \min(\Theta)}$$
+### 5.2 Índice de Vulnerabilidade de Barganha (IVB) — apêndice exploratório
 
-Clubes com IVB alto são "presas fáceis" — pagam sobrepreços maiores quando
-chegam ao mercado recém-capitalizados. Clubes com IVB baixo são negociadores
-disciplinados, capazes de reciclar capital sem ceder à pressão.
+Com o **R-learner** (substituto do `CausalForestDML`) obtemos um CATE por observação, agregado por
+clube (≥ 3 transações). O IVB usa **normalização por percentil** do CATE médio do clube — imune ao
+outlier que dominava a versão min-max:
 
-A mesma lógica, aplicada do lado vendedor, identifica os "clubes predadores"
-— times que extraem as maiores taxas de prêmio positivo quando abordados
-por compradores recém-capitalizados.
+$$IVB_c = \text{percentil}_c(\overline{\theta}_c)$$
 
-### 5.2 Sensibilidade do prêmio à centralidade na rede (substitui a Curva θ(Δt))
+> ⚠️ Como o R² de 1ª etapa em Y é só 0,06, há pouco sinal de heterogeneidade genuína. O IVB é
+> **apêndice ilustrativo / prova de conceito**, não ferramenta de decisão.
 
-Sem datas diárias, não podemos modelar o decaimento temporal proposto. Em
-contrapartida, exploramos uma dimensão ortogonal que a base permite: a
-**heterogeneidade do efeito segundo a posição estrutural do comprador na
-rede de transferências**. Parametrizamos:
+## 6. Testes de robustez (executados)
 
-$$\theta(\text{PageRank}_c) = \theta_0 + \theta_1 \cdot \text{quartil}(\text{PageRank}_c)$$
+Implementados em `etapa2_robustez.ipynb` e `etapa2_double_ml.ipynb`:
 
-A hipótese testada é que clubes centrais (alta centralidade de PageRank,
-top-25 % do mercado) sofrem prêmios menores que clubes periféricos, por
-deterem informação superior e poder de barganha estrutural. Essa
-parametrização entrega um insight gerencial direto: *quanto vale, em
-euros, estar posicionado no núcleo da rede de transferências*.
+1. **Especificação de $D$.** D₁=`log_revenue` (n.s.), D₂=`log(n_sales)`, D₃=`big_sale`. D₂/D₃ são
+   significativos no bruto, mas **perdem significância** ao controlar intensidade de janela
+   (`n_buys`+gasto) → o "mecanismo de sinalização" é **exploratório, não confirmatório**.
+2. **Subgrupos por tier de liga.** Top-4 vs. ligas menores — nenhum significativo na média (cluster).
+3. **Placebos globais.** D embaralhado (θ≈0,002) e ruído gaussiano (θ≈0,001) — ICs cruzam zero.
+4. **Placebo dentro da temporada.** Permuta D entre clubes de 2022/2023 (200×): θ observado fica fora
+   do nulo, **p empírico = 0,005** — o efeito sazonal não é artefato do desenho.
+5. **Causalidade reversa (C2).** Tratamento defasado t−1 (θ=0,0051\*, cluster) — enfraquece C2, mas
+   **não conclusivo** (o contemporâneo é n.s. na mesma subamostra → o lag pode captar traço de clube).
+6. **Sensibilidade ao corte de fee (C6).** Pipeline reconstruído a €0/100k/250k/500k/1M — ATE nulo em
+   todos; 2022/2023 estáveis de €0 a €500k. Achados não dependem do corte.
+7. **Sensibilidade à identificação.** Robustness Value (Cinelli-Hazlett) ≈ 0,24–0,27 para 2022/2023;
+   stress test com financeiros contemporâneos (over-control) — 2023 sobrevive, 2022 atenua.
 
-### 5.3 Curva temporal por temporada (proxy do decaimento)
+**PSM não foi executado** (substituído pelo controle não-paramétrico via DML) — ver seção 7.
 
-Como degradação aceitável da curva $\theta(\Delta t)$ original, estimamos
-$\theta_t$ separadamente para cada temporada $t \in \{2017, \dots, 2025\}$ (exceto 2020).
-O resultado é o **achado central**: o efeito é significativo apenas em **2022 e 2023** (boom
-pós-COVID), sobrevivendo a Bonferroni/FDR; nas demais temporadas é indistinguível de zero.
+## 7. Limitações reconhecidas
 
-## 6. Testes de robustez planejados
-
-1. **Especificação de $D$.** Replicar com $D = $ `log_revenue`, com
-   `n_sales` e com a flag binária `big_sale`.
-2. **Subgrupos.** Estimar $\theta$ por tier de comprador (top-5 ligas vs.
-   demais) e por posição do jogador.
-3. **Placebo.** Aleatorizar $D$ entre clubes mantendo a estrutura de $W$;
-   $\theta$ estimado deve ser estatisticamente indistinguível de zero.
-4. **Reverse causation.** Reestimar com tratamento defasado (lag de uma
-   temporada) — se o efeito persistir, a hipótese de causalidade reversa
-   (C2) enfraquece.
-5. **PSM como sanity check do C6.** Construir pares de clubes com
-   propensity score similar (alto vs. baixo `log_revenue`) e comparar o
-   prêmio médio diretamente, sem o ferramental DML.
-
-## 7. Cronograma de implementação
-
-| Semana | Entrega |
-|---|---|
-| 1 | Pipeline DML completo (LinearDML + CausalForestDML), análises de robustez 1 e 3 |
-| 2 | Cálculo de IVB por clube; ranking de clubes-presa e clubes-predadores |
-| 2 | Curva $\theta_t$ por temporada + sensibilidade ao PageRank |
-| 3 | Validação por PSM e roadmap de enriquecimento (data exata, performance) |
-
-## 8. Limitações reconhecidas
-
-A modelagem atual não controla por contexto esportivo individual
-(classificação para a UCL, troca de técnico, choques de receita de TV) nem
-isola transferências motivadas por cláusula de multa rescisória. Esses
-elementos correspondem aos confundidores C2 e C3 e ficam endereçados como
-trabalho futuro. A granularidade temporal trimestral (por temporada) é a
-restrição mais relevante: ela limita a precisão da estimativa de urgência
-e impede a estimação direta da curva exponencial de decaimento. Ainda
-assim, o desenho proposto é suficiente para responder à pergunta principal
-do projeto — *existe um prêmio causal do vendedor?* — com rigor
-metodológico compatível com o estado da arte.
+1. **Identificação por *selection-on-observables*.** O confundidor C1 ("clube rico") é controlado por
+   *proxies* de rede/elenco, sem o bloco financeiro direto (que seria *bad control*). Com R²_y=0,06,
+   isso não é verificável; o Robustness Value (0,24–0,27) mitiga, mas não substitui um instrumento.
+2. **Granularidade temporal.** D agrega a temporada inteira, não os 30 dias pré-compra — diluindo o
+   efeito (estimativa conservadora) e impedindo a curva de decaimento θ(Δt) da proposta original.
+3. **C3 (causa comum)** não controlado (sem dados de UCL, troca de técnico, receita de TV).
+4. **CATE/IVB via R-learner** (econml não instala) — aproximação, tratada como apêndice.
+5. **Não entregues** (trabalho futuro): PSM ("clubes gêmeos"), integração FBref/StatsBomb,
+   `CausalForestDML`, análise do lado vendedor ("clubes predadores").

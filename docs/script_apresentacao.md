@@ -34,8 +34,9 @@
 > A pergunta operacional é: **a liquidez recente do comprador tem efeito causal sobre o sobrepreço
 > que ele paga**, depois de neutralizar confundidores estruturais?
 
-> Hipótese: sim — e o mecanismo é de **sinalização**, não de volume de dinheiro. O clube não paga
-> mais porque tem mais dinheiro; paga mais porque o mercado sabe que ele precisa comprar.
+> Hipótese inicial: sim — e nossa conjectura era que o mecanismo seria de **sinalização**, não de
+> volume de dinheiro (o clube pagaria mais porque o mercado sabe que ele precisa comprar). *Guardem
+> essa conjectura: no slide 10 mostramos que os dados não a sustentam de forma robusta.*
 
 `[clica]`
 
