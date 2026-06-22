@@ -1,0 +1,35 @@
+\section{Aplicações e Implicações Práticas}
+\label{sec:aplicacoes}
+
+Os resultados têm implicações diretas para clubes, agentes e analistas de mercado. Discutimos três:
+o \textit{timing} de contratações, a inteligência de mercado baseada em vulnerabilidade de barganha
+e um alerta metodológico para a análise de transferências.
+
+\textbf{\textit{Timing} de contratações.} O achado de que o prêmio do vendedor é condicional ao
+regime de mercado tem valor operacional. Em janelas de mercado aquecido — como 2022 e 2023 — a
+liquidez recente elevou significativamente o sobrepreço pago, com efeito causal estimado entre
+\textbf{4,7\% e 6,4\%} (por unidade logarítmica de receita de vendas); fora desses anos, o efeito é
+estatisticamente nulo. Para um clube com poder de espera, isso sugere uma vantagem estrutural: adiar a
+reposição para fora do pico de mercado, ou desacoplar a decisão de compra da entrada de caixa de uma
+venda, pode evitar um sobrepreço material. Para um clube vendedor, o mesmo padrão indica o momento
+oportuno para negociar com compradores pressionados. Fora desses regimes, contudo, não há evidência
+de que reter ou acelerar a compra altere sistematicamente o preço — uma conclusão igualmente útil,
+pois desencoraja heurísticas de negociação infundadas.
+
+\textbf{Inteligência de mercado e o IVB.} O \textit{Índice de Vulnerabilidade de Barganha}, ainda que
+exploratório nesta versão, ilustra um produto analítico concreto: um \textit{ranking} de clubes por
+propensão a pagar sobrepreço sob liquidez. Operacionalizado com dados mais ricos e estimadores mais
+robustos, o IVB poderia integrar ferramentas de \textit{scouting} financeiro — sinalizando, do lado
+comprador, clubes que precisam de disciplina de negociação, e, do lado vendedor, alvos comerciais
+mais permeáveis a prêmios. A contribuição aqui é metodológica: mostramos como efeitos causais
+heterogêneos podem ser convertidos num índice acionável por clube.
+
+\textbf{Alerta metodológico.} Talvez a implicação mais ampla seja de método. Uma análise puramente
+correlacional do mesmo conjunto de dados concluiria pela existência de um prêmio do vendedor
+sistemático e significativo ($\theta = 0{,}0142$). Foi apenas ao isolar o efeito causal, controlando
+o porte e a posição estrutural dos clubes, que essa conclusão se revelou um artefato do confundidor
+``clube rico''. Em um setor que investe cada vez mais em análise de dados, o caso é um lembrete
+prático de que \textbf{correlação não é causalidade}: decisões de mercado de alto valor — orçamentos,
+estratégias de contratação, avaliação de janelas — exigem desenhos que separem efeito de seleção.
+O ferramental de inferência causal com aprendizado de máquina empregado aqui oferece um caminho
+viável para essa distinção em dados observacionais de mercado.

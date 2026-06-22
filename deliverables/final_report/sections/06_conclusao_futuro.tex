@@ -1,0 +1,43 @@
+\section{Conclusão e Trabalhos Futuros}
+
+Este trabalho investigou se a liquidez recente de um clube comprador — o caixa gerado por vendas —
+eleva causalmente o sobrepreço que ele paga em contratações subsequentes, o chamado ``prêmio do
+vendedor''. Para isso, propusemos um \textit{pipeline} em duas etapas: um modelo hedônico que isola
+o sobrepreço como resíduo do preço justo, e uma estimação de \textit{Double Machine Learning} que
+mede o efeito causal da liquidez sobre esse resíduo, neutralizando confundidores estruturais.
+
+\textbf{Principais descobertas.} O modelo hedônico alcançou $R^2$ de $0{,}762$ no \textit{holdout},
+superando em 7,4 pontos a \textit{baseline} de valor de mercado. Na etapa causal, o achado central é
+duplo. Primeiro, o \textbf{efeito médio é estatisticamente nulo}: a correlação positiva e
+significativa que aparece sem controles ($\theta = 0{,}0142$) desaparece sob DML
+($\theta = 0{,}0044$, com intervalo cruzando zero), revelando-se um artefato do confundidor ``clube
+rico''. Segundo, e mais importante, o efeito \textbf{não é uniforme no tempo}: emerge significativo
+apenas em 2022 e 2023 — o auge da recuperação de mercado pós-pandemia — sobrevivendo à correção de
+múltiplas comparações e a uma bateria de testes de robustez. O prêmio do vendedor, portanto, não é
+uma lei universal do mercado, mas um \textbf{fenômeno condicional ao regime}.
+
+\textbf{Contribuições.} Destacamos: (i) a aplicação de inferência causal com aprendizado de máquina
+a uma questão de economia do futebol tradicionalmente tratada de forma correlacional; (ii) a
+evidência de que o prêmio do vendedor é condicional ao aquecimento do mercado, o que reconcilia
+resultados aparentemente positivos de janelas curtas com a nulidade de longo prazo; (iii) o
+\textit{Índice de Vulnerabilidade de Barganha} como demonstração de conceito para inteligência de
+mercado; e (iv) um alerta metodológico sobre os riscos de interpretar correlação como causa na
+análise de transferências.
+
+\textbf{Limitações.} A principal restrição é a \textbf{granularidade temporal}: o tratamento é
+medido por temporada, e não pela janela de poucos dias em que o ``efeito dominó'' originalmente se
+manifestaria — o que dilui o efeito e torna nossas estimativas conservadoras. Além disso, o controle
+do confundidor ``clube rico'' apoia-se em \textit{proxies} estruturais (rede, elenco, liga), e não no
+volume financeiro direto; o confundidor de causa comum (reestruturação estratégica) não é tratado; o
+modelo hedônico não incorpora desempenho individual do atleta, de modo que parte do valor esportivo
+pode vazar para o resíduo; e a estimativa de heterogeneidade que sustenta o IVB tem baixo poder,
+tornando o índice ilustrativo.
+
+\textbf{Trabalhos futuros.} Várias direções decorrem dessas limitações. A obtenção de \textbf{datas
+exatas} das transações permitiria estimar a curva de decaimento temporal do efeito e endereçar
+diretamente a causalidade reversa. A \textbf{integração de métricas de desempenho} (gols,
+assistências, \textit{expected goals}) refinaria o preço justo e depuraria o resíduo. Do lado
+causal, o uso de \textbf{\textit{Propensity Score Matching}} como validação complementar e de
+\textit{Causal Forests} para uma estimativa de heterogeneidade mais robusta consolidaria o IVB.
+Por fim, uma análise simétrica do \textbf{lado vendedor} identificaria ``clubes predadores'' — os que
+extraem prêmios de forma sistemática — fechando o quadro do ecossistema de transferências.

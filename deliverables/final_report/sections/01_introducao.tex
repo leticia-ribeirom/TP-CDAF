@@ -1,0 +1,50 @@
+\section{Introdução}
+
+O mercado de transferências do futebol movimenta bilhões de euros por ano e concentra algumas das
+decisões financeiras mais arriscadas da indústria esportiva. Clubes operam sob pressão de tempo,
+orçamentos limitados e escrutínio público, e cada contratação equivocada tem custo esportivo e
+econômico elevado. Não surpreende que a tomada de decisão no setor seja cada vez mais orientada por
+dados. Um traço estrutural torna o problema particularmente difícil: o mercado funciona como uma
+\textit{rede de dependências}, em que a decisão de um clube altera as condições enfrentadas pelos
+demais. Compreender essas interdependências é, portanto, de interesse direto para clubes, agentes e
+analistas.
+
+Uma dessas interdependências é o que chamamos de \textit{prêmio do vendedor}. Quando um clube realiza
+uma grande venda, dois sinais chegam ao mercado simultaneamente: ele passa a dispor de caixa e
+adquire urgência de repor o elenco. A intuição — partilhada por dirigentes e comentaristas — é que os
+vendedores percebem essa condição e cobram mais caro desse comprador nas negociações seguintes. Há,
+contudo, uma armadilha analítica: clubes financeiramente robustos vendem caro \textit{e} compram caro
+simultaneamente, de modo que uma correlação entre vender e pagar a mais pode refletir apenas o porte
+do clube, e não um efeito causal. A pergunta de pesquisa deste trabalho é precisamente:
+\textbf{a liquidez recente de um clube comprador eleva causalmente o sobrepreço que ele paga em
+contratações subsequentes, uma vez neutralizados os confundidores estruturais?}
+
+Neste trabalho, respondemos a essa pergunta com um \textit{pipeline} em duas etapas e relatamos
+resultados que contrariam a intuição corrente. Primeiro, um modelo hedônico de aprendizado de máquina
+estima o preço justo de cada transferência a partir de atributos do jogador, isolando como resíduo o
+sobrepreço pago. Em seguida, \textit{Double Machine Learning} estima o efeito causal da liquidez do
+comprador sobre esse sobrepreço, neutralizando confundidores de alta dimensão. Nossas contribuições
+são três. \textbf{Primeiro}, mostramos que o efeito causal \textit{médio} é estatisticamente nulo: a
+correlação positiva e significativa que aparece sem controles desaparece sob inferência causal,
+revelando-se um artefato do confundidor ``clube rico''. \textbf{Segundo}, mostramos que o efeito não
+é uniforme no tempo — ele emerge significativo apenas nas temporadas de 2022 e 2023, no auge da
+recuperação de mercado pós-pandemia, sobrevivendo à correção de múltiplas comparações e a uma ampla
+bateria de testes de robustez; o prêmio do vendedor é, assim, um fenômeno \textit{condicional ao
+regime de mercado}, e não uma lei universal. \textbf{Terceiro}, propomos o \textit{Índice de
+Vulnerabilidade de Barganha} como demonstração de conceito para inteligência de mercado, e
+evidenciamos um alerta metodológico relevante para o setor: em análises de transferências, tratar
+correlação como causa conduz a conclusões equivocadas.
+
+Nosso trabalho diferencia-se das abordagens predominantes na literatura. Estudos que modelam o
+mercado de transferências como rede concentram-se em sua \textit{estrutura} — comunidades, centralidade
+e fluxos de capital — enquanto nós focamos no \textit{preço} e em sua determinação causal. Trabalhos
+de avaliação de valor de jogadores, por sua vez, validam as estimativas de mercado contra desfechos
+esportivos; nós as empregamos como insumo para medir desvios conjunturais de preço. A combinação de
+inferência causal com aprendizado de máquina aplicada a esta pergunta é, tanto quanto sabemos, pouco
+explorada. As diferenças são detalhadas na Seção~2.
+
+O restante do artigo está organizado da seguinte forma. A Seção~2 revisa os trabalhos relacionados e
+posiciona nossa contribuição. A Seção~3 descreve os dados, o pré-processamento e as duas etapas de
+modelagem. A Seção~4 apresenta e discute os resultados, incluindo a comparação com a \textit{baseline}
+e os testes de robustez. A Seção~5 trata das implicações práticas, e a Seção~6 conclui, apontando
+limitações e direções futuras.

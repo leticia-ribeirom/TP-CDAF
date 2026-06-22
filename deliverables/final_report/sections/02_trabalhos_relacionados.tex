@@ -1,0 +1,64 @@
+\section{Trabalhos Relacionados}
+
+Este trabalho situa-se na interseção de duas literaturas: a de \textit{análise quantitativa do
+mercado de transferências do futebol} e a de \textit{inferência causal com aprendizado de máquina}.
+Esta seção revisa as frentes mais relevantes, destacando como cada uma fundamenta nossa metodologia
+e em que pontos nossa abordagem se diferencia.
+
+\subsection{Avaliação de valor de mercado de jogadores}
+
+A estimativa do valor de um jogador é um problema central na economia do futebol. Uma linha
+influente apoia-se na \textit{sabedoria das multidões}: as avaliações de mercado do Transfermarkt,
+construídas a partir do julgamento coletivo de uma comunidade de usuários, mostram-se preditores
+robustos de desfechos esportivos. Peeters \cite{peeters2018} demonstra que essas avaliações coletivas
+predizem resultados de seleções nacionais com acurácia comparável ou superior à de \textit{rankings}
+oficiais, evidenciando que o \textit{market value} carrega informação genuína sobre a qualidade do
+atleta.
+
+Nosso trabalho herda essa premissa, mas a aplica a uma tarefa distinta. Enquanto Peeters
+\cite{peeters2018} valida o \textit{market value} contra resultados esportivos, nós o utilizamos como insumo de um
+\textit{modelo hedônico} que estima o \textit{preço de transferência} (\textit{fee}) e, a partir do
+resíduo desse modelo, isolamos o sobrepreço pago além do valor justo. Em vez de tomar o
+\textit{market value} como verdade final, tratamo-lo como uma referência sobre a qual medimos
+desvios conjunturais da negociação.
+
+\subsection{O mercado de transferências como rede}
+
+Uma segunda linha modela o mercado de transferências como uma \textit{rede dirigida e ponderada},
+em que clubes são nós e transferências são arestas ponderadas pelo valor negociado. Esses estudos
+caracterizam a estrutura do mercado — comunidades, centralidade e fluxos de capital — e relacionam a
+posição estrutural de um clube ao seu desempenho.
+% AMPLIAR SE HOUVER TEMPO: citar aqui \cite{wand2022,li2019,palazzo2023,dieles2023} (entradas
+% comentadas em references.bib) ao descrever achados especificos da literatura de redes.
+
+Diferentemente dessa abordagem, cujo foco está na \textit{estrutura} da rede, nosso trabalho
+centra-se no \textit{preço} e no \textit{efeito causal} do histórico recente do comprador. Ainda
+assim, a perspectiva de rede é incorporada de forma instrumental: métricas estruturais como
+\textit{PageRank} e graus de entrada/saída entram em nosso modelo como \textit{confundidores}, para
+neutralizar o fato de que clubes centrais na rede tendem a negociar valores maiores
+independentemente de sua liquidez recente.
+
+\subsection{Inferência causal com aprendizado de máquina}
+
+Estimar um efeito causal a partir de dados observacionais exige separar a influência do tratamento
+de confundidores que afetam tanto o tratamento quanto o desfecho. O arcabouço de \textit{Double/
+Debiased Machine Learning} (DML) de Chernozhukov et al. \cite{chernozhukov2018} permite empregar modelos flexíveis
+de aprendizado de máquina para estimar funções de confundimento de alta dimensão sem introduzir viés
+de regularização no parâmetro causal, graças à ortogonalização de Neyman e ao \textit{cross-fitting}.
+Adotamos esse arcabouço como núcleo da nossa estimação do efeito da liquidez sobre o sobrepreço.
+
+Para investigar a \textit{heterogeneidade} do efeito — isto é, como ele varia entre clubes —
+recorremos ao \textit{R-learner} de Nie e Wager \cite{nie2021}, que estima efeitos de tratamento
+condicionais (CATE) por meio de uma formulação quasi-oráculo derivada da mesma lógica de
+ortogonalização. Essa escolha nos permite construir um índice de vulnerabilidade por clube a partir
+dos efeitos individuais estimados.
+
+\subsection{Posicionamento}
+
+Em síntese, combinamos as duas literaturas de uma forma ainda pouco explorada: aplicamos o
+ferramental de inferência causal com aprendizado de máquina \cite{chernozhukov2018,nie2021} a uma
+pergunta de economia do futebol tradicionalmente tratada de forma descritiva ou correlacional,
+usando o \textit{market value} consagrado pela literatura \cite{peeters2018} como âncora para
+definir o sobrepreço. O resultado é um desenho que distingue explicitamente o efeito causal da
+liquidez do comprador do mero porte financeiro do clube — distinção que análises puramente
+correlacionais ou estruturais não conseguem estabelecer.
